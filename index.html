@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EdoPlus</title>
+    <link rel="stylesheet" href="css/styly.css">
 </head>
 <body>
     <header>
-        <!-- LOGO -->
         <!-- Navigace -->
         <nav>
             <ul>
@@ -31,12 +31,33 @@
                 </li>
             </ul>
         </nav>
+        <!-- Konec - Navigace -->
     </header>
     <!-- Uvodní sekce -->
     <section>
         <p>Welcome To EduPlus</p>
         <h1>More than 1200 Online Courses</h1>
+        <form method="post" action="Zpracuj-search.php">
+            <input type="search" name="qsearch" placeholder="Search Courses">
+            <input type="submit" value="Submit">
+        </form>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+        <p>ONLINE SUPPORT</p>
+        <p>+012 (345) 6789</p>
+
+        <strong>3045+</strong>
+        <p>Satisfied Students</p>
+
+        <strong>7852+</strong>
+        <p>Available Courses</p>
+
+        <strong>9860+</strong>
+        <p>Graduate Students</p>
+
+        <strong>8970+</strong>
+        <p>Active Courses</p>
     </section>
+    <!-- Konec - Uvodní sekce -->
     <!-- Sekce - Course Categories -->
     <section>
         <p>Popular Categories</p>
@@ -106,6 +127,7 @@
             </ul>
         </article>
     </section>
+    <!-- Konec - Course Categories -->
     <!-- Sekce - Available Courses -->
     <section>
         <p>Popular Courses</p>
@@ -145,22 +167,24 @@
         </article>
         <!-- Button - VIEW ALL COURSES -->
     </section>
+    <!-- Konec - Available Courses -->
     <!-- Sekce - Campus Gallery -->
     <section>
         <p>Photo & Album</p>
         <h2>Campus Gallery</h2>
         <ul>
-            <li>Show All</li>
-            <li>University</li>
-            <li>Group Study</li>
-            <li>Awards</li>
-            <li>Students</li>
-            <li>Teachers</li>
-            <li>Campus</li>
+            <li><a href="">Show All</a></li>
+            <li><a href="">University</a></li>
+            <li><a href="">Group Study</a></li>
+            <li><a href="">Awards</a></li>
+            <li><a href="">Students</a></li>
+            <li><a href="">Teachers</a></li>
+            <li><a href="">Campus</a></li>
         </ul>
         <!-- Obrázky -->
     </section>
-    <!-- Sekce - Expers Instructors -->
+    <!-- Konec - Campus Gallery -->
+    <!-- Sekce - Expert Instructors -->
     <section>   
         <p>Team Members</p>
         <h2>Expert Instructors</h2>
@@ -185,6 +209,7 @@
             <p>980+ Courses</p>
         </article>
     </section>
+    <!-- Konec - Expert Instructors -->
     <!-- Sekce - Upcoming Events -->
     <section>
         <p>Latest Events</p>
@@ -192,35 +217,36 @@
         <article>
             <p>$20</p>
             <ul>
-                <li>25 NOV 2020</li>
-                <li>08 AM - 09 PM</li>
+                <li><time datetime="2020-11-25">25 NOV 2020</time></li>
+                <li><time datetime="2020-11-25T08:00">08 AM</time> - <time datetime="2020-11-25T21:00">09 PM</time></li>
                 <li>PARIS,FRANCE</li>
             </ul>
             <h3>Web Design & Development Conference 2020</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Modi nostrum perferendis laudantium exercitationem optio, quidem odit dolores architecto tempore tempora?</p>
-        <!-- Button - JOINT EVENT -->
+            <a href="">JOIN EVENT</a>
         </article>
         <article>
             <p>$25</p>
             <ul>
-                <li>25 NOV 2020</li>
-                <li>08 AM - 09 PM</li>
+                <li><time datetime="2020-11-25">25 NOV 2020</time></li>
+                <li><time datetime="2020-11-25T08:00">08 AM</time> - <time datetime="2020-11-25T21:00">09 PM</time></li>
             </ul>
             <h3>Annual Conference 2020</h3>
-        <!-- Button - JOINT EVENT -->
+            <a href="">JOIN EVENT</a>
         </article>
         <article>
             <p>$30</p>
             <ul>
-                <li>25 NOV 2021</li>
-                <li>08 AM - 09 PM</li>
+                <li><time datetime="2020-11-25">25 NOV 2020</time></li>
+                <li><time datetime="2020-11-25T08:00">08 AM</time> - <time datetime="2020-11-25T21:00">09 PM</time></li>
             </ul>
             <h3>Annual Conference 2021</h3>
-        <!-- Button - JOINT EVENT -->
+            <a href="">JOIN EVENT</a>
         </article>
-        <!-- Button - VIEW ALL EVENTS -->
+        <a href="">VIEW ALL EVENTS</a>
     </section>
+    <!-- Konec - Upcoming Events -->
     <!-- Sekce - What Our Students Say -->
     <section>
         <p>Students Feedback</p>
@@ -234,6 +260,7 @@
     <!-- Šipky na přepínání -->
     <!-- Obrázky -->
     </section>
+    <!-- Konec - What Our Students Say -->
     <!-- Sekce - Become and Instructor -->
     <section>
         <p>Build a Career</p>
@@ -243,16 +270,17 @@
         <p>Fusce nibh. Etiam bibendum elit eget erat. Morbi leo mi, nonummy eget tristique non, rhoncus non leo.</p>
         <h4>Book Friendly</h4>
         <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-        <!-- Button - Join With us -->
-        <!-- Button - Become a partner -->
+        <a href="">JOIN WITH US</a>
+        <a href="">BECOME A PARTNER</a>
     </section>
+    <!-- Konec - Become and Instructor -->
     <!-- Sekce - Latest News & Blog -->
     <section>
         <p>Articles & Tips</p>
         <h2>Latest News & Blog</h2>
         <article>
             <ul>
-                <li>25 NOV 2020</li>
+                <li><time datetime="2020-11-25">25 NOV 2020</time></li>
                 <li>COM(30)</li>
             </ul>
             <h3>Learning Resources In Challenging Times Online Workshop</h3>
@@ -261,7 +289,7 @@
         </article>
         <article>
             <ul>
-                <li>16 FEB 2021</li>
+                <li><time datetime="2021-01-16">16 FEB 2021</time></li>
                 <li>COM(40)</li>
             </ul>
             <h3>Djang Highlights Models Admin And Hardness Relation Database</h3>
@@ -270,7 +298,7 @@
         </article>
         <article>
             <ul>
-                <li>8 MARCH 2021</li>
+                <li><time datetime="2021-03-08">8 MARCH 2021</time></li>
                 <li>COM(40)</li>
             </ul>
             <h3>Smash Podcast Episode With Laura Kalbag What Is Online Privacy</h3>
@@ -278,16 +306,19 @@
         <!--button-->
         </article>
     </section>
-    <!-- Sekce - Loga -->
+    <!-- Konec - Latest News & Blog -->
+    <!-- Sekce - Partners -->
     <section>
         
     </section>
+    <!-- Konec - Partners -->
+    <!-- Footer -->
     <footer>
         <ul>
-            <li>Facebook</li>
-            <li>Facebook</li>
-            <li>Facebook</li>
-            <li>Facebook</li>
+            <li><a href="https://www.facebook.com">Facebook</a></li>
+            <li><a href="https://www.twitter.com">Twitter</a></li>
+            <li><a href="https://www.youtube.com">Youtube</a></li>
+            <li><a href="https://www.instagram.com">Instagram</a></li>
         </ul>
         <h4>Our Courses</h4>
         <ul>
@@ -317,8 +348,8 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, harum.</p>
             <!-- Button na e-mail -->
         </article>
-        <p>Copyright © 2020 EdoPlus All Rights Reserved</p>
+        <p>Copyright &copy; 2020 EdoPlus All Rights Reserved</p>
     </footer>
-
+    <!-- Konec - Footer -->
 </body>
 </html>
