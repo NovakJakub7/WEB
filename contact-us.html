@@ -3,116 +3,244 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EdoPlus</title>
+    <title>EdoPlus</title><link rel="stylesheet" href="css/styly.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lightbox/dist/simple-lightbox.css?v2.4.1" />
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/05fce81391.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <!-- Navigace -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="">Home</a>
-                </li>
-                <li>
-                    <a href="">Courses</a>
-                </li>
-                <li>
-                    <a href="">Events</a>
-                </li>
-                <li>
-                    <a href="">Pages</a>
-                </li>
-                <li>
-                    <a href="">Blog</a>
-                </li>
-                <li>
-                    <a href="">Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- Konec - Navigace -->
-    </header>
+    <div class="basic-content-container basic-content-container--no-brands">
+        <header class="header">
+            <div class="header-logo">
+                <img src="images/logo_d-blue.png" alt="Logo webové stránky" width="60" class="logo__img">
+                <a href="index.html" class="logo__name heading-primary"><b>Edu</b>Plus</a>
+            </div>
+            <!-- Navigace -->
+            <nav class="navigation">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="index.html">Home <i class="fa fa-angle-down"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="about-us.html">About Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="">Courses <i class="fa fa-angle-down"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="">Course</a></li>
+                            <li class="submenu__item"><a href="our-courses.html">Course List</a></li>
+                            <li class="submenu__item"><a href="courses-details.html">Course Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="">Events <i class="fa fa-angle-down"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="event-details.html">Event Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="">Pages <i class="fa fa-angle-down"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="instructor-details.html">Instructors Details</a></li>
+                            <li class="submenu__item"><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="blog-standard.html">Blog <i class="fa fa-angle-down"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="blog-details.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="contact-us.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Konec - Navigace -->
+            <div class="header-links">
+                <a href="" class="icon-box white-bg"><i class="fab fa-facebook-f fa-fw  "></i></a>
+                <a href="" class="icon-box white-bg"><i class="fab fa-youtube fa-fw "></i></a>
+                <a href="" class="icon-box white-bg"><i class="far fa-user-circle fa-fw "></i>SIGN IN</a>
+            </div>
+        </header>
     <!-- Sekce - Contact Us -->
-    <section>
-        <h1>Faq</h1>
-        <p>Home > Contact Us</p>
+    <section class="hero-area hero-area-background-image">
+        <h1 class="hero-area__title white-color">Contact Us</h1>
+        <p class="hero-area__direction white-color">Home > Contact Us</p>
     </section>
     <!-- Konec - Contact Us -->
+    <div class="contact-us-background"></div>
+    <section class="contact-us-container">
     <!-- Sekce - Get In Touch -->
-    <section>
-        <article>
-            <p>Quick Contact</p>
-            <h2>Get In Touch</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore corrupti quam eligendi eum sed maiores pariatur esse magnam laboriosam nulla.</p>
-            <dl>
-                <dt>Location</dt>
-                    <dd>250 Main Street, New York</dd>
-                <dt>Email Us</dt>
-                    <dd>support@gmail.com</dd>
-                <dt>Call Us</dt>
-                    <dd>+012 (354) 6789 99</dd>
-            </dl>
-            <a href="https://www.facebook.com"></a>
-            <a href="https://www.twitter.com"></a>
-            <a href="https://www.instagram.com"></a>
-            <a href="https://www.linkedin.com"></a>
-        </article>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24215.500706751194!2d-74.00098354277117!3d40.6533061511048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2zTmV3IFlvcmssIFNwb2plbsOpIHN0w6F0eSBhbWVyaWNrw6k!5e0!3m2!1scs!2scz!4v1616088171661!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </section>
-    <!-- Konec - Get In Touch -->
-    <!-- Sekce - Leave Us Message -->
-    <section>
-        <article>
-            <p>Get In Touchh</p>
-            <h2>Leave Us A Message</h2>
-            <form method="post" action="zpracuj-formular.php">
-                <input type="text" name="name" placeholder="Full Name">
-                <input type="email" name="email" placeholder="Email Address">
-                <input type="tel" name="tel" placeholder="Phone Number">
-                <textarea name="message" cols="30" rows="10" placeholder="Write Message"></textarea>
-                <input type="submit" value="SEND MESSAGE">
-            </form>
-        </article>
-    </section>
+        <section class="contact-us">
+            <article class="contact-us-article">
+                <article>
+                    <h2 class="main-heading main-heading--no-align main-heading--no-m orange-color"><span class="heading-tag-before">Quick Contact</span><strong class="main-heading__title heading-primary">Get In Touch</strong></h2>
+                    <p class="text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore corrupti quam eligendi eum sed maiores pariatur esse magnam laboriosam nulla.</p>
+                    <div class="contact-us-info">
+                        <span class="fa-stack contact-us-info__stack">
+                            <i class="fa fa-circle fa-stack-2x orange-color"></i>
+                            <i class="fas fa-map-marker-alt fa-stack-1x  contact-us-info__icon white-color "></i>
+                        </span>
+                        <div class="contact-us-details">
+                            <b  class="contact-us-details__heading heading-primary">Location</b>
+                            <p  class="contact-us-details__subheading heading-primary">250 Main Street, New York</p>
+                        </div>
+                    </div>
+                    <div class="contact-us-info">
+                        <span class="fa-stack contact-us-info__stack">
+                            <i class="fa fa-circle fa-stack-2x orange-color"></i>
+                            <i class="far fa-envelope-open fa-stack-1x  contact-us-info__icon white-color "></i>
+                        </span>
+                        <div class="contact-us-details">
+                            <b  class="contact-us-details__heading heading-primary">Email Us</b>
+                            <p  class="contact-us-details__subheading heading-primary">support@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-us-info">
+                        <span class="fa-stack contact-us-info__stack">
+                            <i class="fa fa-circle fa-stack-2x orange-color"></i>
+                            <i class="fas fa-phone fa-stack-1x  contact-us-info__icon white-color "></i>
+                        </span>
+                        <div class="contact-us-details">
+                            <b  class="contact-us-details__heading heading-primary">Call Us</b>
+                            <p  class="contact-us-details__subheading heading-primary">+012 (354) 6789 99</p>
+                        </div>
+                    </div>
+                </article>
+                <div class="line"></div>
+                <a href="https://www.facebook.com" class="contact-us-article__social">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x contact-us-article__socal-bg"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </span>
+                </a>
+                <a href="https://www.twitter.com" class="contact-us-article__social">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x contact-us-article__socal-bg"></i>
+                        <i class="fab fa-twitter fa-stack-1x"></i>
+                    </span>
+                </a>
+                <a href="https://www.instagram.com" class="contact-us-article__social">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x contact-us-article__socal-bg"></i>
+                        <i class="fab fa-instagram fa-stack-1x"></i>
+                    </span>
+                </a>
+                <a href="https://www.linkedin.com" class="contact-us-article__social">
+                    <span class="fa-stack fa-lg">
+                        <i class="fa fa-circle fa-stack-2x contact-us-article__socal-bg"></i>
+                        <i class="fab fa-linkedin fa-stack-1x "></i>
+                    </span>
+                </a>
+            </article>
+           <div class="contact-us-map">
+                <img src="images/map_2.jpg" alt="">
+                <i class="fas fa-map-marker-alt contact-us-map__pin"></i>
+           </div>
+        </section>
+        <!-- Konec - Get In Touch -->
+        <!-- Sekce - Leave Us Message -->
+        <section class="contact-us-form-container">
+            <article>
+                <h2 class="main-heading  orange-color"><span class="heading-tag">Get In Touch</span><strong class="main-heading__title heading-primary">Leave A Message</strong></h2>
+                <form method="post" action="zpracuj-formular.php" class="contact-us-form">
+                    <div class="form__input-container">
+                        <i class="far fa-user form__icon orange-color"></i>
+                        <input type="text" name="name" placeholder="Full Name" class="form__input "> 
+                    </div>
+                    <div class="form__input-container">
+                        <i class="far fa-envelope form__icon orange-color"></i>
+                        <input type="email" name="email" placeholder="Email Address" class="form__input "> 
+                    </div>
+                    <div class="form__input-container">
+                        <i class="fas fa-phone form__icon orange-color"></i>
+                        <input type="tel" name="tel" placeholder="Phone Number" class="form__input "> 
+                    </div>
+                    <div class="form__textarea-container">
+                        <textarea name="message" cols="30" rows="10" placeholder="Write Message" class="form__input form__textarea "></textarea>
+                    </div>
+                    <button type="submit" value="Submit" class="form__submit orange-bg white-color">SEND MESSAGE<span class="arrow--long">&xrarr;</span></button>   
+                </form>
+            </article>
+        </section>
     <!-- Konec - Leave Us Message -->
+    </section>
     <!-- Footer -->
-    <footer>
-        <ul>
-            <li><a href="https://www.facebook.com">Facebook</a></li>
-            <li><a href="https://www.twitter.com">Twitter</a></li>
-            <li><a href="https://www.youtube.com">Youtube</a></li>
-            <li><a href="https://www.instagram.com">Instagram</a></li>
-        </ul>
-        <h4>Our Courses</h4>
-        <ul>
-            <li>Web Development</li>
-            <li>Business Studies</li>
-            <li>Computer Engineering</li>
-            <li>English Learning</li>
-            <li>Graphics Design</li>
-        </ul>
-        <ul>
-            <li>Web Development</li>
-            <li>Business Studies</li>
-            <li>Computer Engineering</li>
-            <li>English Learning</li>
-            <li>Graphics Design</li>
-        </ul>
-        <h4>Company</h4>
-        <ul>
-            <li>About EduPlus</li>
-            <li>Meet Advisors</li>
-            <li>Join A Career</li>
-            <li>Latest Courses</li>
-            <li>Newsletters</li>
-        </ul>
-        <article>
-            <h4>Newsletters</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, harum.</p>
-            <!-- Button na e-mail -->
-        </article>
-        <p>Copyright &copy; 2020 EdoPlus All Rights Reserved</p>
+    <div class="footer-background"></div>
+    <footer class="footer">
+        <div class="footer-header">
+            <div class="footer-logo">
+                <img src="images/logo_white.png" alt="Logo webové stránky" width="60" class="logo__img">
+                <a href="index.html" class="logo__name white-color"><b>Edu</b>Plus</a>
+            </div>
+            <ul class="footer-social">
+                <li class="footer-social__item"><a href="https://www.facebook.com">
+                    <span class="fa-stack">
+                        <i class="fa fa-circle fa-stack-2x fb-color"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x white-color"></i>
+                    </span>
+                    Facebook</a>
+                </li>
+                <li class="footer-social__item"><a href="https://www.twitter.com">
+                    <span class="fa-stack">
+                        <i class="fa fa-circle fa-stack-2x tw-color"></i>
+                        <i class="fab fa-twitter fa-stack-1x white-color"></i>
+                    </span>
+                    Twitter</a></li>
+                <li class="footer-social__item"><a href="https://www.youtube.com">
+                    <span class="fa-stack">
+                        <i class="fa fa-circle fa-stack-2x yt-color"></i>
+                        <i class="fab fa-youtube fa-stack-1x white-color"></i>
+                    </span>
+                    Youtube</a></li>
+                <li class="footer-social__item"><a href="https://www.instagram.com">
+                    <span class="fa-stack">
+                        <i class="fa fa-circle fa-stack-2x ig-color"></i>
+                        <i class="fab fa-instagram fa-stack-1x white-color"></i>
+                    </span>
+                    Instagram</a></li>
+            </ul>
+        </div>
+        <div class="footer-body">
+            <ul class="footer-menu">
+                <li class="footer-menu__header white-color">Our Courses</li>
+                <li class="footer-menu__item">Web Development</li>
+                <li class="footer-menu__item">Business Studies</li>
+                <li class="footer-menu__item">Computer Engineering</li>
+                <li class="footer-menu__item">English Learning</li>
+                <li class="footer-menu__item">Graphics Design</li>
+            </ul>
+            <ul class="footer-menu">
+                <li class="footer-menu__item">Color Combinations</li>
+                <li class="footer-menu__item">Software Development</li>
+                <li class="footer-menu__item">Photography</li>
+                <li class="footer-menu__item">Advance WordPress</li>
+                <li class="footer-menu__item">Basic PSD To HTML</li>
+            </ul>
+            <ul class="footer-menu">
+                <li class="footer-menu__header white-color">Company</li>
+                <li class="footer-menu__item">About EduPlus</li>
+                <li class="footer-menu__item">Meet Advisors</li>
+                <li class="footer-menu__item">Join A Career</li>
+                <li class="footer-menu__item">Latest Courses</li>
+                <li class="footer-menu__item">Newsletters</li>
+            </ul>
+            <article class="newsletter">
+                <h4 class="newsletter__header white-color">Newsletters</h4>
+                <p class="newsletter__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Ad, harum.ellentesque ipsum. Nam sed tellus id magna elementum tincidunt.</p>
+                <form method="post" action="zpracuj-formular.php" class="newsletter-form">
+                    <input type="text" name="newsletter" placeholder="Enter Your Email" class="newsletter-form__text"><input type="submit" value="&xrarr;" class="newsletter-form__submit orange-bg">
+                </form>
+            </article>
+        </div>
+        <button onclick="scrollUp()" class="scroll-up-btn"><i class="fas fa-angle-up white-color"></i></button>
+        <p class="footer__copyright">Copyright &copy; 2020 <span class="white-color"><b>Edu</b>Plus</span> All Rights Reserved</p>
     </footer>
     <!-- Konec - Footer -->
+    </div>
 </body>
 </html>

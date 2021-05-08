@@ -4,190 +4,321 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EdoPlus</title>
+    <link rel="stylesheet" href="css/styly.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lightbox/dist/simple-lightbox.css?v2.4.1" />
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/05fce81391.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <!-- LOGO -->
-        <!-- Navigace -->
-        <nav>
-            <ul>
-                <li>
-                    <a href="">Home</a>
-                </li>
-                <li>
-                    <a href="">Courses</a>
-                </li>
-                <li>
-                    <a href="">Events</a>
-                </li>
-                <li>
-                    <a href="">Pages</a>
-                </li>
-                <li>
-                    <a href="">Blog</a>
-                </li>
-                <li>
-                    <a href="">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Sekce - Blog Grid -->
-    <section>
-        <h1>Faq</h1>
-        <p>Home > Blog Grid</p>
-    </section>
-    <!-- Konec - Blog Grid -->
-    <!-- Sekce BLOG ARTICLES -->
-    <section>
-        <article>
-            <img src="" alt="">
-            <strong>DESIGN</strong>
-            <h2>Inspire Design Decision With Ott Storch When Idea How To Space And Kern Punctuation</h2>
-            <ul>
-                <li>By John Doe</li>
-                <li><time datetime="2021-11-25">25 Nov 2021</time></li>
-                <li>Comments (05)</li>
-                <li>Likes (1k)</li>
-            </ul>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, aperiam laudantium et id nesciunt distinctio cumque, voluptatum repudiandae sunt perferendis, blanditiis sequi vel nihil dicta!</p>
-            <a href="">READ MORE</a>
-        </article>
-        <article>
-            <img src="" alt="">
-            <strong>PHOTOGRAPHY</strong>
-            <h2>How To Find The Perfect Picture For Your Project</h2>
-            <ul>
-                <li>By Jane Doe</li>
-                <li><time datetime="2021-11-09">9 Nov 2021</time></li>
-                <li>Comments (08)</li>
-                <li>Likes (2k)</li>
-            </ul>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, aperiam laudantium et id nesciunt distinctio cumque, voluptatum repudiandae sunt perferendis, blanditiis sequi vel nihil dicta!</p>
-            <a href="">READ MORE</a>
-        </article>
-        <article>
-            <img src="" alt="">
-            <strong>PHP</strong>
-            <h2>Using PHP In Your Web Project The Right Way</h2>
-            <ul>
-                <li>By John Doe</li>
-                <li><time datetime="20201-11-20">20 Nov 2021</time></li>
-                <li>Comments (15)</li>
-                <li>Likes (1.5k)</li>
-            </ul>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, aperiam laudantium et id nesciunt distinctio cumque, voluptatum repudiandae sunt perferendis, blanditiis sequi vel nihil dicta!</p>
-            <a href="">READ MORE</a>
-        </article>
-        <article>
-            <h2>Setting TypeScript For Modern React Projects Using Webpack How To Build A Vue Survey App Using Firebase Authentication</h2>
-            <small>Gonzales Pereira</small>
-        </article>
-        <article>
-            <img src="" alt="">
-            <strong>PYTHON</strong>
-            <h2>How To Use Python Libraries For Your Project</h2>
-            <ul>
-                <li>By John Doe</li>
-                <li><time datetime="20201-11-28">28 Nov 2021</time></li>
-                <li>Comments (21)</li>
-                <li>Likes (3k)</li>
-            </ul>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, aperiam laudantium et id nesciunt distinctio cumque, voluptatum repudiandae sunt perferendis, blanditiis sequi vel nihil dicta!</p>
-            <a href="">READ MORE</a>
-        </article>
-    </section>
-    <!-- Konec BLOG ARTICLES -->
-    <!-- ASIDE -->
-    <aside>
-        <form method="post" action="Zpracuj-search.php">
-            <label for="search">Search Here</label>
-            <input type="search" id="search" name="qsearch" placeholder="Keywords">
-            <input type="submit" value="Submit">
-        </form>
-        <nav>
-            <ul>
-                <li><a href="">Web Design</a></li>
-                <li><a href="">Computer Engineering</a></li>
-                <li><a href="">Business Studies</a></li>
-                <li><a href="">Medical & Health</a></li>
-                <li><a href="">Web Development</a></li>
-                <li><a href="">Learning English</a></li>
-            </ul>
-        </nav>
-        <article>
-            <h3>Recent News</h3>
-            <article>
-                <h4>Small Podcast With EPS Crew Ep. 15</h4>
-                <small>By Jane Doe</small>
-            </article>
-            <article>
-                <h4>Using Python For Web Development</h4>
-                <small>By Jane Doe</small>
-            </article>
-            <article>
-                <h4>Best Practices In Web Design</h4>
-                <small>By Jane Doe</small>
-            </article>
-            <article>
-                <h4>Small Podcast With EPS Crew Ep. 14</h4>
-                <small>By Jane Doe</small>
-            </article>
-        </article>
-        <article>
-            <h3>Photo Gallery</h3>
+    <div class="basic-content-container basic-content-container--no-brands">
+        <header class="header">
+            <div class="header-logo">
+                <img src="images/logo_d-blue.png" alt="Logo webové stránky" width="60" class="logo__img">
+                <a href="index.html" class="logo__name heading-primary"><b>Edu</b>Plus</a>
+            </div>
+            <!-- Navigace -->
+            <nav class="navigation">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="index.html">Home <i class="fa fa-angle-down"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="about-us.html">About Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="">Courses <i class="fa fa-angle-down"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="">Course</a></li>
+                            <li class="submenu__item"><a href="our-courses.html">Course List</a></li>
+                            <li class="submenu__item"><a href="courses-details.html">Course Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="">Events <i class="fa fa-angle-down"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="event-details.html">Event Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="">Pages <i class="fa fa-angle-down"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="instructor-details.html">Instructors Details</a></li>
+                            <li class="submenu__item"><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="blog-standard.html">Blog <i class="fa fa-angle-down"></i></a>
+                        <ul class="submenu">
+                            <li class="submenu__item"><a href="blog-details.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="contact-us.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Konec - Navigace -->
+            <div class="header-links">
+                <a href="" class="icon-box white-bg"><i class="fab fa-facebook-f fa-fw  "></i></a>
+                <a href="" class="icon-box white-bg"><i class="fab fa-youtube fa-fw "></i></a>
+                <a href="" class="icon-box white-bg"><i class="far fa-user-circle fa-fw "></i>SIGN IN</a>
+            </div>
+        </header>
+        <!-- Sekce - Blog Grid -->
+        <section class="hero-area hero-area-background-image">
+            <h1 class="hero-area__title white-color">Blog Grid</h1>
+            <p class="hero-area__direction white-color">Home > Blog Grid</p>
+        </section>
+        <!-- Konec - Blog Grid -->
+        <!-- Sekce BLOG ARTICLES -->
+        <div class="blog-background"></div>
+        <section class="blog-container">
+            <section class="blog">
+                <article class="blog-article-container">
+                    <img src="images/blog_grid_1.jpg" alt="A young man with a laptop" width="770" class="blog-article__img">
+                    <article class="blog-article white-bg">
+                        <strong class="blog-article__tag white-color orange-bg">DESIGN</strong>
+                        <h2 class="blog-article__heading heading-primary">Inspire Design Decision With Ott Storch When Idea How To Space And Kern Punctuation</h2>
+                        <ul class="meta-list meta-list--80">
+                            <li class="meta-list__item text-primary"><i class="far fa-user-circle meta-list__icon orange-color"></i>By John Doe</li>
+                            <li class="meta-list__item text-primary"><i class="far fa-calendar-alt meta-list__icon orange-color"></i><time datetime="2021-11-25">25 Nov 2021</time></li>
+                            <li class="meta-list__item text-primary"><i class="far fa-comments meta-list__icon orange-color"></i>Comments (05)</li>
+                            <li class="meta-list__item text-primary"><i class="far fa-heart meta-list__icon orange-color"></i>Likes (1k)</li>
+                        </ul>
+                        <p class="blog-article__text text-primary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, aperiam laudantium et id nesciunt distinctio cumque, voluptatum repudiandae sunt perferendis, blanditiis sequi vel nihil dicta! Et harum quidem rerum facilis est et expedita distinctio.</p>
+                        <a href="" class="blog-article__button orange-bg white-color">READ MORE<span class="arrow--long">&xrarr;</span></a>
+                    </article>
+                </article>
+                <article class="blog-article-container">
+                    <img  src="images/blog_grid_2.jpg" alt="Two young women in a library" width="770" class="blog-article__img">
+                    <article class="blog-article white-bg">
+                        <strong class="blog-article__tag white-color orange-bg">PHOTOGRAPHY</strong>
+                        <h2 class="blog-article__heading heading-primary">How To Find The Perfect Picture For Your Project</h2>
+                        <ul class="meta-list meta-list--80">
+                            <li class="meta-list__item text-primary"><i class="far fa-user-circle meta-list__icon orange-color"></i>By Jane Doe</li>
+                            <li class="meta-list__item text-primary"><i class="far fa-calendar-alt meta-list__icon orange-color"></i><time datetime="2021-11-25">9 Nov 2021</time></li>
+                            <li class="meta-list__item text-primary"><i class="far fa-comments meta-list__icon orange-color"></i>Comments (08)</li>
+                            <li class="meta-list__item text-primary"><i class="far fa-heart meta-list__icon orange-color"></i>Likes (2k)</li>
+                        </ul>
+                        <p class="blog-article__text text-primary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, aperiam laudantium et id nesciunt distinctio cumque, voluptatum repudiandae sunt perferendis, blanditiis sequi vel nihil dicta! Et harum quidem rerum facilis est et expedita distinctio.</p>
+                        <a href="" class="blog-article__button orange-bg white-color">READ MORE<span class="arrow--long">&xrarr;</span></a>
+                    </article>
+                </article>
+                <article class="blog-article-container">
+                    <iframe width="770" height="435" src="https://www.youtube.com/embed/C72WkcUZvco" class="blog-article__img" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <article class="blog-article white-bg">
+                        <strong class="blog-article__tag white-color orange-bg">PHP</strong>
+                        <h2 class="blog-article__heading heading-primary">Using PHP In Your Web Project The Right Way</h2>
+                        <ul class="meta-list meta-list--80">
+                            <li class="meta-list__item text-primary"><i class="far fa-user-circle meta-list__icon orange-color"></i>By John Doe</li>
+                            <li class="meta-list__item text-primary"><i class="far fa-calendar-alt meta-list__icon orange-color"></i><time datetime="2021-11-25">1 Nov 2021</time></li>
+                            <li class="meta-list__item text-primary"><i class="far fa-comments meta-list__icon orange-color"></i>Comments (12)</li>
+                            <li class="meta-list__item text-primary"><i class="far fa-heart meta-list__icon orange-color"></i>Likes (2.5k)</li>
+                        </ul>
+                        <p class="blog-article__text text-primary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, aperiam laudantium et id nesciunt distinctio cumque, voluptatum repudiandae sunt perferendis, blanditiis sequi vel nihil dicta! Et harum quidem rerum facilis est et expedita distinctio.</p>
+                        <a href="" class="blog-article__button orange-bg white-color">READ MORE<span class="arrow--long">&xrarr;</span></a>
+                    </article>
+                </article>
+                
+                <article class="blog-ad">
+                    <h2  class="blog-article__heading white-color">Setting TypeScript For Modern React Projects Using Webpack How To Build A Vue Survey App Using Firebase Authentication</h2>
+                    <small class="blog-ad__tag white-color">Gonzales Pereira</small>
+                </article>
 
-        </article>
-        <article>
-            <h3>Popular Tags</h3>
-            <a href="">Design</a>
-            <a href="">Portfolio</a>
-            <a href="">Energy</a>
-            <a href="">Resume</a>
-            <a href="">Gallery</a>
-            <a href="">Renewable</a>
-        </article>
-        <!--reklama-->
-    </aside>
-    <!-- Konec ASIDE -->
-    <!-- Footer -->
-    <footer>
-        <ul>
-            <li><a href="https://www.facebook.com">Facebook</a></li>
-            <li><a href="https://www.twitter.com">Twitter</a></li>
-            <li><a href="https://www.youtube.com">Youtube</a></li>
-            <li><a href="https://www.instagram.com">Instagram</a></li>
-        </ul>
-        <h4>Our Courses</h4>
-        <ul>
-            <li>Web Development</li>
-            <li>Business Studies</li>
-            <li>Computer Engineering</li>
-            <li>English Learning</li>
-            <li>Graphics Design</li>
-        </ul>
-        <ul>
-            <li>Web Development</li>
-            <li>Business Studies</li>
-            <li>Computer Engineering</li>
-            <li>English Learning</li>
-            <li>Graphics Design</li>
-        </ul>
-        <h4>Company</h4>
-        <ul>
-            <li>About EduPlus</li>
-            <li>Meet Advisors</li>
-            <li>Join A Career</li>
-            <li>Latest Courses</li>
-            <li>Newsletters</li>
-        </ul>
-        <article>
-            <h4>Newsletters</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, harum.</p>
-            <!-- Button na e-mail -->
-        </article>
-        <p>Copyright &copy; 2020 EdoPlus All Rights Reserved</p>
-    </footer>
-    <!-- Konec Footer -->
+                <article class="blog-article-container">
+                    <img src="images/blog_grid_3.jpg" alt="A group of young people sitting on stairs" width="770" class="blog-article__img">
+                    <article class="blog-article white-bg">
+                        <strong class="blog-article__tag white-color orange-bg">PYTHON</strong>
+                        <h2 class="blog-article__heading heading-primary">How To Use Python Libraries For Your Project</h2>
+                        <ul class="meta-list meta-list--80">
+                            <li class="meta-list__item text-primary"><i class="far fa-user-circle meta-list__icon orange-color"></i>By John Doe</li>
+                            <li class="meta-list__item text-primary"><i class="far fa-calendar-alt meta-list__icon orange-color"></i><time datetime="2021-11-25">1 Nov 2021</time></li>
+                            <li class="meta-list__item text-primary"><i class="far fa-comments meta-list__icon orange-color"></i>Comments (12)</li>
+                            <li class="meta-list__item text-primary"><i class="far fa-heart meta-list__icon orange-color"></i>Likes (3k)</li>
+                        </ul>
+                        <p class="blog-article__text text-primary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, aperiam laudantium et id nesciunt distinctio cumque, voluptatum repudiandae sunt perferendis, blanditiis sequi vel nihil dicta! Et harum quidem rerum facilis est et expedita distinctio.</p>
+                        <a href="" class="blog-article__button orange-bg white-color">READ MORE<span class="arrow--long">&xrarr;</span></a>
+                    </article>
+                </article>
+                
+            </section>
+            <!-- Konec BLOG ARTICLES -->
+            <!-- ASIDE -->
+            <aside class="blog-aside">
+                <form method="post" action="Zpracuj-search.php" class="blog-aside-search white-bg">
+                    <label for="search" class="blog-aside__heading heading-primary">Search Here</label>
+                    <div class="input-container">
+                        <input type="search" id="search" name="qsearch" placeholder="Keywords" class="form__input form__input--search">
+                        <button type="submit" class="blog-aside-search__btn"><i class="fas fa-search orange-color"></i></button>
+                    </div>
+                </form>
+                <nav>
+                    <ul class="blog-aside-nav">
+                        <li class="blog-aside-nav__item white-bg"><a href="" class="heading-primary">Web Design</a><i class="fas fa-angle-right heading-primary"></i></li>
+                        <li class="blog-aside-nav__item white-bg"><a href="" class="heading-primary">Computer Engineering</a><i class="fas fa-angle-right heading-primary"></i></li>
+                        <li class="blog-aside-nav__item white-bg"><a href="" class="heading-primary">Business Studies</a><i class="fas fa-angle-right heading-primary"></i></li>
+                        <li class="blog-aside-nav__item white-bg"><a href="" class="heading-primary">Medical & Health</a><i class="fas fa-angle-right heading-primary"></i></li>
+                        <li class="blog-aside-nav__item white-bg"><a href="" class="heading-primary">Web Development</a><i class="fas fa-angle-right heading-primary"></i></li>
+                        <li class="blog-aside-nav__item white-bg"><a href="" class="heading-primary">Learning English</a><i class="fas fa-angle-right heading-primary"></i></li>
+                    </ul>
+                </nav>
+                <article class="blog-aside-news white-bg">
+                    <h3 class="blog-aside__heading heading-primary">Recent News</h3>
+                    <article class="blog-aside-news-article">
+                        <img src="images/recent_news_1.jpg" alt="A group of people in a bussiness attire" width="85">
+                        <div>
+                            <h4 class="blog-aside-news-article__heading heading-primary">Small Podcast With EPS Crew Ep. 15</h4>
+                            <small class="text-primary"><i class="fas fa-angle-right orange-color blog-aside-news-article__tag"></i>By Jane Doe</small>
+                        </div>    
+                    </article>
+                    <article class="blog-aside-news-article">
+                        <img src="images/recent_news_2.jpg" alt="A work meeting" width="85">
+                        <div>
+                            <h4 class="blog-aside-news-article__heading heading-primary">Using Python For Web Development</h4>
+                            <small class="text-primary"><i class="fas fa-angle-right orange-color blog-aside-news-article__tag"></i>By Jane Doe</small>
+                        </div>    
+                    </article>
+                    <article class="blog-aside-news-article">
+                        <img src="images/recent_news_3.jpg" alt="A woman sitting in a library" width="85">
+                        <div>
+                            <h4 class="blog-aside-news-article__heading heading-primary">Best Practices In Web Design</h4>
+                            <small class="text-primary"><i class="fas fa-angle-right orange-color blog-aside-news-article__tag"></i>By Jane Doe</small>
+                        </div>    
+                    </article>
+                    <article class="blog-aside-news-article">
+                        <img src="images/recent_news_4.jpg" alt="A woman in a library" width="85">
+                        <div>
+                            <h4 class="blog-aside-news-article__heading heading-primary">Small Podcast With EPS Crew Ep. 14</h4>
+                            <small class="text-primary"><i class="fas fa-angle-right orange-color blog-aside-news-article__tag"></i>By Jane Doe</small>
+                        </div>    
+                    </article>
+                </article>
+                <article class="blog-aside-gallery white-bg">
+                    <h3 class="blog-aside__heading heading-primary">Photo Gallery</h3>
+                    <div class="blog-aside-gallery-wrapper">
+                        <div class="blog-aside-gallery-item">
+                            <img src="images/gallery_1.jpg" alt="" width="140" class="blog-aside-gallery__img">
+                            <a href="images/gallery/gallery_big_1.jpg"><div class="blog-aside-gallery-desc"><i class="fab fa-instagram white-color"></i></div></a>
+                        </div>
+                        <div class="blog-aside-gallery-item">
+                            <img src="images/gallery_2.jpg" alt="" width="140" class="blog-aside-gallery__img">
+                            <a href="images/gallery/gallery_big_2.jpg"><div class="blog-aside-gallery-desc"><i class="fab fa-instagram white-color"></i></div></a>
+                        </div>
+                        <div class="blog-aside-gallery-item">
+                            <img src="images/gallery_3.jpg" alt="" width="140" class="blog-aside-gallery__img">
+                            <a href="images/gallery/gallery_big_3.jpg"><div class="blog-aside-gallery-desc"><i class="fab fa-instagram white-color"></i></div></a>
+                        </div>
+                        <div class="blog-aside-gallery-item">
+                            <img src="images/gallery_4.jpg" alt="" width="140" class="blog-aside-gallery__img">
+                            <a href="images/gallery/gallery_big_4.jpg"><div class="blog-aside-gallery-desc"><i class="fab fa-instagram white-color"></i></div></a>
+                        </div>
+                        <div class="blog-aside-gallery-item">
+                            <img src="images/gallery_5.jpg" alt="" width="140" class="blog-aside-gallery__img">
+                            <a href="images/gallery/gallery_big_5.jpg"><div class="blog-aside-gallery-desc"><i class="fab fa-instagram white-color"></i></div></a>
+                        </div>
+                        <div class="blog-aside-gallery-item">
+                            <img src="images/gallery_6.jpg" alt="" width="140" class="blog-aside-gallery__img">
+                            <a href="images/gallery/gallery_big_6.jpg"><div class="blog-aside-gallery-desc"><i class="fab fa-instagram white-color"></i></div></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-aside-tags white-bg">
+                    <h3 class="blog-aside__heading heading-primary">Popular Tags</h3>
+                    <div class="blog-aside-tags-wrapper"> 
+                    <a href="" class="blog-aside-tags__item text-primary white-bg">Design</a>
+                    <a href="" class="blog-aside-tags__item text-primary white-bg">Portfolio</a>
+                    <a href="" class="blog-aside-tags__item text-primary white-bg">Energy</a>
+                    <a href="" class="blog-aside-tags__item text-primary white-bg">Resume</a>
+                    <a href="" class="blog-aside-tags__item text-primary white-bg">Gallery</a>
+                    <a href="" class="blog-aside-tags__item text-primary white-bg">Renewable</a>
+                    </div>
+
+                </article>
+                <img src="images/advertisement.jpg" alt="Advertisement for a education website." width="370">
+            </aside>
+            <!-- Konec ASIDE -->
+        </section>
+        <!-- Footer -->
+        <div class="footer-background"></div>
+        <footer class="footer">
+            <div class="footer-header">
+                <div class="footer-logo">
+                    <img src="images/logo_white.png" alt="Logo webové stránky" width="60" class="logo__img">
+                    <a href="index.html" class="logo__name white-color"><b>Edu</b>Plus</a>
+                </div>
+                <ul class="footer-social">
+                    <li class="footer-social__item"><a href="https://www.facebook.com">
+                        <span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x fb-color"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x white-color"></i>
+                        </span>
+                        Facebook</a>
+                    </li>
+                    <li class="footer-social__item"><a href="https://www.twitter.com">
+                        <span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x tw-color"></i>
+                            <i class="fab fa-twitter fa-stack-1x white-color"></i>
+                        </span>
+                        Twitter</a></li>
+                    <li class="footer-social__item"><a href="https://www.youtube.com">
+                        <span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x yt-color"></i>
+                            <i class="fab fa-youtube fa-stack-1x white-color"></i>
+                        </span>
+                        Youtube</a></li>
+                    <li class="footer-social__item"><a href="https://www.instagram.com">
+                        <span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x ig-color"></i>
+                            <i class="fab fa-instagram fa-stack-1x white-color"></i>
+                        </span>
+                        Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-body">
+                <ul class="footer-menu">
+                    <li class="footer-menu__header white-color">Our Courses</li>
+                    <li class="footer-menu__item">Web Development</li>
+                    <li class="footer-menu__item">Business Studies</li>
+                    <li class="footer-menu__item">Computer Engineering</li>
+                    <li class="footer-menu__item">English Learning</li>
+                    <li class="footer-menu__item">Graphics Design</li>
+                </ul>
+                <ul class="footer-menu">
+                    <li class="footer-menu__item">Color Combinations</li>
+                    <li class="footer-menu__item">Software Development</li>
+                    <li class="footer-menu__item">Photography</li>
+                    <li class="footer-menu__item">Advance WordPress</li>
+                    <li class="footer-menu__item">Basic PSD To HTML</li>
+                </ul>
+                <ul class="footer-menu">
+                    <li class="footer-menu__header white-color">Company</li>
+                    <li class="footer-menu__item">About EduPlus</li>
+                    <li class="footer-menu__item">Meet Advisors</li>
+                    <li class="footer-menu__item">Join A Career</li>
+                    <li class="footer-menu__item">Latest Courses</li>
+                    <li class="footer-menu__item">Newsletters</li>
+                </ul>
+                <article class="newsletter">
+                    <h4 class="newsletter__header white-color">Newsletters</h4>
+                    <p class="newsletter__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Ad, harum.ellentesque ipsum. Nam sed tellus id magna elementum tincidunt.</p>
+                    <form method="post" action="zpracuj-formular.php" class="newsletter-form">
+                        <input type="text" name="newsletter" placeholder="Enter Your Email" class="newsletter-form__text"><input type="submit" value="&xrarr;" class="newsletter-form__submit orange-bg">
+                    </form>
+                </article>
+            </div>
+            <button onclick="scrollUp()" class="scroll-up-btn"><i class="fas fa-angle-up white-color"></i></button>
+            <p class="footer__copyright">Copyright &copy; 2020 <span class="white-color"><b>Edu</b>Plus</span> All Rights Reserved</p>
+        </footer>
+        <!-- Konec - Footer -->
+    </div>
+    <script src="lightbox/dist/simple-lightbox.js"></script>
+    <script>
+        (function() {
+            var $gallery = new SimpleLightbox('.blog-aside-gallery-item a', {});
+        })();
+    </script>  
 </body>
 </html>
