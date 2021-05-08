@@ -1,0 +1,3143 @@
+
+/*
+Oranžová - #ea5822
+Světle šedá - #a3b5c3
+Tmavě modrá - #0c3542
+#e6e6e6
+#a9b5b8
+#062a35
+Modrá - #4582ff
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Hind";
+}
+
+a{
+    text-decoration: none;
+}
+
+/* LAYOUT */
+
+.index-container{
+    display: grid;
+    grid-template-rows: 6em repeat(9, auto) 15em auto;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    ". hero-area ."
+    ". categories ."
+    ". courses ."
+    ". gallery ."
+    ". team ."
+    ". events ."
+    ". testimonials ."
+    ". become-instructor ."
+    ". blog ."
+    ". brands ."
+    ". footer .";
+}
+
+.about-us-container{
+    display: grid;
+    grid-template-rows: 6em repeat(6, auto) 15em auto;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "hero-area hero-area hero-area"
+    ". welcome ."
+    ". goals ."
+    ". team ."
+    ". testimonials ."
+    ". blog ."
+    ". brands ."
+    ". footer .";
+}
+
+.our-courses-container{
+    display: grid;
+    grid-template-rows: 6em repeat(4, auto) 15em auto;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "hero-area hero-area hero-area"
+    ". courses ."
+    ". team ."
+    ". blog ."
+    ". brands ."
+    ". footer .";
+}
+
+.basic-content-container{
+    display: grid;
+    grid-template-rows: 6em repeat(2, auto) 15em auto;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "hero-area hero-area hero-area"
+    ". content ."
+    ". brands ."
+    ". footer .";
+}
+
+.basic-content-container--no-brands{
+    grid-template-rows: 6em auto auto auto;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "hero-area hero-area hero-area"
+    ". content ."
+    ". footer .";
+}
+
+.faq-content-container{
+    display: grid;
+    grid-template-rows: 6em repeat(3, auto) 15em auto;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "hero-area hero-area hero-area"
+    ". content ."
+    ". cta ."
+    ". brands ."
+    ". footer .";
+}
+
+/* KONEC - LAYOUT */
+
+
+.heading-tag, .heading-tag-before{
+    vertical-align: middle;
+}
+
+.heading-tag::before, .heading-tag-before::before{
+    content: '■ ■ ■';
+    display: inline-block;
+    margin-right: 0.8em;
+    font-size: .8em;
+    vertical-align: inherit;
+}
+
+.heading-tag::after{
+    content: '■ ■ ■';
+    display: inline-block;
+    margin-left: 0.8em;
+    font-size: .8em;
+    vertical-align: inherit;
+}
+
+.main-heading{
+    margin: 0 0 3em 0;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.main-heading--no-m{
+    margin: 0;
+}
+
+.main-heading--no-align{
+    text-align: initial;
+}
+
+.main-heading--regular{
+    font-weight: normal;
+}
+
+.main-heading__title{
+    display: block;
+    font-size: 2.5em;
+    font-family: "Roboto";
+}
+
+.main-heading__title--big{
+    font-size: 4.5em;
+}
+
+.circle-img{
+    display: block;
+    border-radius: 50%;
+}
+
+.icon-m{
+    margin-right: .5em;
+}
+
+.logo__name{
+    font-size: 2.8125em ;
+}
+
+.logo__img{
+    margin-right: .625em;
+    margin-bottom: .3em;
+}
+
+
+/* NAVIGACE */
+
+.header{
+    grid-area: header;
+    display: flex;
+    padding: 1em 2em 1em 2em;
+    background-color: #eaf4f7;
+}
+
+.header-logo, .header-links, .navigation{
+    flex: 1;
+}
+
+.header-logo--index, .header-links--index{
+    flex: none;
+}
+
+
+.header-logo{
+    display: flex;
+    align-items: center;
+}
+
+.navigation{
+    display: inline-block;
+    flex: 2;
+}
+
+.navigation--index{
+    flex: auto;
+}
+
+.navigation--index .menu{
+    margin-left: 6em;
+    justify-content: flex-start;
+}
+
+.menu, .submenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/*.menu__item {
+    flex: 1;
+}*/
+
+.menu a {
+    display: block;
+    padding: 1em;
+    font-size: 1em;
+    color: #062a35;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 1em;
+}
+  
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border-top: 2px solid #ea5822;
+}
+
+.submenu__item{
+    padding-right: 2em;
+}
+
+.submenu__item a{
+    color: #708389;
+}
+
+.submenu .submenu__item:hover a{
+    color: #fff;
+}
+
+.submenu__item:hover{
+    background-color: #ea5822;
+}
+
+.menu__item:hover .submenu {
+    display: block;
+    z-index: 100; /* v ukázce není potřeba */
+}
+
+.menu__item a:hover{
+    color: #ea5822;
+}
+
+.header-links{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.header-links a{
+   margin-right: .5em;
+   color: #062a35;
+   font-weight: bold;
+}
+
+.header-links a i{
+    color: #ea5822;
+}
+
+.header-links a:hover{
+    background-color: #ea5822;
+    color: white;
+}
+
+.header-links a:hover i{
+    color: #fff;
+}
+
+/* KONEC - NAVIGACE*/
+/* HERO AREA */
+
+.hero-area-background{
+    grid-row: 1 / 3;
+    grid-column: 1 / 4;
+    background-color: #e9f3f7;
+    z-index: -1;
+}
+
+.hero-area{
+    grid-area: hero-area;
+    padding: 8em 0;
+    position: relative;
+}
+
+.hero-area-form{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: 2em 0;
+    padding-right: 1em;
+    background-color: #fff;
+    
+}
+
+.hero-area-form .form__input-container{
+    width: 100%;
+}
+
+.hero-area-form .form__icon{
+    top: 1.57em;
+    right: 1.57em;
+    font-size: 1.375em;
+    color: #5b7076;
+}
+
+.hero-area-form__search{
+    padding: 1.8em;
+    font-family: "Roboto";
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #708389;
+    border: none;
+    width: 100%;
+}
+
+.hero-area-form__search::placeholder{
+    color: #708389;
+}
+
+.hero-area-form__search:focus-visible{
+   outline: none;
+}
+
+.hero-area-form__btn{
+    padding: 1em;
+    font-size: 1.2em;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-area-content{
+    display: flex;
+    width: 50%;
+}
+
+.hero-area-content__text{
+    flex: 1;
+    margin: 1em 0;
+    padding-right: 2em;
+    border-right: 3px solid #ea5822;
+    font-weight: 500;
+}
+
+.hero-area-call-container{
+    flex: 1;
+    margin: 1em 0 1em 2em;
+}
+
+.hero-area-call-container__icon{
+    display: inline-block;
+    font-size: 2.5em;
+}
+
+.hero-area-call{
+    display: inline-block;
+    margin-left: .5em;
+}
+
+.hero-area-call__text{
+    display: block;
+    font-weight: bold;
+}
+
+
+.hero-area-call__number{
+    display: block;
+    font-family: "Roboto";
+    font-size: 1.2em;
+}
+
+.fact-container{
+    position: absolute;
+    bottom: -4em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 8em;
+    width: 16em;
+}
+
+.fact--bordered{
+    border-top: 2px solid #ea5822;
+}
+
+.fact__icon{
+    font-size: 2em;
+}
+
+.fact__heading{
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.fact__heading--small{
+    font-family: "Hind";
+    font-size: 1.125em;
+}
+
+.fact__text{
+    margin: 0;
+    font-weight: 500;
+}
+
+.hero-area__title{
+    margin: 0;
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 6.875em;
+}
+
+.hero-area__direction{
+    margin: 0;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.hero-area-background-image{
+    padding: 12em 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/hero-area-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* KONEC - HERO AREA */
+/* COURSE CATEGORIES */
+
+.courses{
+    grid-area: categories;
+    margin: 8em 0;
+}
+
+.courses-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.courses-article{
+    margin-bottom: 2em;
+    border: 1px solid #e6e6e6;
+}
+
+.courses-article-caption{
+    padding: 1em 1.5em;
+}
+
+.courses-article-caption__heading{
+    font-size: 1.3em;
+    margin: 0;
+}
+
+.courses-article-caption__text{
+    font-size: 1em;
+    margin: .5em 0 .8em 0;
+}
+
+.courses-article-caption__info{
+    font-size: 1em;
+    margin-right: 1em;
+}
+
+/* KONEC - COURSE CATEGORIES */
+/* AVAILABLE COURSES */
+
+.available-courses-background{
+    grid-row: 4 / 5;
+    grid-column: 1 / 4;
+    background-color: #062a35;
+    z-index: -1;
+}
+
+.available-courses{
+    grid-area: courses;
+    margin: 8em 0;
+}
+
+.available-courses-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 1.5em;
+}
+
+.available-courses-article{
+    width: min-content;
+    position: relative;
+}
+
+.available-courses-article--bordered{
+    border: 1px solid #e2e2e2;
+}
+
+.available-courses-img-container{
+    position: relative;
+    height: min-content;
+}
+
+.available-courses-img-container::after
+{
+    box-shadow: inset 0 -80px 60px -40px #000000;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.available-courses-article__img{
+    display: block;
+}
+
+.available-courses-article__avatar{
+    position: absolute;
+    bottom: 2em;
+    left: 2em;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    z-index: 10;
+}
+
+.avatar-img{
+    float: left;
+    height: 2.5em;
+    border-radius: 50%;
+    margin-right: .8em;
+}
+
+.avatar-name{
+    font-family:  "Roboto";
+    font-size: 1.2em;
+    font-weight: bold
+}
+
+.available-courses-article__tag{
+    position: absolute;
+    bottom: 3em;
+    right: 2em;
+    margin: 0;
+    padding: 2px 14px;
+    border-radius: 10px;
+    font-size: .8em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    z-index: 10;
+}
+
+.available-courses-article-caption{
+    padding: 2em;
+    background-color: #fff;
+}
+
+.available-courses-article-caption__tag{
+    display: inline-block;
+    margin: 0;
+    margin-right: 1em;
+    padding: 2px 14px;
+    border-radius: 10px;
+    background-color: #4582ff;
+    font-size: .8em;
+    font-weight: 600;
+}
+
+.available-courses-article-caption__star{
+    font-size: .8em;
+    margin-right: .3em;
+}
+
+.available-courses-article-caption__heading{
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0;
+    margin-top: .8em;
+}
+
+.available-courses-article-caption__info{
+    display: inline-block;
+    margin: 0;
+    margin-right: 1em;
+    font-family: "Roboto";
+    font-weight: 500;
+}
+
+.line{
+    border-top: 1px solid #e2e2e2;
+    width: 100%;
+    margin: 1.5em 0;
+}
+
+.line--80{
+    width: 80%;
+}
+
+.available-courses-btn-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+.available-courses-btn-container__btn{
+    padding: 1em 2em;
+    text-align: center;
+    border: 2px solid #113742;
+    font-family: "Roboto";
+    font-size: 1em;
+    font-weight: bold;
+    color: #417b8d;
+
+}
+
+.available-courses-article-caption--hidden{
+    display: none;
+    opacity: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.available-courses-article:hover .available-courses-article-caption--hidden{
+    display: block;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+}
+
+.available-courses-article:hover .available-courses-article__avatar, .available-courses-article:hover .available-courses-article__tag{
+    display: none;
+    
+}
+
+.available-courses-article--disabled:hover .available-courses-article__avatar{
+    display: flex;
+}
+.available-courses-article--disabled:hover .available-courses-article__tag{
+    display: inline-block;
+}
+
+.available-courses-article--m-bottom{
+    margin-bottom: 2em;
+}
+
+
+.available-courses-article-caption__link{
+    display: block;
+    width: max-content;
+    margin: 0 0 2em 0;
+    padding: .8em 1em;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.available-courses-article-caption__arrow{
+   margin-left: .3em;
+}
+
+.available-courses-article-avatar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.available-courses-article__avatar--in-hover{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.available-courses-article__tag--in-hover{
+    margin: 0;
+    padding: 2px 14px;
+    border-radius: 10px;
+    font-size: .8em;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/* KONEC - AVAILABLE COURSES */
+/* GALLERY */
+
+.gallery{
+    grid-area: gallery;
+    margin: 8em 0;
+}
+
+.gallery-menu{
+    display: flex;
+    justify-content: center;
+    width: 80%; /* plne fluidní menu */
+    padding: 0;
+    margin: 0 auto 3em auto;
+    list-style-type: none;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.gallery-menu__item{
+    font-family: "Roboto";
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 1em;
+}
+
+.gallery-menu__item:hover{
+    border: none;
+    border-bottom: 2px solid #EA5822;
+}
+
+.gallery-menu__item:hover a{
+    color: #EA5822;
+}
+
+.gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery-img-wrap{
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.gallery__img{
+    display: block;
+}
+
+.gallery-img-description{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2.5em;
+    background: rgba(35, 80, 95, 0.75);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+}
+
+.gallery-img-wrap:hover .gallery-img-description{
+  visibility: visible;
+  opacity: 1;
+}
+
+.gallery-img-description__heading{
+    margin: 0;
+    margin-bottom: .3em;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.gallery-img-description__subheading{
+    margin: 0;
+    font-weight: 500
+}
+
+.gallery-img-description__link{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1em 1.5em;
+    margin: 1.667em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* KONEC - GALLERY */
+/* INSTRUCTORS */
+
+.instructors-background{
+    grid-row: 6 / 7;
+    grid-column: 1 / 4;
+    background-color: #eaf4f7;
+    z-index: -1;
+}
+
+.instructors-background--our-courses{
+    grid-row: 4 / 5;
+    grid-column: 1 / 4;
+}
+
+.instructors{
+    grid-area: team;
+    margin: 8em 0;
+}
+
+.instructors-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.instructors-article-img{
+    display: block;
+}
+
+.instructors-article-caption{
+    position: relative;
+    padding: 2em;
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+}
+
+.instructors-article-caption__heading{
+    margin: 0;
+    font-size: 1.3em;
+}
+
+.instructors-article-caption__subheading{
+    margin: .3em 0;
+    font-weight: 500;
+}
+
+.instructors-article-caption__info{
+    margin: 0;
+}
+
+.instructors-article-caption__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3em;
+    height: 3em;
+    position: absolute;
+    top: -1.5em;
+    right: 1.5em;
+}
+
+.instructors-article-caption__link span{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.sublinks{
+    display: none;
+    position: absolute;
+    bottom: 3em;
+    width: 3em;
+    height: 8em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+
+.sublinks__item a{
+    font-size: .8em;
+}
+
+.instructors-article-caption__link:hover .sublinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 100;
+}
+
+/* KONEC - INSTRUCTORS */
+/* EVENTS */
+
+.events{
+    grid-area: events;
+    margin: 8em 0;
+}
+
+.events-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.events-container-article{
+    flex: 2;
+    margin-right: 2em;
+}
+
+.events-aside{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.events-container-article__img{
+    display: block;
+}
+
+.events-container-article-caption{
+    position: relative;
+    padding: 2em 4.5em;
+    background-color: #eaf4f7;
+}
+
+.events-container-article-caption__price{
+    position: absolute;
+    top: -1.375em;
+    right: 3em;
+    padding: .375em;
+    margin: 0;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.events-container-article-caption__info{
+    display: inline-block;
+    margin: 0;
+    margin-right: 1.5em;
+    font-weight: 500;
+
+}
+
+.events-container-article-caption__heading{
+    font-size: 1.5em;
+    margin: .5em 0;
+}
+
+.events-container-article-caption__text{
+    margin: 1em 0;
+}
+
+.events-container-article-caption__link{
+    padding: 1em 2em;
+    font-size: 1em;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.events-aside-article{
+    position: relative;
+}
+
+.events-aside-article::after{
+    box-shadow: inset 0 -150px 80px -10px #052935;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.events-aside-article__img{
+    display: block;
+}
+
+.events-aside-article__price{
+    position: absolute;
+    top: 1.33em;
+    right: 1.33em;
+    padding: .375em;
+    margin: 0;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.events-aside-article-text{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 0 2em 1.5em 2em;
+    z-index: 10;
+}
+
+.events-aside-article-text__info{
+    display: inline-block;
+    font-weight: 500;
+    margin: 0;
+    margin-right: .5em;
+    color: #bacbd8;
+}
+
+.events-aside-article-text__heading{
+    margin: .3em 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.events-aside-article-text__link{
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: .8em;
+
+}
+
+.events-btn-container{
+    text-align: center;
+    margin-top: 4em;
+}
+
+.events-btn-container__link{
+    padding: 1em 2em;
+    border: 2px solid #bacbd8;
+    font-family: "Roboto";
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* KONEC - EVENTS */
+/* TESTiMONIALS */
+
+.testimonials-background{
+    grid-row: -5 / -6;
+    grid-column: 1 / 4;
+    background:linear-gradient(0deg, rgba(0, 12, 15, 0.8), rgba(0, 12, 15, 0.8)), url(../images/testimonials_bg.jpg);
+    background-size:cover;
+    z-index: -1;
+}
+
+.testimonials-background--about-us{
+    grid-row: -4 / -5;
+    grid-column: 1 / 4;
+}
+
+.testimonials{
+    grid-area: testimonials;
+    margin: 8em 0;
+}
+
+.testimonials-content{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10em;
+}
+
+.testimonials-gallery{
+    margin-right: 4.375em;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2em;
+}
+
+.testimonials-gallery__img{
+    display: block;
+}
+
+.col1, .col2, .col3{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+}
+
+.col1{
+    margin-top: 8em;
+}
+
+.col2{
+    margin-top: 1.875em;
+}
+
+.testimonials-gallery-img-container{
+    width: 8.125em;
+    height: 8.125em;
+    position: relative;
+}
+
+.testimonials-gallery__img--top-positioned{
+    position: absolute;
+    top: .4375em;
+    left: .4375em;
+}
+
+.testimonials-gallery__img--bot-positioned{
+    position: absolute;
+    bottom: .4375em;
+    left: .4375em;
+}
+
+.testimonials-article-container{
+    position: relative;
+    width: 28.75em;
+    height: 33.125em;
+    background-color: #eaf4f7;
+}
+
+.testimonials-article{
+    display: none;
+    padding: 3.75em;
+    margin: 0;
+    position: absolute;
+    top: 1.25em;
+    left: 1.25em;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    
+}
+
+.active{
+    display: block;
+}
+
+.testimonials-article__text-medium{
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.testimonials-figure{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1.2em;
+}
+
+.testimonials-figure__heading{
+    margin: 0;
+    font-size: 1.25em;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.testimonials-figure__subheading{
+    margin: .2em 0 0 0;
+    font-size: .875em;
+    font-weight: 600;
+}
+
+.testimonials-btn-container{
+    margin-top: 3.75em;
+    display: flex;
+    flex-direction: row;
+    column-gap: .6em;
+}
+
+.testimonials-btn{
+    width: 2.5em;
+    height: 2.5em;
+    border: none;
+    background-color: #eaf4f7;
+    cursor: pointer;
+}
+
+.testimonials-btn:hover{
+    background-color: #ea5822;
+    color: #fff;
+}
+
+.testimonials-quote{
+    position: absolute;
+    bottom: 2.5em;
+    right: 3.75em;
+}
+
+/* KONEC - TESTiMONIALS */
+/* BECOME INSTRUCTOR */
+
+.become-instructor{
+    grid-area: become-instructor;
+    display: flex;
+    align-items: center;
+    margin: 8em 0;
+}
+
+.become-instructor-background{
+    grid-row: -4 / -5;
+    grid-column: 1 / 4;
+    background-color: #eaf4f7;
+    z-index: -1;
+}
+
+.become-instructor-images, .become-instructor-article{
+    flex: 1;
+}
+
+.become-instructor-images{
+    position: relative;
+}
+
+.become-instructor-images__image--positioned{
+    position: absolute;
+    top: 40%;
+    right: -10%;
+}
+
+.become-instructor-article{
+    padding-left: 8em;
+    
+}
+
+.become-instructor-article__text{
+    margin: 1em 0 2em 0;
+}
+
+.become-instructor-info{
+    display: flex;
+    margin-bottom: 1.5em;
+}
+
+.become-instructor-info__01{
+    margin-right: 2em;
+    border-right: 1px solid #c3d9df;
+}
+
+.become-instructor-info__01 h4, .become-instructor-info__02 h4{
+    margin: .8em 0 0 0;
+    font-size: 1.3em;
+}
+
+.become-instructor-info__01 p, .become-instructor-info__02 p{
+    margin: .5em 0;
+}
+
+.become-instructor-article__button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 1em 2.5em;
+    margin-right: 1em
+}
+
+.become-instructor-article__arrow{
+    display: inline-block;
+    margin-left: .3em;
+    font-size: 2em;
+}
+
+/* KONEC - BECOME INSTRUCTOR */
+/* LATEST NEWS AND BLOG */
+
+.news{
+    grid-area: blog;
+    margin: 8em 0;
+}
+
+.news-articles-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-article{
+    width: min-content;
+    border: 1px solid #e6e6e6;
+}
+
+.news-article-caption{
+    padding: 1.5em;
+    position: relative;
+}
+
+.news-article-caption__info{
+    display: inline-block;
+    margin: 0 1.2em 0 0;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.news-article-caption__header{
+    font-size: 1.5em;
+    color: #062a35;
+    line-height: 1.2;
+}
+
+.news-article-caption figure{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.news-article-caption__img{
+    float: left;
+    height: 2em;
+    border-radius: 50%;
+    margin-right: .8em;
+}
+
+.news-article-caption__author{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+
+.news-article-caption-link{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: .5em 1em;
+    background-color: #062a35;
+}
+
+.news-article-caption-link:hover{
+    background-color: #EA5822;
+}
+
+/* KONEC - LATEST NEWS AND BLOG */
+/* WELCOME TO EDUPLUS */
+
+.welcome{
+    grid-area: welcome;
+    display: flex;
+    margin-top: 8em;
+    padding-bottom: 12em;
+    position: relative;
+}
+
+.welcome-img-container{
+    position: relative;
+    height: min-content;
+    
+}
+
+.welcome-img-container--positioned{
+    position: absolute;
+    bottom: -6em;
+    right: -3.5em;
+}
+
+.welcome-img-container__img{
+    display: block;
+}
+
+.welcome-tag{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: -5em;
+    left: -5em;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.welcome-tag-background{
+    position: absolute;
+    top: -4.3em;
+    left: -4.3em;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    z-index: 4;
+}
+
+.welcome-tag__num{
+    display: block;
+    font-size: 3em;
+}
+
+.welcome-tag__text{
+    margin: 0;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.welcome-article{
+    margin-left: 8em;
+}
+
+.welcome-article__bordered-text{
+    margin: 2em 0;
+    padding-left: 1.5em;
+    border-left: 3px solid #ea5822;
+}
+
+.welcome-subarticle-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3em 0 2em 0;
+}
+
+.welcome-subarticle{
+    flex: 5;
+}
+
+.welcome-subarticle__heading{
+    margin: 0;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.welcome-subarticle__icon{
+    flex: 1;
+    font-size: 1.8em;
+}
+
+.welcome-subarticle__icon--small{
+    font-size: .7em;
+}
+
+.welcome-article__link{
+    padding: 1.5em 2.5em;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: .875em;
+}
+
+.arrow--long{
+    display: inline-block;
+    vertical-align: sub;
+    margin-left: .3em;
+    font-size: 2.5em;
+}
+
+/* KONEC - WELCOME TO EDUPLUS */
+/* INSTITUTE GOALS */
+
+.institute-goals{
+    grid-area: goals;
+    display: flex;
+    flex-direction: row;
+    margin: 10em 0 8em 0;
+}
+
+.institute-goals-background{
+    grid-row: 4 / 5;
+    grid-column: 1 / 4;
+    background-color: #eaf4f7;
+    z-index: -1;
+}
+
+.institute-goals-content{
+    display: inline-block;
+    margin-right: 5em;
+}
+
+.institute-goals-graph-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.institute-goals-graph-wrapper{
+    margin-right: 2em;
+}
+
+.institute-goals-graph{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6em;
+    height: 6em;
+    position: relative;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.institute-goals-graph__num{
+    font-family: "Roboto";
+    font-weight: bold;
+    
+}
+
+.institute-goals-graph__num strong{
+    font-size: 1.8em;
+    margin-right: .15em;
+}
+
+
+.institute-goals-graph__num small{
+    font-size: 1em;
+}
+
+.institute-goals-graph-wrapper__subheading{
+    margin: .8em 0 0 0 ;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+/* KONEC - INSTITUTE GOALS */
+/* ALL COURSES */
+
+.all-courses{
+    grid-area: courses;
+    margin: 8em 0;
+}
+
+.all-courses-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto 2em auto;
+    padding: 0;
+    width: 80%;
+    list-style-type: none;
+}
+
+.all-courses-menu__item{
+    padding: .2em .8em;
+    border-radius: 20px;
+    font-weight: 600
+}
+
+.all-courses-menu__item:hover{
+    background-color: #EA5822;
+    color: #fff;
+}
+
+.all-courses-menu__item:hover a{
+    color: #fff;
+}
+
+.all-courses-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.all-courses-article{
+    width: min-content;
+    margin-bottom: 1.5em;
+    position: relative;
+}
+
+.all-courses-img-container{
+    position: relative;
+    height: min-content;
+}
+
+.all-courses-img-container::after{
+    box-shadow: inset 0 -100px 60px -40px #052935;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.all-courses-article__img{
+    display: block;
+}
+
+.all-courses-article__avatar{
+    position: absolute;
+    bottom: 2em;
+    left: 2em;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    z-index: 10;
+}
+
+.all-courses-article__tag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -1em;
+    right: 1em;
+    margin: 0;
+    width: 3.2em;
+    height: 3.2em;
+    border-radius: 50%;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 1.2em;
+    z-index: 10;
+}
+
+.all-courses-article-caption{
+    padding: 1.2em;
+    border: 1px solid #e2e2e2;
+    box-sizing: border-box;
+}
+
+.all-courses-article-caption__tag{
+    display: inline-block;
+    margin: 0;
+    margin-right: 1em;
+    padding: 2px 14px;
+    border-radius: 10px;
+    background-color: #3662ff;
+    font-size: .8em;
+    font-weight: 600;
+}
+
+.all-courses-article-caption__heading{
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0;
+    margin-top: .8em;
+}
+
+.all-courses-article-caption--hidden{
+    display: none;
+}
+
+.all-courses-article:hover .all-courses-article-caption--hidden{
+    display: block;
+    height: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    background-color: #3662ff;
+    border: none;
+}
+
+.all-courses-article:hover .all-courses-article__avatar, .all-courses-article:hover .all-courses-article__tag{
+    display: none;
+}
+
+.all-courses-article-avatar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.all-courses-article__tag--in-hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 3.3em;
+    height: 3.3em;
+    border-radius: 50%;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.all-courses-article__avatar--in-hover{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.all-courses-article-caption__link{
+    display: block;
+    width: max-content;
+    margin: 0 0 1.5em 0;
+    padding: .8em 1em;
+    border-radius: 20px;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: .875em
+}
+
+.all-courses-article-caption__arrow{
+    margin-left: .3em;
+}
+
+/*KONEC - ALL COURSES */
+/* COURSES DETAILS */
+
+.courses-details-content{
+    grid-area: content;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row-reverse;
+    margin: 5em 0;
+}
+
+.courses-details-article{
+    padding: 1em;
+    flex: 2;
+}
+
+.courses-details-aside{
+    padding: 1em;
+    flex: 1;
+}
+
+.courses-details-intro{
+    margin: 1em 0 2em 0;
+}
+
+.courses-details-article__star{
+    margin-right: .3em;
+    font-size: .8em;
+}
+
+.courses-details-article__heading{
+    margin: .5em 0 .8em 0;
+    font-family: "Roboto";
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.lessons-container{
+    margin: 2em 0 4em 0;
+    border-bottom: 1px solid #e2e2e2;
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+}
+
+.lesson{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2em 2.2em;
+    border-top: 1px solid #e2e2e2;
+}
+
+.lesson:hover{
+    background-color: #eaf4f7;
+}
+
+.lesson__name{
+    margin: 0;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.lesson__time{
+    margin: 0;
+    font-weight: 500;
+}
+
+.lesson__icon{
+    margin-right: 1em;
+}
+
+.question{
+    cursor: pointer;
+}
+
+.question__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 1.125em;
+    list-style-type: none;
+    padding: 1.5em 0;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.question__header .question__angle-d{
+  display: none;
+  
+}
+.question__header:focus .question__angle-d{
+    display:inline-block;
+}
+
+.question__header:focus .question__angle-r{
+    display: none;
+}
+
+.question__header--focus:focus{
+    color: #ea5822;
+}
+
+.question-img-content{
+    display: flex;
+    align-items: center;
+    padding: 1.5em 1em;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.question-img-content p{
+    margin: 0 0 0 2em;
+}
+
+.course-instructors{
+    margin: 3em 0 0 0;
+}
+
+.course-instructors-img-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.course-instructor{
+    margin: 0 0 2em 0;
+    width: 23em;
+    height: 23em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e2e2e2;
+}
+
+.course-instructor-caption{
+    padding: 1.5em 0;
+    text-align: center;
+}
+
+.course-instructor__name{
+    font-family: "Roboto";
+    font-size: 1.375em;
+}
+
+.course-instructor__job{
+    margin: 0;
+    font-weight: 500;
+}
+
+.courses-details-info-container{
+    margin: 0 0 3em 0;
+    padding: 1em 2.3em 4em 2.3em;
+    border: 1px solid #e2e2e2;
+    text-align: center;
+}
+
+.courses-details-info-container dl{
+    margin: 0 0 2em 0;
+}
+
+.courses-details-info:last-child{
+    border: none;
+}
+
+.courses-details-info{
+    padding: 1.5em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e2e2e2;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+
+
+.courses-details__link{
+    padding: 1.3em 2.3em;
+    border-radius: 35px;
+    background-color: #3662ff;
+    font-size: 1em;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+/* KONEC - COURSES DETAILS */
+/* EVENT DETAILS */
+
+.event-details-content{
+    grid-area: content;
+    margin: 5em 0;
+}
+
+.event-details-content__heading{
+    margin: 0;
+    font-size: 2.1875em;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.meta-container{
+    margin-bottom: 1.8em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.meta-list{
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-end;
+    justify-content: space-between;
+    width: 65%;
+    list-style-type: none;
+}
+
+.meta-list--80{
+    width: 80%;
+}
+
+.meta-list__item{
+    font-weight: 500;
+}
+
+.meta-list__icon{
+    margin-right: .3em;
+}
+
+.event-details-content__price{
+    margin: 0 0 0 4em;
+    padding: 0 .8em;
+    height: 2em;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 1.5em;
+    background-color: #3662ff;
+}
+
+.event-details-content__link{
+    padding: 0 2.5em;
+    height: 3.5em;
+    display: inline-block;
+    font-size: .875em;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.event-details-content__img{
+    margin: 1.5em 0;
+}
+
+.event-details-content-map{
+    margin: 3em 0 5em 0;
+    display: flex;
+}
+
+.event-details-content-map-article{
+    margin-right: 2.5em;
+}
+
+.event-details-content-map-article__text{
+    margin: 1.5em 0;
+}
+
+.event-details-content-map-list{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.event-details-content-map-list__item{
+    padding: .3em;
+    font-weight: 500;
+}
+
+.event-details-content-map-list__icon{
+    padding: .5em;
+    margin-right: .8em;
+    border: 2px solid #e2e2e2;
+    border-radius: 50%;
+}
+
+.event-details-content-events{
+    margin: 5em 0 3em 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* KONEC - EVENT DETAILS */
+/* INSTRUCTOR DETAILS */
+
+.instructor-details{
+    grid-area: content;
+    margin: 5em 0;
+}
+
+.instructor-details-background{
+    grid-row: 3 / 4;
+    grid-column: 1 / 4;
+    background-color: #eaf4f7;
+    z-index: -1;
+}
+
+.instructor-details-member{
+    display: flex;
+}
+
+.instructor-details-profile{
+    margin: 0;
+    padding: 0;
+
+}
+
+.instructor-details-profile__img{
+    display: block;
+}
+
+.instructor-details-profile-caption{
+    padding: 2.5em;
+    display: flex;
+}
+
+.instructor-details-profile-caption div{
+    flex: 1;
+}
+
+.instructor-details-profile-caption__heading{
+    margin: 0;
+    font-size: 1.5em;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.instructor-details-profile-caption__job{
+    margin: 0;
+    font-weight: 500;
+}
+
+.instructor-details-profile-caption__courses{
+    margin: 0;
+}
+
+.instructor-details-profile-links{
+    display: grid;
+    grid-template-columns: 40% repeat(2, auto);
+    grid-template-rows: repeat(2, 3em);
+    grid-template-areas: 
+    ". link1 link2"
+    ". link3 link4";
+    row-gap: .5em;
+    align-self: center;
+}
+
+.instructor-details-profile-links__link1{
+    grid-area: link1;
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+.instructor-details-profile-links__link2{
+    grid-area: link2;
+    justify-self: flex-start;
+    align-self: flex-end;
+}
+.instructor-details-profile-links__link3{
+    grid-area: link3;
+    justify-self: flex-end;
+    align-self: flex-start;
+}
+.instructor-details-profile-links__link4{
+    grid-area: link4;
+    justify-self: flex-start;
+    align-self: flex-start;
+}
+
+.instructor-details-profile-links__icon{
+    font-size: 1.3em;
+}
+
+.instructor-details-profile-links__icon--small{
+    font-size: .8em
+}
+
+.instructor-details-about{
+    margin-left: 2em;
+    padding: 4em;
+}
+
+.instructor-details-about__heading{
+    margin: 0 0 .3em 0;
+    font-size: 2.1875em;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.instructor-details-facts{
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.instructor-details-facts--m-small{
+    margin:1em 0 3em 0;
+}
+
+.instructor-details-fact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.line--vertical{
+    border-left: 3px solid #e2e2e2;
+    margin: 0 1.5em;
+}
+
+.instructor-details-education{
+    margin: 2em 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.instructor-details-certificate, .instructor-details-experience{
+    padding: 4em;
+    box-sizing: border-box;
+    flex-basis: calc(100% / 2 - 1em);
+}
+
+.instructor-details__heading{
+    margin: 0;
+    font-size: 1.875em;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.instructor-details-certificate-imgs{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.instructor-details-courses{
+    margin: 8em 0;
+    position: relative;
+}
+
+.instructor-details-courses__heading{
+    margin: 0 0 1.2em 0;
+    text-align: center;
+}
+
+.instructor-details-courses::before{
+    content:"";
+    background-color:#fff;
+    position: absolute;
+    left: -10%;
+    top:-5%;
+    height: 113%;
+    width: 120%;
+    
+    z-index: -1;
+}
+
+/* KONEC - INSTRUCTOR DETAILS */
+/* FAQ */
+
+.faq{
+    grid-area: content;
+    margin: 5em 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "author questions"
+    "get-in-touch questions";
+    gap: 2em;
+}
+
+.faq-background{
+    grid-row: 3 / 4;
+    grid-column: 1 / 4;
+    background-color: #eaf4f7;
+    z-index: -1;
+}
+
+.faq-author{
+    grid-area: author;
+    padding: 3.75em 2.875em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.faq-figure{
+    margin: 0;
+    padding: 0;
+}
+
+.faq-figure__heading{
+    margin: .8em 0 .3em 0;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 1.375em;
+}
+
+.faq-figure__subheading{
+    margin: 0;
+    font-size: .875em;
+}
+
+.faq-author__text{
+    margin: 1em 0 0 0;
+}
+
+.faq__heading{
+    margin: 0 0 .5em 0;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 1.875em;
+}
+
+.faq-form-container{
+    grid-area: get-in-touch;
+    padding: 3.75em 2.875em;
+}
+
+.faq-form{
+    display: flex;
+    flex-direction: column;
+    row-gap: .625em;
+}
+
+.form__input-container, .form__textarea-container{
+    position: relative;
+    display: inline-flex;
+}
+
+.form__icon{
+    position: absolute;
+    right: 1.333em;
+    top: 1.222em;
+    font-size: 1.125em;
+}
+
+.form__input-container .form__input, .form__textarea-container .form__textarea{
+    flex-grow: 100;
+}
+
+.form__input{
+    padding: 1.375em 1.5em;
+    border: none;
+    font-size: 1em;
+    font-family: "Roboto";
+    font-weight: 500;
+    color: #062a35;
+    
+}
+
+.form__input--bordered{
+    border: 1px solid #e2e2e2;
+}
+
+.form__input:focus-visible{
+    outline: none;
+}
+
+.form__input::placeholder{
+    color: #062a35;
+}
+
+.form__input--search{
+    background: none;
+    color: #757575;
+}
+
+.form__input--search::placeholder{
+    color: #757575; 
+}
+
+.form__input--grey-bg{
+ background-color: #f5f6fa;
+}
+
+.form__input--primary-color{
+    color: #708389;
+}
+
+.form__input--primary-color::placeholder{
+    color: #708389;
+}
+
+.form__input--orange-focus:focus-visible{
+    border: 2px solid #ea5822;
+    border-radius: 5px;
+}
+
+.form__textarea{
+    resize: none;
+}
+
+.form__submit{
+    padding: .6em;
+    appearance: none;
+    border: none;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: .875em;
+    cursor: pointer;
+}
+
+.faq-questions{
+    grid-area: questions;
+    padding: 3.75em 2.875em;
+}
+
+.faq-cta{
+    grid-area: cta;
+    margin: 5em 0;
+    display: flex;
+}
+
+.faq-cta-background{
+    grid-row: 4 / 5;
+    grid-column: 1 / 4;
+    background: rgb(14,24,81);
+    background: linear-gradient(90deg, rgba(14,24,81,1) 0%, rgba(14,24,81,1) 50%, rgba(0,8,70,1) 50%, rgba(0,8,70,1) 100%);
+    z-index: -1;
+}
+
+.faq-cta-card{
+    flex: 0 0 50%;
+    box-sizing: border-box;
+}
+
+.faq-cta-card--right{
+    padding-left: 10em;
+}
+
+.faq-cta-card--left{
+    padding-right: 5em;
+}
+
+.faq-cta-card__text{
+    margin: 1.5em 0 3em 0;
+    color: #999ec4;
+}
+
+.faq-cta-card__button{
+    padding: 1.7em 2.8em;
+    border-radius: 40px;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: .875em;
+    background-color: #3662ff;
+}
+
+/* KONEC - FAQ */
+/* BLOG */
+
+.blog-container{
+    grid-area: content;
+    margin: 5em 0;
+    display: flex;
+    column-gap: 2em;
+}
+
+.blog{
+    flex: 2;
+}
+
+.blog-background{
+    grid-row: 3 / 4;
+    grid-column: 1 / 4;
+    background-color: #eaf4f7;
+    z-index: -1;
+}
+
+.blog-article-container{
+    margin-bottom: 2em;
+}
+
+.blog-article{
+    padding: 2.5em;
+}
+
+.blog-article__img{
+    display: block;
+}
+
+.blog-article__img--m{
+    margin: 1.75em 0;
+}
+
+.blog-article__tag{
+    margin: 0;
+    margin-right: 1em;
+    padding: .3em .875em;
+    border-radius: 5px;
+    background-color: #4582ff;
+    font-size: .875em;
+    font-weight: 600;
+    font-family: "Roboto";
+}
+
+.blog-article__heading{
+    margin: .8em 0;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 1.875em;
+}
+
+.blog-article__subheading{
+    margin: .8em 0;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.blog-article__heading--no-m{
+    margin: 0;
+}
+
+.blog-article__text{
+    margin: 1em 0 2em 0;
+}
+
+.blog-article__button{
+    padding: 1.5em 2.8em;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: .875em;
+}
+
+.blog-ad{
+    margin-bottom: 2em;
+    padding: 3em 4.375em;
+    background-color: #3662ff;
+}
+
+.blog-ad--small{
+    padding: 2.5em 3.75em;
+}
+
+.blog-ad__tag{
+    padding-left: 4em;
+    font-size: 1.125em;
+    font-weight: 500;
+    position: relative;
+}
+
+.blog-ad__tag::before{
+    content: '';
+    display: inline-block;
+    width: 3.125em;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.blog-ad__icon{
+    display: flex;
+    align-items: center;
+    font-size: 1.125em;
+    font-weight: 500;
+}
+
+.blog-ad__icon .fa-quote-left{
+    margin-right: .5em;
+}
+
+.blog-article-social-tags{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid #ededef;
+}
+
+.blog-article-tag{
+    margin: 0;
+    color: #757575;
+}
+
+.blog-article-tag-name{
+    margin-right: .3em;
+    color: #222222;
+    font-family: "Roboto";
+    font-size: 1.125em;
+    font-weight: bold;
+}
+
+.blog-article-tag__icon{
+    margin-right: 1em;
+    color: #757575;
+}
+
+.blog-article-tag__icon:hover{
+    color: #ea5822;
+}
+
+.blog-article-author{
+    padding: 2.625em;
+    margin: 4em 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 2em;
+    background-color: #eaf4f7;
+}
+
+
+.blog-article-author__text{
+    margin: .5em 0;
+}
+
+.blog-article-news{
+    padding: 4em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 4em;
+    border-bottom: 2px solid #ededef;
+    border-top: 2px solid #ededef;
+}
+
+.blog-article-news-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1.5em;
+}
+
+.blog-article-new-item__heading{
+    margin: 0 0 .3em 0;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 1.125em;
+}
+
+.blog-article-news-item__meta{
+    margin-right: .8em;
+}
+
+.blog-article-comment-container{
+    margin-top: 4em;
+    padding-bottom: 4em;
+    border-bottom: 2px solid #ededef;
+}
+
+.blog-article-comment{
+    margin: 0 1.5em 3.125em 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    column-gap: 1.5em;
+    position: relative;
+}
+
+.blog-article-comment:last-child{
+    margin-bottom: 0;
+}
+
+.blog-article-comment--subcoment{
+    margin-left: 6.5em;
+    margin-right: 0;
+}
+
+.blog-article-comment__heading{
+    margin: 0;
+    font-size: 1.125em;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.blog-article-comment__position{
+    margin: .3em 0 0 0;
+    font-weight: 500;
+}
+
+.blog-article-comment__reply{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 1em;
+    right: 0;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: .8125em;
+}
+
+.blog-article-comment__reply:hover{
+    color: #ea5822;
+}
+
+.blog-article-comment__icon{
+    margin-left: .5em;
+    font-size: 1.3em;
+}
+
+.blog-article-form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.875em;
+}
+
+.blog-article-form .form__input-container{
+    flex: 1;
+}
+
+.blog-article-form .form__textarea-container{
+    flex: 0 1 100%;
+}
+
+.blog-article-form .form__submit{
+    width: 35%;
+}
+
+.blog-aside{
+    flex: 1;
+}
+
+.blog-aside-search{
+    padding: 2.125em;
+    
+}
+
+.blog-aside__heading{
+    margin: 0 0 1em 0;
+    display: block;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.input-container{
+    padding: 0 .5em;
+    display: inline-flex;
+    flex-direction:row;
+    align-items: center;
+    background-color: #f5f6fa;
+    border-radius: 30px;
+}   
+
+.blog-aside-search__btn{
+    padding-right: 1.25em;
+    appearance: none;
+    border: none;
+    background:none;
+    font-size: 1.2em;
+}
+
+.blog-aside-nav{
+    margin: 2em 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    list-style-type: none;
+}
+
+.blog-aside-nav__item{
+    padding: 1.3em 1.9em ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.125em;
+    font-weight: bold;
+}
+
+.blog-aside-nav__item:hover{
+    background-color: #ea5822;
+}
+
+.blog-aside-nav__item:hover .heading-primary{
+    color: #FFF;
+}
+
+.blog-aside-news{
+    padding: 2.5em 2.125em;
+    margin-top: 2em;
+
+}
+
+.blog-aside-news-article{
+    margin-top: 1.875em;
+    padding-bottom: 1.875em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1.25em;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.blog-aside-news-article:first-child{
+    margin: 0;
+}
+.blog-aside-news-article:last-child{
+    padding-bottom: 0;
+    border: none;
+}
+
+.blog-aside-news-article__heading{
+    margin: 0;
+    font-size: 1.125em;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.blog-aside-news-article__tag{
+    margin-right: .4em;
+}
+
+.blog-aside-gallery{
+    padding: 2.5em 2.125em;
+    margin-top: 2em;
+}
+
+.blog-aside-gallery-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.25em;
+}
+
+.blog-aside-gallery-item{
+    position: relative;
+}
+
+.blog-aside-gallery__img{
+    display: block;
+}
+
+.blog-aside-gallery-desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(237, 89, 30, 0.75);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+}
+
+.blog-aside-gallery-item:hover .blog-aside-gallery-desc{
+    opacity: 1;
+    visibility: visible;
+}
+
+.blog-aside-tags{
+    padding: 2.5em 2.125em;
+    margin: 2em 0;
+}
+
+.blog-aside-tags-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: .4em;
+}
+
+.blog-aside-tags__item{
+    padding: .8em 1.25em;
+    font-size: .875em;
+    font-weight: 500;
+    filter: drop-shadow(0 0 3em rgb(162, 162, 162, 0.3));
+}
+
+.blog-aside-tags__item:hover{
+    color: #fff;
+    background-color: #ea5822;
+}
+
+/* KONEC - BLOG */
+/* CONTACT US */
+
+.contact-us-container{
+    grid-area: content;
+    margin: 8em 0;
+}
+
+.contact-us-background{
+    grid-row: 3 /4;
+    grid-column: 1 / 4;
+    background-color: #eaf4f7;
+}
+
+.contact-us{
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-us-article{
+    flex: 0 1 40%;
+}
+
+.contact-us-article article{
+    padding-right: 8em;
+}
+
+.contact-us-map{
+    flex: 0 0 60%;
+    overflow: hidden;
+    position: relative;
+}
+
+.contact-us-map__pin{
+    color: #e93547;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 9em;
+}
+
+.contact-us-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: .8em;
+    margin-bottom: 1em;
+}
+
+.contact-us-info__stack{
+    font-size: 1.8em;
+    margin-left: -.2em;
+}
+
+
+.contact-us-info__icon{
+    font-size: .8em;
+}
+
+.contact-us-details__heading{
+    font-family: "Roboto";
+    font-size: 1.125em;
+}
+
+.contact-us-details__subheading{
+    margin: 0;
+    font-size: 1em;
+    font-weight: 500;
+   
+}
+
+.contact-us-article__socal-bg{
+    color: #cae3ea;
+}
+
+.contact-us-article__social{
+    color: #3662ff;
+}
+
+.contact-us-article__social:hover{
+    color: #fff;
+}
+
+.contact-us-article__social:hover .contact-us-article__socal-bg{
+    color: #3662ff;
+}
+
+.contact-us-form-container{
+    margin-top: 6.5em;
+}
+
+.contact-us-form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.contact-us-form .form__input-container{
+    flex: 1;
+}
+
+.contact-us-form .form__textarea-container{
+    flex: 1 0 100%;
+}
+
+.contact-us-form .form__submit{
+    flex: 0 0 60%;
+    margin: 0 auto;
+}
+
+/* KONEC - CONTACT US */
+/* BRANDS */
+
+.brands-background{
+    grid-row: -2 / -3;
+    grid-column: 1 / 4;
+    z-index: -1;
+}
+
+.brands{
+    grid-area: brands;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+/* KONEC - BRANDS */
+/* FOOTER */
+
+.scroll-up-btn{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 12em;
+    right: -7em;
+    width: 2.5em;
+    height: 2.5em;
+    font-size: 1.375em;
+    border: none;
+    background-color: #4582ff;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.footer-background{
+    z-index: -10;
+    grid-row: -1/-2;
+    grid-column: 1 / 4;
+    background-image: url("../images/footer_bg.png");
+    background-size: cover;
+    background-color: #062a35;
+}
+
+.footer{
+    grid-area: footer;
+    position: relative;
+}
+
+.footer-header{
+    display: flex;
+    align-items: center;
+    margin-top: 3em;
+    padding-bottom: 3em;
+    border-bottom: 1px solid #1d303f;
+}
+
+.footer-logo{
+    flex: 3;
+    display: flex;
+    align-items: center;
+}
+
+.footer-social{
+    display: flex;
+    flex: 4;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-social__item a{
+    font-size: 1em;
+    /*color: #fff;*/
+}
+
+.footer-social__item a:visited{
+    color: #fff;
+}
+
+.footer-body{
+    display: flex;
+    align-items: flex-end;
+    padding-top: 3em;
+    position: relative;
+}
+
+.footer-body::before{
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: calc(50% - 12.5em / 2);
+    height: 3px;
+    width: 12.5em;
+    background-color: #ea5822;
+}
+
+
+.footer-menu{
+    flex: 1;
+}
+
+.newsletter{
+    flex: 2;
+    align-self: baseline;
+}
+
+.footer-menu, .newsletter{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: .9em;
+}
+
+.newsletter__text{
+    color: #a3b5c3;
+}
+
+.footer-menu__item{
+    padding: .2em;
+    color: #a3b5c3;
+}
+
+.footer-menu__header, .newsletter__header{
+    margin: 1em 0;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.footer__copyright{
+    width: 100%;
+    padding: 1em;
+    margin:  3em 0;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: .9em;
+    color: #a3b5c3;
+    background-color: #0c3542;
+}
+
+
+.newsletter-form__text, .newsletter-form__submit{
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    
+}
+
+.newsletter-form__text, .newsletter-form__submit:focus{
+    outline: none;
+}
+
+.newsletter-form{
+    display: flex;
+}
+
+.newsletter-form__text{
+    flex: 4;
+    font-weight: normal;
+    background-color: #0c3542;
+    color: #a3b5c3;
+}
+
+.newsletter-form__text::placeholder{
+    color: #a3b5c3;
+}
+
+.newsletter-form__submit{
+    flex: 1;
+    padding: 0;
+    
+    color: #fff;
+    font-size: 2em;
+}
+
+/* Barvy */
+
+.heading-primary{
+    color: #062a35;
+}
+
+.text-primary{
+    color: #708389;
+}
+
+.fb-color{
+    color: #1771e5;
+}
+
+.yt-color{
+    color: #ff0000;
+}
+
+.tw-color{
+    color: #1da1f1;
+}
+
+.ig-color{
+    color: #de0d88;
+}
+
+.white-color{
+    color: #fff;
+}
+
+.orange-color{
+   color: #EA5822;
+}
+
+.orange-bg{
+    background-color: #EA5822;
+}
+
+.white-bg{
+    background-color: #fff;
+}
+
+.yellow-color{
+    color: #f7bb00;
+}
+
+.blue-color{
+    color: #24a1ff;
+}
+
+.dark-blue-color{
+    color: #3662ff;
+}
+
+/* IKONY */
+
+.fa-user-circle{
+    margin-right: .3em;
+}
+
+.icon-box{
+    padding: .8em 1em;
+}
