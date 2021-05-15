@@ -13,98 +13,100 @@
     <script src="https://kit.fontawesome.com/05fce81391.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="faq-content-container">
-        <header class="header">
-            <div class="header-logo">
-                <img src="images/logo_d-blue.png" alt="Logo webové stránky" width="60" class="logo__img">
-                <a href="index.html" class="logo__name heading-primary"><b>Edu</b>Plus</a>
+    <header class="header header--bg">
+        <div class="header-logo">
+            <img src="images/logo_d-blue.png" alt="Logo webové stránky" width="60" class="logo__img">
+            <a href="index.html" class="logo__name heading-primary"><b>Edu</b>Plus</a>
+        </div>
+        <!-- Navigace -->
+        <nav class="navigation">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="index.html">Home <i class="fa fa-angle-down"></i></a>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="about-us.html">About Us</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a href="">Courses <i class="fa fa-angle-down"></i></a>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="">Course</a></li>
+                        <li class="submenu__item"><a href="our-courses.html">Course List</a></li>
+                        <li class="submenu__item"><a href="courses-details.html">Course Details</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a href="">Events <i class="fa fa-angle-down"></i></a>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="event-details.html">Event Details</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a href="">Pages <i class="fa fa-angle-down"></i></a>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="instructor-details.html">Instructors Details</a></li>
+                        <li class="submenu__item"><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a href="blog-standard.html">Blog <i class="fa fa-angle-down"></i></a>
+                    <ul class="submenu">
+                        <li class="submenu__item"><a href="blog-details.html">Blog Details</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a href="contact-us.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Konec - Navigace -->
+        <div class="header-links">
+            <a href="" class="icon-box white-bg"><i class="fab fa-facebook-f fa-fw  "></i></a>
+            <a href="" class="icon-box white-bg"><i class="fab fa-youtube fa-fw "></i></a>
+            <a href="" class="icon-box white-bg"><i class="far fa-user-circle fa-fw "></i><span class="sign-in">SIGN IN</span></a>
+            <img src="images/Bar.png" alt="" class="header-links__bar">
+        </div>
+    </header>
+    <!-- Sekce - Faq -->
+    <section class="hero-area hero-area-background-image">
+        <h1 class="hero-area__title white-color">Faq</h1>
+        <p class="hero-area__direction white-color">Home <i class="fas fa-angle-right"></i> Faq</p>
+    </section>
+    <!-- Konec - Faq -->
+    <!-- Sekce - Questions -->
+    <section class="content-wrapper faq-background">
+        <div class="content-box faq">
+            <div class="faq-author-container">
+                <article class="faq-author white-bg">
+                    <figure class="faq-figure">
+                        <img src="images/ceo_crop.jpg" alt="A man in a suit sitting in a chair" width="220" class="circle-img">
+                        <figcaption>
+                            <h3 class="faq-figure__heading heading-primary">David Warner</h3>
+                            <small class="faq-figure__subheading orange-color">CEO & Founder</small>
+                        </figcaption>
+                    </figure>
+                    <p class="faq-author__text text-primary">Lorem ipsum dolor sit amet, consectetur elit. Iure nobis culpa et reprehenderit! Impedit voluptatibus tempora enim obcaecati possimus nisi odio.</p>
+                </article>
+                <article class="faq-form-container white-bg">
+                    <h2 class="faq__heading heading-primary">Get In Touch</h2>
+                    <form action="zpracuj-formular.php" method="post" class="faq-form">
+                        <div class="form__input-container">
+                            <i class="far fa-user form__icon orange-color"></i>
+                            <input type="text" name="name" placeholder="Your Name" class="form__input form__input--bordered">
+                        </div>
+                        <div class="form__input-container">
+                            <i class="far fa-envelope-open form__icon orange-color"></i>
+                            <input type="email" name="email" placeholder="Your Email" class="form__input form__input--bordered">
+                        </div>
+                        <div class="form__textarea-container">
+                            <i class="far fa-envelope-open form__icon orange-color"></i>
+                            <textarea name="message"  rows="5" placeholder="Write Message" class="form__input form__input--bordered form__textarea"></textarea>
+                        </div>
+                        
+                        <button type="submit" value="Submit" class="form__submit orange-bg white-color">SEND MESSAGE<span class="arrow--long">&xrarr;</span></button>
+                    </form>
+                </article>
             </div>
-            <!-- Navigace -->
-            <nav class="navigation">
-                <ul class="menu">
-                    <li class="menu__item">
-                        <a href="index.html">Home <i class="fa fa-angle-down"></i></a>
-                        <ul class="submenu">
-                            <li class="submenu__item"><a href="about-us.html">About Us</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu__item">
-                        <a href="">Courses <i class="fa fa-angle-down"></i></a>
-                        <ul class="submenu">
-                            <li class="submenu__item"><a href="">Course</a></li>
-                            <li class="submenu__item"><a href="our-courses.html">Course List</a></li>
-                            <li class="submenu__item"><a href="courses-details.html">Course Details</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu__item">
-                        <a href="">Events <i class="fa fa-angle-down"></i></a>
-                        <ul class="submenu">
-                            <li class="submenu__item"><a href="event-details.html">Event Details</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu__item">
-                        <a href="">Pages <i class="fa fa-angle-down"></i></a>
-                        <ul class="submenu">
-                            <li class="submenu__item"><a href="instructor-details.html">Instructors Details</a></li>
-                            <li class="submenu__item"><a href="faq.html">FAQ</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu__item">
-                        <a href="blog-standard.html">Blog <i class="fa fa-angle-down"></i></a>
-                        <ul class="submenu">
-                            <li class="submenu__item"><a href="blog-details.html">Blog Details</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu__item">
-                        <a href="contact-us.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- Konec - Navigace -->
-            <div class="header-links">
-                <a href="" class="icon-box white-bg"><i class="fab fa-facebook-f fa-fw  "></i></a>
-                <a href="" class="icon-box white-bg"><i class="fab fa-youtube fa-fw "></i></a>
-                <a href="" class="icon-box white-bg"><i class="far fa-user-circle fa-fw "></i>SIGN IN</a>
-            </div>
-        </header>
-        <!-- Sekce - Faq -->
-        <section class="hero-area hero-area-background-image">
-            <h1 class="hero-area__title white-color">Faq</h1>
-            <p class="hero-area__direction white-color">Home > Faq</p>
-        </section>
-        <!-- Konec - Faq -->
-        <!-- Sekce - Questions -->
-        <div class="faq-background"></div>
-        <section class="faq">
-            <article class="faq-author white-bg">
-                <figure class="faq-figure">
-                    <img src="images/ceo_crop.jpg" alt="A man in a suit sitting in a chair" width="220" class="circle-img">
-                    <figcaption>
-                        <h3 class="faq-figure__heading heading-primary">David Warner</h3>
-                        <small class="faq-figure__subheading orange-color">CEO & Founder</small>
-                    </figcaption>
-                </figure>
-                <p class="faq-author__text text-primary">Lorem ipsum dolor sit amet, consectetur elit. Iure nobis culpa et reprehenderit! Impedit voluptatibus tempora enim obcaecati possimus nisi odio.</p>
-            </article>
-            <article class="faq-form-container white-bg">
-                <h2 class="faq__heading heading-primary">Get In Touch</h2>
-                <form action="zpracuj-formular.php" method="post" class="faq-form">
-                    <div class="form__input-container">
-                        <i class="far fa-user form__icon orange-color"></i>
-                        <input type="text" name="name" placeholder="Your Name" class="form__input form__input--bordered">
-                    </div>
-                    <div class="form__input-container">
-                        <i class="far fa-envelope-open form__icon orange-color"></i>
-                        <input type="email" name="email" placeholder="Your Email" class="form__input form__input--bordered">
-                    </div>
-                    <div class="form__textarea-container">
-                        <i class="far fa-envelope-open form__icon orange-color"></i>
-                        <textarea name="message"  rows="5" placeholder="Write Message" class="form__input form__input--bordered form__textarea"></textarea>
-                    </div>
-                    
-                    <button type="submit" value="Submit" class="form__submit orange-bg white-color">SEND MESSAGE<span class="arrow--long">&xrarr;</span></button>
-                </form>
-            </article>
             <article class="faq-questions white-bg">
                 <h2 class="faq__heading heading-primary">Frequently Asked Questions</h2>
                 <details class="question">
@@ -188,12 +190,13 @@
                     </summary>
                         <p class="text-primary">Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo. Maecenas libero. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Nullam rhoncus aliquam metus.</p>
                 </details>
-                </article>
-        </section>
-        <!-- Konec - Questions -->
-        <!-- Sekce - Build a career -->
-        <div class="faq-cta-background"></div>
-        <section class="faq-cta">
+            </article>
+        </div>
+    </section>
+    <!-- Konec - Questions -->
+    <!-- Sekce - Build a career -->
+    <section class="content-wrapper faq-cta-background">
+        <div class="content-box faq-cta">
             <article class="faq-cta-card faq-cta-card--left">
                 <h2 class="main-heading main-heading--no-align main-heading--no-m white-color"><span class="heading-tag-before">Build A Career</span><strong class="main-heading__title">Become an Instructor</strong></h2>
                 <p class="faq-cta-card__text">Curabitur ligula sapien, pulvinar a vestibulum quis, facilisis vel sapien. Maecenas libero. Integer imperdiet lectus quis justo. Etiam bibendum elit eget erat. Curabitur sagittis hendrerit ante. Duis pulvinar. Integer imperdiet lectus quis justo.</p>
@@ -204,22 +207,23 @@
                 <p class="faq-cta-card__text">In laoreet, magna id viverra tincidunt, sem odio bibendum justo, vel imperdiet sapien wisi sed libero. Integer imperdiet lectus quis justo. Etiam egestas wisi a erat. Quisque tincidunt scelerisque libero. In dapibus augue non sapien.</p>
                 <a href=""  class="faq-cta-card__button white-color blue-bg">CONTACT US<span class="arrow--long">&xrarr;</span></a>
             </article>
-        </section>
-        <!-- Konec - Build a career -->
-        <!-- Sekce - Partners -->
-        <div class="brands-background orange-bg">
         </div>
-        <section class="brands">
+    </section>
+    <!-- Konec - Build a career -->
+    <!-- Sekce - Partners -->
+    <section class="content-wrapper content-wrapper--no-p orange-bg">
+        <div class="content-box brands">
             <img src="images/brand1.png" alt="Brand1">
             <img src="images/brand2.png" alt="Brand2">
             <img src="images/brand3.png" alt="Brand3">
             <img src="images/brand4.png" alt="Brand4">
             <img src="images/brand5.png" alt="Brand5">
-        </section>
-        <!-- Konec - Partners -->
-        <!-- Footer -->
-        <div class="footer-background"></div>
-        <footer class="footer">
+        </div>  
+    </section>
+    <!-- Konec - Partners -->
+    <!-- Footer -->
+    <footer class="content-wrapper content-wrapper--no-p footer-background">
+        <div class="content-box footer">
             <div class="footer-header">
                 <div class="footer-logo">
                     <img src="images/logo_white.png" alt="Logo webové stránky" width="60" class="logo__img">
@@ -281,14 +285,14 @@
                     <h4 class="newsletter__header white-color">Newsletters</h4>
                     <p class="newsletter__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Ad, harum.ellentesque ipsum. Nam sed tellus id magna elementum tincidunt.</p>
                     <form method="post" action="zpracuj-formular.php" class="newsletter-form">
-                        <input type="text" name="newsletter" placeholder="Enter Your Email" class="newsletter-form__text"><input type="submit" value="&xrarr;" class="newsletter-form__submit orange-bg">
+                        <input type="text" name="newsletter" placeholder="Enter Your Email" class="form__input newsletter-form__text"><input type="submit" value="&xrarr;" class="newsletter-form__submit orange-bg">
                     </form>
                 </article>
             </div>
             <button onclick="scrollUp()" class="scroll-up-btn"><i class="fas fa-angle-up white-color"></i></button>
             <p class="footer__copyright">Copyright &copy; 2020 <span class="white-color"><b>Edu</b>Plus</span> All Rights Reserved</p>
-        </footer>
-        <!-- Konec - Footer -->
-    </div>
+        </div>
+    </footer>
+    <!-- Konec - Footer -->
 </body>
 </html>

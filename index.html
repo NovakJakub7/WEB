@@ -13,9 +13,8 @@
     <script src="https://kit.fontawesome.com/05fce81391.js" crossorigin="anonymous"></script>
     
 </head>
-<body>
-    <div class="index-container">
-        <div class="hero-area-background"></div>
+<body> 
+    <div class="content-wrapper content-wrapper--no-p hero-area-background">   
         <header class="header">
             <div class="header-logo header-logo--index">
                     <img src="images/logo_d-blue.png" alt="Logo webové stránky" width="60" class="logo__img">
@@ -66,12 +65,13 @@
             <div class="header-links header-links--index">
                 <a href="" class="icon-box white-bg"><i class="fab fa-facebook-f fa-fw  "></i></a>
                 <a href="" class="icon-box white-bg"><i class="fab fa-youtube fa-fw "></i></a>
-                <a href="" class="icon-box white-bg"><i class="far fa-user-circle fa-fw "></i>SIGN IN</a>
+                <a href="" class="icon-box white-bg"><i class="far fa-user-circle fa-fw "></i><span class="sign-in">SIGN IN</span></a>
+                <img src="images/Bar.png" alt="" class="header-links__bar">
             </div>
         </header>
         <!-- Uvodní sekce -->
-        <section class="hero-area">
-            <h1 class="main-heading main-heading--no-align orange-color"><span class="heading-tag-before">Welcome To EduPlus</span><strong class="main-heading__title main-heading__title--big heading-primary">More than 1200 Online Courses</strong>
+        <section class="content-box hero-area">
+            <h1 class="main-heading main-heading--no-align orange-color"><span class="heading-tag-before">Welcome To EduPlus</span><strong class="main-heading__title main-heading__title--big heading-primary">More than 1200<br> Online Courses</strong>
             </h1>
             <form method="post" action="Zpracuj-search.php" class="hero-area-form">
                 <div class="form__input-container">
@@ -81,7 +81,7 @@
                 
                 <button type="submit" class="hero-area-form__btn orange-bg">
                     <i class="fas fa-search white-color"></i>
-                  </button>
+                    </button>
             </form>
             <div class="hero-area-content">
                 <p class="hero-area-content__text text-primary">Lorem ipsum, dolor sit consectetur quidem odit adipisicing.</p>
@@ -125,537 +125,538 @@
             </div>
         </section>
         <!-- Konec - Uvodní sekce -->
-        <!-- Sekce - Course Categories -->
-        <section class="courses">
-            <h2 class="main-heading orange-color"><span class="heading-tag">Popular Categories</span><strong class="main-heading__title heading-primary">Course Categories</strong></h2>
-            <div class="courses-container">
-                <article class="courses-article">
-                    <img src="images/course_1.jpg" alt="A man working on a project" width="270">
-                    <div class="courses-article-caption">
-                        <h3 class="courses-article-caption__heading heading-primary">Graphic Design (UI)</h3>
-                        <p class="courses-article-caption__text text-primary">Web Design Course</p>
-                        <small class="courses-article-caption__info text-primary"><i class="fas fa-users icon-m orange-color"></i>250</small>
-                        <small class="courses-article-caption__info text-primary"><i class="fas fa-book icon-m orange-color"></i>800+ Courses</small>
-                    </div>
-                </article>
-                <article class="courses-article">
-                    <img src="images/course_2.jpg" alt="Two women behind a laptop" width="270">
-                    <div class="courses-article-caption">
-                        <h3 class="courses-article-caption__heading heading-primary">Business Studies</h3>
-                        <p class="courses-article-caption__text text-primary">Finance Business</p>
-                        <small class="courses-article-caption__info text-primary"><i class="fas fa-users icon-m orange-color"></i>320</small>
-                        <small class="courses-article-caption__info text-primary"><i class="fas fa-book icon-m orange-color"></i>750+ Courses</small>
-                    </div>
-                </article>
-                <article class="courses-article">
-                    <img src="images/course_3.jpg" alt="A woman sitting behind a computer" width="270">
-                    <div class="courses-article-caption">
-                        <h3 class="courses-article-caption__heading heading-primary">Web Development</h3>
-                        <p class="courses-article-caption__text text-primary">Web Design Course</p>
-                        <small class="courses-article-caption__info text-primary"><i class="fas fa-users icon-m orange-color"></i>280</small>
-                        <small class="courses-article-caption__info text-primary"><i class="fas fa-book icon-m orange-color"></i>450+ Courses</small>
-                    </div>
-                </article>
-                <article class="courses-article">
-                    <img src="images/course_4.jpg" alt="A man with a laptop sitting on a sofa" width="270">
-                    <div class="courses-article-caption">
-                        <h3 class="courses-article-caption__heading heading-primary">Product Engineering</h3>
-                        <p class="courses-article-caption__text text-primary">Web Design Course</p>
-                        <small class="courses-article-caption__info text-primary"><i class="fas fa-users icon-m orange-color"></i>320</small>
-                        <small class="courses-article-caption__info text-primary"><i class="fas fa-book icon-m orange-color"></i>750+ Courses</small>
-                    </div>
-                </article>
-                <article class="courses-article">
-                    <img src="images/course_5.jpg" alt="A man with a camera" width="270">
-                    <div class="courses-article-caption">
-                        <h3 class="courses-article-caption__heading heading-primary">Basic Photography</h3>
-                        <p class="courses-article-caption__text text-primary">Film Movies & Photography</p>
-                        <small class="courses-article-caption__info text-primary"><i class="fas fa-users icon-m orange-color"></i>120</small>
-                        <small class="courses-article-caption__info text-primary"><i class="fas fa-book icon-m orange-color"></i>350+ Courses</small>
-                    </div>
-                </article>
-                <article class="courses-article">
-                    <img src="images/course_6.jpg" alt="A group of doctors" width="270">
-                    <div class="courses-article-caption">
-                        <h3 class="courses-article-caption__heading heading-primary">Medical & Health</h3>
-                        <p class="courses-article-caption__text text-primary">Doctors & Nursing</p>
-                        <small class="courses-article-caption__info text-primary"><i class="fas fa-users icon-m orange-color"></i>320</small>
-                        <small class="courses-article-caption__info text-primary"><i class="fas fa-book icon-m orange-color"></i>750+ Courses</small>
-                    </div>
-                </article>
-                <article class="courses-article">
-                    <img src="images/course_7.jpg" alt="A man pointing a dart" width="270">
-                    <div class="courses-article-caption">
-                        <h3 class="courses-article-caption__heading heading-primary">Marketing Strategy</h3>
-                        <p class="courses-article-caption__text text-primary">Social Media Marketing</p>
-                        <small class="courses-article-caption__info text-primary"><i class="fas fa-users icon-m orange-color"></i>220</small>
-                        <small class="courses-article-caption__info text-primary"><i class="fas fa-book icon-m orange-color"></i>650+ Courses</small>
-                    </div> 
-                </article>
-                <article class="courses-article">
-                    <img src="images/course_8.jpg" alt="Interface of a mobile app" width="270">
-                    <div class="courses-article-caption">
-                        <h3 class="courses-article-caption__heading heading-primary">Mobile UI Design</h3>
-                        <p class="courses-article-caption__text text-primary">Web Design Course</p>
-                        <small class="courses-article-caption__info text-primary"><i class="fas fa-users icon-m orange-color"></i>280</small>
-                        <small class="courses-article-caption__info text-primary"><i class="fas fa-book icon-m orange-color"></i>550+ Courses</small>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <!-- Konec - Course Categories -->
-        <!-- Sekce - Available Courses -->
-        <div class="available-courses-background"></div>
-        <section class="available-courses">
-            <h2 class="main-heading orange-color"><span class="heading-tag">Popular Courses</span><strong class="main-heading__title white-color">Available Courses</strong></h2>
-            <div class="available-courses-container">
-                <article class="available-courses-article">
-                    <div class="available-courses-img-container">
-                        <img src="images/av_course_1.jpg" alt="Classroom full of young people" width="370" class="available-courses-article__img">
-                        <figure class="available-courses-article__avatar">
+    </div>
+    <!-- Sekce - Course Categories -->
+    <section class="content-wrapper courses-container">
+        <h2 class="main-heading orange-color"><span class="heading-tag">Popular Categories</span><strong class="main-heading__title heading-primary">Course Categories</strong></h2>
+        <div class="courses content-box">
+            <article class="courses-article">
+                <img src="images/course_1.jpg" alt="A man working on a project" width="270">
+                <div class="courses-article-caption">
+                    <h3 class="courses-article-caption__heading heading-primary">Graphic Design (UI)</h3>
+                    <p class="courses-article-caption__text text-primary">Web Design Course</p>
+                    <small class="courses-article-caption__info text-primary"><i class="fas fa-users icon-m orange-color"></i>250</small>
+                    <small class="courses-article-caption__info text-primary"><i class="fas fa-book icon-m orange-color"></i>800+ Courses</small>
+                </div>
+            </article>
+            <article class="courses-article">
+                <img src="images/course_2.jpg" alt="Two women behind a laptop" width="270">
+                <div class="courses-article-caption">
+                    <h3 class="courses-article-caption__heading heading-primary">Business Studies</h3>
+                    <p class="courses-article-caption__text text-primary">Finance Business</p>
+                    <small class="courses-article-caption__info text-primary"><i class="fas fa-users icon-m orange-color"></i>320</small>
+                    <small class="courses-article-caption__info text-primary"><i class="fas fa-book icon-m orange-color"></i>750+ Courses</small>
+                </div>
+            </article>
+            <article class="courses-article">
+                <img src="images/course_3.jpg" alt="A woman sitting behind a computer" width="270">
+                <div class="courses-article-caption">
+                    <h3 class="courses-article-caption__heading heading-primary">Web Development</h3>
+                    <p class="courses-article-caption__text text-primary">Web Design Course</p>
+                    <small class="courses-article-caption__info text-primary"><i class="fas fa-users icon-m orange-color"></i>280</small>
+                    <small class="courses-article-caption__info text-primary"><i class="fas fa-book icon-m orange-color"></i>450+ Courses</small>
+                </div>
+            </article>
+            <article class="courses-article">
+                <img src="images/course_4.jpg" alt="A man with a laptop sitting on a sofa" width="270">
+                <div class="courses-article-caption">
+                    <h3 class="courses-article-caption__heading heading-primary">Product Engineering</h3>
+                    <p class="courses-article-caption__text text-primary">Web Design Course</p>
+                    <small class="courses-article-caption__info text-primary"><i class="fas fa-users icon-m orange-color"></i>320</small>
+                    <small class="courses-article-caption__info text-primary"><i class="fas fa-book icon-m orange-color"></i>750+ Courses</small>
+                </div>
+            </article>
+            <article class="courses-article">
+                <img src="images/course_5.jpg" alt="A man with a camera" width="270">
+                <div class="courses-article-caption">
+                    <h3 class="courses-article-caption__heading heading-primary">Basic Photography</h3>
+                    <p class="courses-article-caption__text text-primary">Film Movies & Photography</p>
+                    <small class="courses-article-caption__info text-primary"><i class="fas fa-users icon-m orange-color"></i>120</small>
+                    <small class="courses-article-caption__info text-primary"><i class="fas fa-book icon-m orange-color"></i>350+ Courses</small>
+                </div>
+            </article>
+            <article class="courses-article">
+                <img src="images/course_6.jpg" alt="A group of doctors" width="270">
+                <div class="courses-article-caption">
+                    <h3 class="courses-article-caption__heading heading-primary">Medical & Health</h3>
+                    <p class="courses-article-caption__text text-primary">Doctors & Nursing</p>
+                    <small class="courses-article-caption__info text-primary"><i class="fas fa-users icon-m orange-color"></i>320</small>
+                    <small class="courses-article-caption__info text-primary"><i class="fas fa-book icon-m orange-color"></i>750+ Courses</small>
+                </div>
+            </article>
+            <article class="courses-article">
+                <img src="images/course_7.jpg" alt="A man pointing a dart" width="270">
+                <div class="courses-article-caption">
+                    <h3 class="courses-article-caption__heading heading-primary">Marketing Strategy</h3>
+                    <p class="courses-article-caption__text text-primary">Social Media Marketing</p>
+                    <small class="courses-article-caption__info text-primary"><i class="fas fa-users icon-m orange-color"></i>220</small>
+                    <small class="courses-article-caption__info text-primary"><i class="fas fa-book icon-m orange-color"></i>650+ Courses</small>
+                </div> 
+            </article>
+            <article class="courses-article">
+                <img src="images/course_8.jpg" alt="Interface of a mobile app" width="270">
+                <div class="courses-article-caption">
+                    <h3 class="courses-article-caption__heading heading-primary">Mobile UI Design</h3>
+                    <p class="courses-article-caption__text text-primary">Web Design Course</p>
+                    <small class="courses-article-caption__info text-primary"><i class="fas fa-users icon-m orange-color"></i>280</small>
+                    <small class="courses-article-caption__info text-primary"><i class="fas fa-book icon-m orange-color"></i>550+ Courses</small>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- Konec - Course Categories -->
+    <!-- Sekce - Available Courses -->
+    <section class="content-wrapper available-courses-background">
+        <h2 class="main-heading orange-color"><span class="heading-tag">Popular Courses</span><strong class="main-heading__title white-color">Available Courses</strong></h2>
+        <div class="available-courses content-box">
+            <article class="available-courses-article">
+                <div class="available-courses-img-container">
+                    <img src="images/av_course_1.jpg" alt="Classroom full of young people" width="370" class="available-courses-article__img">
+                    <figure class="available-courses-article__avatar">
+                        <img src="images/instructor_2_crop.jpg" alt="" class="avatar-img">
+                        <figcaption class="avatar-name white-color">Warner</figcaption>
+                    </figure>
+                    <p class="available-courses-article__tag orange-bg white-color">$59.95</p>
+                </div>
+                <div class="available-courses-article-caption">
+                    <p class="available-courses-article-caption__tag white-color">ENGLISH</p>
+                    <i class="fas fa-star orange-color available-courses-article-caption__star"></i><i class="fas fa-star orange-color available-courses-article-caption__star"></i><i class="fas fa-star orange-color available-courses-article-caption__star"></i><i class="fas fa-star orange-color available-courses-article-caption__star"></i><i class="fas fa-star-half-alt orange-color available-courses-article-caption__star"></i>
+                    <h3 class="available-courses-article-caption__heading heading-primary">Best Courses For Learning English</h3>
+                    <div class="line"></div>
+                    <p class="available-courses-article-caption__info text-primary"><i class="fas fa-users icon-m orange-color"></i>25</p>
+                    <p class="available-courses-article-caption__info text-primary"><i class="far fa-clock icon-m orange-color"></i>36hr</p>
+                    <p class="available-courses-article-caption__info text-primary"><i class="far fa-comments icon-m orange-color"></i>2.5k</p>
+                </div>
+                <div class="available-courses-article-caption available-courses-article-caption--hidden orange-bg">
+                    <p class="available-courses-article-caption__tag orange-color white-bg">ENGLISH</p>
+                    <i class="fas fa-star white-color available-courses-article-caption__star "></i><i class="fas fa-star white-color available-courses-article-caption__star"></i><i class="fas fa-star white-color available-courses-article-caption__star"></i><i class="fas fa-star white-color available-courses-article-caption__star"></i><i class="fas fa-star-half-alt white-color available-courses-article-caption__star"></i>
+                    <h3 class="available-courses-article-caption__heading white-color">Best Courses For Learning English</h3>
+                    <div class="available-courses-article-avatar-container">
+                        <figure class="available-courses-article__avatar--in-hover">
                             <img src="images/instructor_2_crop.jpg" alt="" class="avatar-img">
                             <figcaption class="avatar-name white-color">Warner</figcaption>
                         </figure>
-                        <p class="available-courses-article__tag orange-bg white-color">$59.95</p>
+                        <p class="available-courses-article__tag--in-hover white-bg orange-color">$59.95</p>
                     </div>
-                    <div class="available-courses-article-caption">
-                        <p class="available-courses-article-caption__tag white-color">ENGLISH</p>
-                        <i class="fas fa-star orange-color available-courses-article-caption__star"></i><i class="fas fa-star orange-color available-courses-article-caption__star"></i><i class="fas fa-star orange-color available-courses-article-caption__star"></i><i class="fas fa-star orange-color available-courses-article-caption__star"></i><i class="fas fa-star-half-alt orange-color available-courses-article-caption__star"></i>
-                        <h3 class="available-courses-article-caption__heading heading-primary">Best Courses For Learning English</h3>
-                        <div class="line"></div>
-                        <p class="available-courses-article-caption__info text-primary"><i class="fas fa-users icon-m orange-color"></i>25</p>
-                        <p class="available-courses-article-caption__info text-primary"><i class="far fa-clock icon-m orange-color"></i>36hr</p>
-                        <p class="available-courses-article-caption__info text-primary"><i class="far fa-comments icon-m orange-color"></i>2.5k</p>
-                    </div>
-                    <div class="available-courses-article-caption available-courses-article-caption--hidden orange-bg">
-                        <p class="available-courses-article-caption__tag orange-color white-bg">ENGLISH</p>
-                        <i class="fas fa-star white-color available-courses-article-caption__star "></i><i class="fas fa-star white-color available-courses-article-caption__star"></i><i class="fas fa-star white-color available-courses-article-caption__star"></i><i class="fas fa-star white-color available-courses-article-caption__star"></i><i class="fas fa-star-half-alt white-color available-courses-article-caption__star"></i>
-                        <h3 class="available-courses-article-caption__heading white-color">Best Courses For Learning English</h3>
-                        <div class="available-courses-article-avatar-container">
-                            <figure class="available-courses-article__avatar--in-hover">
-                                <img src="images/instructor_2_crop.jpg" alt="" class="avatar-img">
-                                <figcaption class="avatar-name white-color">Warner</figcaption>
-                            </figure>
-                            <p class="available-courses-article__tag--in-hover white-bg orange-color">$59.95</p>
-                        </div>
-                        <p class="white-color">Ut tempus purus at lorem. Etiam dictum tincidunt diam. Etiam bibendum elit eget erat. Quisque porta. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna.</p>
-                        <a href="" class="available-courses-article-caption__link orange-color white-bg">GET ENROLLED <i class="fas fa-arrow-right available-courses-article-caption__arrow"></i></a>
-                        <p class="available-courses-article-caption__info white-color"><i class="fas fa-users icon-m white-color"></i>25</p>
-                        <p class="available-courses-article-caption__info white-color"><i class="far fa-clock icon-m white-color"></i>36hr</p>
-                        <p class="available-courses-article-caption__info white-color"><i class="far fa-comments icon-m white-color"></i>2.5k</p>
-                    </div>
-                </article>
-                <article class="available-courses-article">
-                    <div class="available-courses-img-container">
-                        <img src="images/av_course_2.jpg" alt="A man sitting behind a desk" width="370" class="available-courses-article__img">
-                        <figure class="available-courses-article__avatar">
+                    <p class="white-color">Ut tempus purus at lorem. Etiam dictum tincidunt diam. Etiam bibendum elit eget erat. Quisque porta. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna.</p>
+                    <a href="" class="available-courses-article-caption__link orange-color white-bg">GET ENROLLED <i class="fas fa-arrow-right available-courses-article-caption__arrow"></i></a>
+                    <p class="available-courses-article-caption__info white-color"><i class="fas fa-users icon-m white-color"></i>25</p>
+                    <p class="available-courses-article-caption__info white-color"><i class="far fa-clock icon-m white-color"></i>36hr</p>
+                    <p class="available-courses-article-caption__info white-color"><i class="far fa-comments icon-m white-color"></i>2.5k</p>
+                </div>
+            </article>
+            <article class="available-courses-article">
+                <div class="available-courses-img-container">
+                    <img src="images/av_course_2.jpg" alt="A man sitting behind a desk" width="370" class="available-courses-article__img">
+                    <figure class="available-courses-article__avatar">
+                        <img src="images/instructor_2_crop.jpg" alt="" class="avatar-img">
+                        <figcaption class="avatar-name white-color">Warner</figcaption>
+                    </figure>
+                    <p class="available-courses-article__tag orange-bg white-color">$59.95</p>
+                </div>
+                <div class="available-courses-article-caption">
+                    <p class="available-courses-article-caption__tag white-color">BUSINESS</p>
+                    <i class="fas fa-star orange-color available-courses-article-caption__star "></i><i class="fas fa-star orange-color available-courses-article-caption__star"></i><i class="fas fa-star orange-color available-courses-article-caption__star"></i><i class="fas fa-star orange-color available-courses-article-caption__star"></i><i class="fas fa-star-half-alt orange-color available-courses-article-caption__star"></i>
+                    <h3 class="available-courses-article-caption__heading heading-primary">Learning About Consulting Business Solutions</h3>
+                    <div class="line"></div>
+                    <p class="available-courses-article-caption__info text-primary"><i class="fas fa-users icon-m orange-color"></i>45</p>
+                    <p class="available-courses-article-caption__info text-primary"><i class="far fa-clock icon-m orange-color"></i>40hr</p>
+                    <p class="available-courses-article-caption__info text-primary"><i class="far fa-comments icon-m orange-color"></i>1.5k</p>
+                </div>
+                <div class="available-courses-article-caption available-courses-article-caption--hidden orange-bg">
+                    <p class="available-courses-article-caption__tag orange-color white-bg">BUSINESS</p>
+                    <i class="fas fa-star white-color available-courses-article-caption__star "></i><i class="fas fa-star white-color available-courses-article-caption__star"></i><i class="fas fa-star white-color available-courses-article-caption__star"></i><i class="fas fa-star white-color available-courses-article-caption__star"></i><i class="fas fa-star-half-alt white-color available-courses-article-caption__star"></i>
+                    <h3 class="available-courses-article-caption__heading white-color">Learning About Consulting Business Solutions</h3>
+                    <div class="available-courses-article-avatar-container">
+                        <figure class="available-courses-article__avatar--in-hover">
                             <img src="images/instructor_2_crop.jpg" alt="" class="avatar-img">
                             <figcaption class="avatar-name white-color">Warner</figcaption>
                         </figure>
-                        <p class="available-courses-article__tag orange-bg white-color">$59.95</p>
+                        <p class="available-courses-article__tag--in-hover white-bg orange-color">$59.95</p>
                     </div>
-                    <div class="available-courses-article-caption">
-                        <p class="available-courses-article-caption__tag white-color">BUSINESS</p>
-                        <i class="fas fa-star orange-color available-courses-article-caption__star "></i><i class="fas fa-star orange-color available-courses-article-caption__star"></i><i class="fas fa-star orange-color available-courses-article-caption__star"></i><i class="fas fa-star orange-color available-courses-article-caption__star"></i><i class="fas fa-star-half-alt orange-color available-courses-article-caption__star"></i>
-                        <h3 class="available-courses-article-caption__heading heading-primary">Learning About Consulting Business Solutions</h3>
-                        <div class="line"></div>
-                        <p class="available-courses-article-caption__info text-primary"><i class="fas fa-users icon-m orange-color"></i>45</p>
-                        <p class="available-courses-article-caption__info text-primary"><i class="far fa-clock icon-m orange-color"></i>40hr</p>
-                        <p class="available-courses-article-caption__info text-primary"><i class="far fa-comments icon-m orange-color"></i>1.5k</p>
-                    </div>
-                    <div class="available-courses-article-caption available-courses-article-caption--hidden orange-bg">
-                        <p class="available-courses-article-caption__tag orange-color white-bg">BUSINESS</p>
-                        <i class="fas fa-star white-color available-courses-article-caption__star "></i><i class="fas fa-star white-color available-courses-article-caption__star"></i><i class="fas fa-star white-color available-courses-article-caption__star"></i><i class="fas fa-star white-color available-courses-article-caption__star"></i><i class="fas fa-star-half-alt white-color available-courses-article-caption__star"></i>
-                        <h3 class="available-courses-article-caption__heading white-color">Learning About Consulting Business Solutions</h3>
-                        <div class="available-courses-article-avatar-container">
-                            <figure class="available-courses-article__avatar--in-hover">
-                                <img src="images/instructor_2_crop.jpg" alt="" class="avatar-img">
-                                <figcaption class="avatar-name white-color">Warner</figcaption>
-                            </figure>
-                            <p class="available-courses-article__tag--in-hover white-bg orange-color">$59.95</p>
-                        </div>
-                        <p class="white-color">Ut tempus purus at lorem. Etiam dictum tincidunt diam. Etiam bibendum elit eget erat. Quisque porta. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna.</p>
-                        <a href="" class="available-courses-article-caption__link orange-color white-bg">GET ENROLLED <i class="fas fa-arrow-right available-courses-article-caption__arrow"></i></a>
-                        <p class="available-courses-article-caption__info white-color"><i class="fas fa-users icon-m white-color"></i>45</p>
-                        <p class="available-courses-article-caption__info white-color"><i class="far fa-clock icon-m white-color"></i>40hr</p>
-                        <p class="available-courses-article-caption__info white-color"><i class="far fa-comments icon-m white-color"></i>1.5k</p>
-                    </div>
-                </article>
-                <article class="available-courses-article">
-                    <div class="available-courses-img-container">
-                        <img src="images/av_course_3.jpg" alt="People working on a laptop" width="370" class="available-courses-article__img">
-                        <figure class="available-courses-article__avatar">
+                    <p class="white-color">Ut tempus purus at lorem. Etiam dictum tincidunt diam. Etiam bibendum elit eget erat. Quisque porta. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna.</p>
+                    <a href="" class="available-courses-article-caption__link orange-color white-bg">GET ENROLLED <i class="fas fa-arrow-right available-courses-article-caption__arrow"></i></a>
+                    <p class="available-courses-article-caption__info white-color"><i class="fas fa-users icon-m white-color"></i>45</p>
+                    <p class="available-courses-article-caption__info white-color"><i class="far fa-clock icon-m white-color"></i>40hr</p>
+                    <p class="available-courses-article-caption__info white-color"><i class="far fa-comments icon-m white-color"></i>1.5k</p>
+                </div>
+            </article>
+            <article class="available-courses-article">
+                <div class="available-courses-img-container">
+                    <img src="images/av_course_3.jpg" alt="People working on a laptop" width="370" class="available-courses-article__img">
+                    <figure class="available-courses-article__avatar">
+                        <img src="images/instructor_2_crop.jpg" alt="" class="avatar-img">
+                        <figcaption class="avatar-name white-color">Warner</figcaption>
+                    </figure>
+                    <p class="available-courses-article__tag orange-bg white-color">$59.95</p>
+                </div>
+                <div class="available-courses-article-caption">
+                    <p class="available-courses-article-caption__tag white-color">DESIGN</p>
+                    <i class="fas fa-star orange-color available-courses-article-caption__star "></i><i class="fas fa-star orange-color available-courses-article-caption__star"></i><i class="fas fa-star orange-color available-courses-article-caption__star"></i><i class="fas fa-star orange-color available-courses-article-caption__star"></i><i class="fas fa-star-half-alt orange-color available-courses-article-caption__star"></i>
+                    <h3 class="available-courses-article-caption__heading heading-primary">Introduction About Basic Web Design For Beginners</h3>
+                    <div class="line"></div>
+                    <p class="available-courses-article-caption__info text-primary"><i class="fas fa-users icon-m orange-color"></i>30</p>
+                    <p class="available-courses-article-caption__info text-primary"><i class="far fa-clock icon-m orange-color"></i>52hr</p>
+                    <p class="available-courses-article-caption__info text-primary"><i class="far fa-comments icon-m orange-color"></i>3.5k</p>
+                </div>
+                <div class="available-courses-article-caption available-courses-article-caption--hidden orange-bg">
+                    <p class="available-courses-article-caption__tag orange-color white-bg">DESIGN</p>
+                    <i class="fas fa-star white-color available-courses-article-caption__star "></i><i class="fas fa-star white-color available-courses-article-caption__star"></i><i class="fas fa-star white-color available-courses-article-caption__star"></i><i class="fas fa-star white-color available-courses-article-caption__star"></i><i class="fas fa-star-half-alt white-color available-courses-article-caption__star"></i>
+                    <h3 class="available-courses-article-caption__heading white-color">Introduction About Basic Web Design For Beginners</h3>
+                    <div class="available-courses-article-avatar-container">
+                        <figure class="available-courses-article__avatar--in-hover">
                             <img src="images/instructor_2_crop.jpg" alt="" class="avatar-img">
                             <figcaption class="avatar-name white-color">Warner</figcaption>
                         </figure>
-                        <p class="available-courses-article__tag orange-bg white-color">$59.95</p>
+                        <p class="available-courses-article__tag--in-hover white-bg orange-color">$59.95</p>
                     </div>
-                    <div class="available-courses-article-caption">
-                        <p class="available-courses-article-caption__tag white-color">DESIGN</p>
-                        <i class="fas fa-star orange-color available-courses-article-caption__star "></i><i class="fas fa-star orange-color available-courses-article-caption__star"></i><i class="fas fa-star orange-color available-courses-article-caption__star"></i><i class="fas fa-star orange-color available-courses-article-caption__star"></i><i class="fas fa-star-half-alt orange-color available-courses-article-caption__star"></i>
-                        <h3 class="available-courses-article-caption__heading heading-primary">Introduction About Basic Web Design For Beginners</h3>
-                        <div class="line"></div>
-                        <p class="available-courses-article-caption__info text-primary"><i class="fas fa-users icon-m orange-color"></i>30</p>
-                        <p class="available-courses-article-caption__info text-primary"><i class="far fa-clock icon-m orange-color"></i>52hr</p>
-                        <p class="available-courses-article-caption__info text-primary"><i class="far fa-comments icon-m orange-color"></i>3.5k</p>
+                    <p class="white-color">Ut tempus purus at lorem. Etiam dictum tincidunt diam. Etiam bibendum elit eget erat. Quisque porta. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna.</p>
+                    <a href="" class="available-courses-article-caption__link orange-color white-bg">GET ENROLLED <i class="fas fa-arrow-right available-courses-article-caption__arrow"></i></a>
+                    <p class="available-courses-article-caption__info white-color"><i class="fas fa-users icon-m white-color"></i>30</p>
+                    <p class="available-courses-article-caption__info white-color"><i class="far fa-clock icon-m white-color"></i>52hr</p>
+                    <p class="available-courses-article-caption__info white-color"><i class="far fa-comments icon-m white-color"></i>3.5k</p>
+                </div>
+            </article>
+        </div>
+        <div class="available-courses-btn-container">
+            <a href="" class="available-courses-btn-container__btn">VIEW ALL COURSES<span class="arrow--long">&xrarr;</span></a>
+        </div>
+    </section>
+    <!-- Konec - Available Courses -->
+    <!-- Sekce - Campus Gallery -->
+    <section class="content-wrapper">
+        <h2 class="main-heading orange-color"><span class="heading-tag">Photo & Album</span><strong class="main-heading__title heading-primary">Campus Gallery</strong></h2>
+        <ul class="gallery-menu">
+            <li class="gallery-menu__item "><a href="" class="heading-primary">Show All</a></li>
+            <li class="gallery-menu__item "><a href="" class="heading-primary">University</a></li>
+            <li class="gallery-menu__item "><a href="" class="heading-primary">Group Study</a></li>
+            <li class="gallery-menu__item "><a href="" class="heading-primary">Awards</a></li>
+            <li class="gallery-menu__item "><a href="" class="heading-primary">Students</a></li>
+            <li class="gallery-menu__item "><a href="" class="heading-primary">Teachers</a></li>
+            <li class="gallery-menu__item"><a href="" class="heading-primary">Campus</a></li>
+        </ul>
+        <!-- Obrázky -->
+        <div class="gallery content-box">
+            <div class="gallery-img-wrap">
+                <img src="images/gallery_1.jpg" alt="A group of teenagers" width="370" class="gallery__img">
+                <div class="gallery-img-description">
+                    <h3 class="gallery-img-description__heading">Classes</h3>
+                    <p class="gallery-img-description__subheading">University Interior</p>
+                    <a href="images/gallery/gallery_big_1.jpg" class="gallery-img-description__link orange-bg white-color"><i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="gallery-img-wrap">
+                <img src="images/gallery_2.jpg" alt="A group of young people doing homework outside" width="370" class="gallery__img">
+                <div class="gallery-img-description">
+                    <h3 class="gallery-img-description__heading">Group Study</h3>
+                    <p class="gallery-img-description__subheading">University Campus</p>
+                    <a href="images/gallery/gallery_big_2.jpg" class="gallery-img-description__link orange-bg white-color"><i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="gallery-img-wrap">
+                <img src="images/gallery_3.jpg" alt="A group of young people in a park" width="370" class="gallery__img">
+                <div class="gallery-img-description">
+                    <h3 class="gallery-img-description__heading">Outside the University</h3>
+                    <p class="gallery-img-description__subheading">University Campus</p>
+                    <a href="images/gallery/gallery_big_3.jpg" class="gallery-img-description__link orange-bg white-color"><i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="gallery-img-wrap">
+                <img src="images/gallery_4.jpg" alt="A woman in a library" width="370" class="gallery__img">
+                <div class="gallery-img-description">
+                    <h3 class="gallery-img-description__heading">University Libraries</h3>
+                    <p class="gallery-img-description__subheading">University Campus</p>
+                    <a href="images/gallery/gallery_big_4.jpg" class="gallery-img-description__link orange-bg white-color"><i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="gallery-img-wrap">
+                <img src="images/gallery_5.jpg" alt="A group of young people working on a project" width="370" class="gallery__img">
+                <div class="gallery-img-description">
+                    <h3 class="gallery-img-description__heading">Student Projects</h3>
+                    <p class="gallery-img-description__subheading">University Campus</p>
+                    <a href="images/gallery/gallery_big_5.jpg" class="gallery-img-description__link orange-bg white-color"><i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="gallery-img-wrap">
+                <img src="images/gallery_6.jpg" alt="A group of young people sitting at stairs outside" width="370" class="gallery__img">
+                <div class="gallery-img-description">
+                    <h3 class="gallery-img-description__heading">Free time</h3>
+                    <p class="gallery-img-description__subheading">University Campus</p>
+                    <a href="images/gallery/gallery_big_6.jpg" class="gallery-img-description__link orange-bg white-color"><i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Konec - Campus Gallery -->
+    <!-- Sekce - Expert Instructors -->
+    <section class="content-wrapper instructors-background">   
+        <h2 class="main-heading orange-color"><span class="heading-tag">Team Members</span><strong class="main-heading__title heading-primary">Expert Instructors</strong></h2>
+        <div class="instructors content-box">
+            <article>
+                <img src="images/instructor_1_crop.jpg" alt="A young man smiling" width="270" class="instructors-article-img">
+                <div class="instructors-article-caption">
+                    <h3 class="instructors-article-caption__heading heading-primary">Somalia D. Silva</h3>
+                    <p class="instructors-article-caption__subheading text-primary">Math Teacher</p>
+                    <div class="line"></div>
+                    <p class="instructors-article-caption__info text-primary"><i class="fas fa-book icon-m orange-color"></i>750+ Courses</p>
+                    <div class="instructors-article-caption__link orange-bg"><span class="white-color">+</span>
+                        <ul class="sublinks">
+                            <li class="sublinks__item">
+                                <a href=""><span class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x yellow-color"></i>
+                                <i class="fab  fa-twitter fa-stack-1x white-color"></i>
+                                </span></a>
+                            </li>
+                            <li class="sublinks__item">
+                                <a href=""><span class="fa-stack">
+                                    <i class="fa fa-circle fa-stack-2x yt-color"></i>
+                                    <i class="fab fa-youtube fa-stack-1x white-color"></i>
+                                </span></a>
+                            </li>
+                            <li class="sublinks__item">
+                                <a href=""><span class="fa-stack">
+                                    <i class="fa fa-circle fa-stack-2x blue-color"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x white-color"></i>
+                                </span></a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="available-courses-article-caption available-courses-article-caption--hidden orange-bg">
-                        <p class="available-courses-article-caption__tag orange-color white-bg">DESIGN</p>
-                        <i class="fas fa-star white-color available-courses-article-caption__star "></i><i class="fas fa-star white-color available-courses-article-caption__star"></i><i class="fas fa-star white-color available-courses-article-caption__star"></i><i class="fas fa-star white-color available-courses-article-caption__star"></i><i class="fas fa-star-half-alt white-color available-courses-article-caption__star"></i>
-                        <h3 class="available-courses-article-caption__heading white-color">Introduction About Basic Web Design For Beginners</h3>
-                        <div class="available-courses-article-avatar-container">
-                            <figure class="available-courses-article__avatar--in-hover">
-                                <img src="images/instructor_2_crop.jpg" alt="" class="avatar-img">
-                                <figcaption class="avatar-name white-color">Warner</figcaption>
-                            </figure>
-                            <p class="available-courses-article__tag--in-hover white-bg orange-color">$59.95</p>
-                        </div>
-                        <p class="white-color">Ut tempus purus at lorem. Etiam dictum tincidunt diam. Etiam bibendum elit eget erat. Quisque porta. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna.</p>
-                        <a href="" class="available-courses-article-caption__link orange-color white-bg">GET ENROLLED <i class="fas fa-arrow-right available-courses-article-caption__arrow"></i></a>
-                        <p class="available-courses-article-caption__info white-color"><i class="fas fa-users icon-m white-color"></i>30</p>
-                        <p class="available-courses-article-caption__info white-color"><i class="far fa-clock icon-m white-color"></i>52hr</p>
-                        <p class="available-courses-article-caption__info white-color"><i class="far fa-comments icon-m white-color"></i>3.5k</p>
+                </div>
+            </article>
+            <article>
+                <img src="images/instructor_2_crop.jpg" alt="A young man smiling" width="270" class="instructors-article-img">
+                <div class="instructors-article-caption">
+                    <h3 class="instructors-article-caption__heading heading-primary">David Warner</h3>
+                    <p class="instructors-article-caption__subheading text-primary">English Teacher</p>
+                    <div class="line"></div>
+                    <p class="instructors-article-caption__info text-primary"><i class="fas fa-book icon-m orange-color"></i>3850+ Courses</p>
+                    <div class="instructors-article-caption__link orange-bg"><span class="white-color">+</span>
+                        <ul class="sublinks">
+                            <li class="sublinks__item">
+                                <a href=""><span class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x yellow-color"></i>
+                                <i class="fab  fa-twitter fa-stack-1x white-color"></i>
+                                </span></a>
+                            </li>
+                            <li class="sublinks__item">
+                                <a href=""><span class="fa-stack">
+                                    <i class="fa fa-circle fa-stack-2x yt-color"></i>
+                                    <i class="fab fa-youtube fa-stack-1x white-color"></i>
+                                </span></a>
+                            </li>
+                            <li class="sublinks__item">
+                                <a href=""><span class="fa-stack">
+                                    <i class="fa fa-circle fa-stack-2x blue-color"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x white-color"></i>
+                                </span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <img src="images/instructor_3_crop.jpg" alt="A young man smiling" width="270" class="instructors-article-img">
+                <div class="instructors-article-caption">
+                    <h3 class="instructors-article-caption__heading heading-primary">Xavi Toni Crusse</h3>
+                    <p class="instructors-article-caption__subheading text-primary">Computer Scientist</p>
+                    <div class="line"></div>
+                    <p class="instructors-article-caption__info text-primary"><i class="fas fa-book icon-m orange-color"></i>630+ Courses</p>
+                    <div class="instructors-article-caption__link orange-bg"><span class="white-color">+</span>
+                        <ul class="sublinks">
+                            <li class="sublinks__item">
+                                <a href=""><span class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x yellow-color"></i>
+                                <i class="fab  fa-twitter fa-stack-1x white-color"></i>
+                                </span></a>
+                            </li>
+                            <li class="sublinks__item">
+                                <a href=""><span class="fa-stack">
+                                    <i class="fa fa-circle fa-stack-2x yt-color"></i>
+                                    <i class="fab fa-youtube fa-stack-1x white-color"></i>
+                                </span></a>
+                            </li>
+                            <li class="sublinks__item">
+                                <a href=""><span class="fa-stack">
+                                    <i class="fa fa-circle fa-stack-2x blue-color"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x white-color"></i>
+                                </span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <img src="images/instructor_4_crop.jpg" alt="A young man smiling" width="270" class="instructors-article-img">
+                <div class="instructors-article-caption">
+                    <h3 class="instructors-article-caption__heading heading-primary">Shaine Watson</h3>
+                    <p class="instructors-article-caption__subheading text-primary">Web Designer</p>
+                    <div class="line"></div>
+                    <p class="instructors-article-caption__info text-primary"><i class="fas fa-book icon-m orange-color"></i>980+ Courses</p>
+                    <div class="instructors-article-caption__link orange-bg"><span class="white-color">+</span>
+                        <ul class="sublinks">
+                            <li class="sublinks__item">
+                                <a href=""><span class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x yellow-color"></i>
+                                <i class="fab  fa-twitter fa-stack-1x white-color"></i>
+                                </span></a>
+                            </li>
+                            <li class="sublinks__item">
+                                <a href=""><span class="fa-stack">
+                                    <i class="fa fa-circle fa-stack-2x yt-color"></i>
+                                    <i class="fab fa-youtube fa-stack-1x white-color"></i>
+                                </span></a>
+                            </li>
+                            <li class="sublinks__item">
+                                <a href=""><span class="fa-stack">
+                                    <i class="fa fa-circle fa-stack-2x blue-color"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x white-color"></i>
+                                </span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- Konec - Expert Instructors -->
+    <!-- Sekce - Upcoming Events -->
+    <section class="content-wrapper">
+        <h2 class="main-heading orange-color"><span class="heading-tag">Latest Events</span><strong class="main-heading__title heading-primary">Upcoming Events</strong></h2>
+        <div class="events content-box">
+            <article class="events-article">
+                <img   srcset="images/event_1_770.jpg 770w,
+                            images/event_1_570.jpg 570w"
+                        sizes="(max-width: 800px) 570px, 770px"
+                        src="images/event_1_770.jpg" alt="A group of people smiling at the camera" class="events-article__img">
+                <div class="events-article-caption">
+                    <span class="events-article-caption__price orange-bg white-color">$20</span>
+                    <p class="events-article-caption__info text-primary"><i class="far fa-calendar-alt icon-m orange-color"></i><time datetime="2020-11-25">25 NOV 2020</time></p>
+                    <p class="events-article-caption__info text-primary"><i class="far fa-clock icon-m orange-color"></i><time datetime="2020-11-25T08:00">08 AM</time> - <time datetime="2020-11-25T21:00">09 PM</time></p>
+                    <p class="events-article-caption__info text-primary"><i class="fas fa-map-marker-alt icon-m orange-color"></i>PARIS,FRANCE</p>
+                    <h3 class="events-article-caption__heading heading-primary">Web Design & Development Conference 2020</h3>
+                    <p class="events-article-caption__text text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Modi nostrum perferendis laudantium exercitationem optio, quidem odit dolores architecto tempore tempora?</p>
+                    <a href="" class="events-article-caption__link white-color orange-bg">JOIN EVENT<span class="arrow--long">&xrarr;</span></a>
+                </div>
+            </article>
+            <div class="events-aside">
+                <article class="events-aside-article">
+                    <img src="images/event_2_370.jpg" alt="Class in school" width="370" class="events-aside-article__img">
+                    <p class="events-aside-article__price white-color orange-bg">$25</p>
+                    <div class="events-aside-article-text">
+                        <p class="events-aside-article-text__info"><i class="far fa-calendar-alt icon-m orange-color"></i><time datetime="2020-11-25">25 NOV 2020</time></p>
+                        <p class="events-aside-article-text__info"><i class="far fa-clock icon-m orange-color"></i><time datetime="2020-11-25T08:00">08 AM</time> - <time datetime="2020-11-25T21:00">09 PM</time></p>
+                        <h3 class="events-aside-article-text__heading white-color">Annual Conference 2020</h3>
+                        <a href="" class="events-aside-article-text__link white-color">JOIN EVENT<span class="arrow--long">&xrarr;</span></a>
+                    </div>
+                </article>
+                <article class="events-aside-article">
+                    <img src="images/event_3_370.jpg" alt="A man on an online meeting" width="370" class="events-aside-article__img">
+                    <p class="events-aside-article__price white-color orange-bg">$30</p>
+                    <div class="events-aside-article-text">
+                        <p class="events-aside-article-text__info"><i class="far fa-calendar-alt icon-m orange-color"></i><time datetime="2020-11-25">25 NOV 2020</time></p>
+                        <p class="events-aside-article-text__info"><i class="far fa-clock icon-m orange-color"></i><time datetime="2020-11-25T08:00">08 AM</time> - <time datetime="2020-11-25T21:00">09 PM</time></p>
+                        <h3 class="events-aside-article-text__heading white-color">Annual Conference 2020</h3>
+                        <a href="" class="events-aside-article-text__link white-color">JOIN EVENT<span class="arrow--long">&xrarr;</span></a>
                     </div>
                 </article>
             </div>
-            <div class="available-courses-btn-container">
-                <a href="" class="available-courses-btn-container__btn">VIEW ALL COURSES</a>
-            </div>
-        </section>
-        <!-- Konec - Available Courses -->
-        <!-- Sekce - Campus Gallery -->
-        <section class="gallery">
-            <h2 class="main-heading orange-color"><span class="heading-tag">Photo & Album</span><strong class="main-heading__title heading-primary">Campus Gallery</strong></h2>
-            <ul class="gallery-menu">
-                <li class="gallery-menu__item "><a href="" class="heading-primary">Show All</a></li>
-                <li class="gallery-menu__item "><a href="" class="heading-primary">University</a></li>
-                <li class="gallery-menu__item "><a href="" class="heading-primary">Group Study</a></li>
-                <li class="gallery-menu__item "><a href="" class="heading-primary">Awards</a></li>
-                <li class="gallery-menu__item "><a href="" class="heading-primary">Students</a></li>
-                <li class="gallery-menu__item "><a href="" class="heading-primary">Teachers</a></li>
-                <li class="gallery-menu__item"><a href="" class="heading-primary">Campus</a></li>
-            </ul>
-            <!-- Obrázky -->
-            <div class="gallery-container">
-                <div class="gallery-img-wrap">
-                    <img src="images/gallery_1.jpg" alt="A group of teenagers" width="370" class="gallery__img">
-                    <div class="gallery-img-description">
-                        <h3 class="gallery-img-description__heading">Classes</h3>
-                        <p class="gallery-img-description__subheading">University Interior</p>
-                        <a href="images/gallery/gallery_big_1.jpg" class="gallery-img-description__link orange-bg white-color"><i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="gallery-img-wrap">
-                    <img src="images/gallery_2.jpg" alt="A group of young people doing homework outside" width="370" class="gallery__img">
-                    <div class="gallery-img-description">
-                        <h3 class="gallery-img-description__heading">Group Study</h3>
-                        <p class="gallery-img-description__subheading">University Campus</p>
-                        <a href="images/gallery/gallery_big_2.jpg" class="gallery-img-description__link orange-bg white-color"><i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="gallery-img-wrap">
-                    <img src="images/gallery_3.jpg" alt="A group of young people in a park" width="370" class="gallery__img">
-                    <div class="gallery-img-description">
-                        <h3 class="gallery-img-description__heading">Outside the University</h3>
-                        <p class="gallery-img-description__subheading">University Campus</p>
-                        <a href="images/gallery/gallery_big_3.jpg" class="gallery-img-description__link orange-bg white-color"><i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="gallery-img-wrap">
-                    <img src="images/gallery_4.jpg" alt="A woman in a library" width="370" class="gallery__img">
-                    <div class="gallery-img-description">
-                        <h3 class="gallery-img-description__heading">University Libraries</h3>
-                        <p class="gallery-img-description__subheading">University Campus</p>
-                        <a href="images/gallery/gallery_big_4.jpg" class="gallery-img-description__link orange-bg white-color"><i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="gallery-img-wrap">
-                    <img src="images/gallery_5.jpg" alt="A group of young people working on a project" width="370" class="gallery__img">
-                    <div class="gallery-img-description">
-                        <h3 class="gallery-img-description__heading">Student Projects</h3>
-                        <p class="gallery-img-description__subheading">University Campus</p>
-                        <a href="images/gallery/gallery_big_5.jpg" class="gallery-img-description__link orange-bg white-color"><i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="gallery-img-wrap">
-                    <img src="images/gallery_6.jpg" alt="A group of young people sitting at stairs outside" width="370" class="gallery__img">
-                    <div class="gallery-img-description">
-                        <h3 class="gallery-img-description__heading">Free time</h3>
-                        <p class="gallery-img-description__subheading">University Campus</p>
-                        <a href="images/gallery/gallery_big_6.jpg" class="gallery-img-description__link orange-bg white-color"><i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Konec - Campus Gallery -->
-        <!-- Sekce - Expert Instructors -->
-        <div class="instructors-background"></div>
-        <section class="instructors">   
-            <h2 class="main-heading orange-color"><span class="heading-tag">Team Members</span><strong class="main-heading__title heading-primary">Expert Instructors</strong></h2>
-            <div class="instructors-container">
-                <article>
-                    <img src="images/instructor_1_crop.jpg" alt="A young man smiling" width="270" class="instructors-article-img">
-                    <div class="instructors-article-caption">
-                        <h3 class="instructors-article-caption__heading heading-primary">Somalia D. Silva</h3>
-                        <p class="instructors-article-caption__subheading text-primary">Math Teacher</p>
-                        <div class="line"></div>
-                        <p class="instructors-article-caption__info text-primary"><i class="fas fa-book icon-m orange-color"></i>750+ Courses</p>
-                        <div class="instructors-article-caption__link orange-bg"><span class="white-color">+</span>
-                            <ul class="sublinks">
-                                <li class="sublinks__item">
-                                    <a href=""><span class="fa-stack">
-                                    <i class="fa fa-circle fa-stack-2x yellow-color"></i>
-                                    <i class="fab  fa-twitter fa-stack-1x white-color"></i>
-                                    </span></a>
-                                </li>
-                                <li class="sublinks__item">
-                                    <a href=""><span class="fa-stack">
-                                        <i class="fa fa-circle fa-stack-2x yt-color"></i>
-                                        <i class="fab fa-youtube fa-stack-1x white-color"></i>
-                                    </span></a>
-                                </li>
-                                <li class="sublinks__item">
-                                    <a href=""><span class="fa-stack">
-                                        <i class="fa fa-circle fa-stack-2x blue-color"></i>
-                                        <i class="fab fa-facebook-f fa-stack-1x white-color"></i>
-                                    </span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-                <article>
-                    <img src="images/instructor_2_crop.jpg" alt="A young man smiling" width="270" class="instructors-article-img">
-                    <div class="instructors-article-caption">
-                        <h3 class="instructors-article-caption__heading heading-primary">David Warner</h3>
-                        <p class="instructors-article-caption__subheading text-primary">English Teacher</p>
-                        <div class="line"></div>
-                        <p class="instructors-article-caption__info text-primary"><i class="fas fa-book icon-m orange-color"></i>3850+ Courses</p>
-                        <div class="instructors-article-caption__link orange-bg"><span class="white-color">+</span>
-                            <ul class="sublinks">
-                                <li class="sublinks__item">
-                                    <a href=""><span class="fa-stack">
-                                    <i class="fa fa-circle fa-stack-2x yellow-color"></i>
-                                    <i class="fab  fa-twitter fa-stack-1x white-color"></i>
-                                    </span></a>
-                                </li>
-                                <li class="sublinks__item">
-                                    <a href=""><span class="fa-stack">
-                                        <i class="fa fa-circle fa-stack-2x yt-color"></i>
-                                        <i class="fab fa-youtube fa-stack-1x white-color"></i>
-                                    </span></a>
-                                </li>
-                                <li class="sublinks__item">
-                                    <a href=""><span class="fa-stack">
-                                        <i class="fa fa-circle fa-stack-2x blue-color"></i>
-                                        <i class="fab fa-facebook-f fa-stack-1x white-color"></i>
-                                    </span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-                <article>
-                    <img src="images/instructor_3_crop.jpg" alt="A young man smiling" width="270" class="instructors-article-img">
-                    <div class="instructors-article-caption">
-                        <h3 class="instructors-article-caption__heading heading-primary">Xavi Toni Crusse</h3>
-                        <p class="instructors-article-caption__subheading text-primary">Computer Scientist</p>
-                        <div class="line"></div>
-                        <p class="instructors-article-caption__info text-primary"><i class="fas fa-book icon-m orange-color"></i>630+ Courses</p>
-                        <div class="instructors-article-caption__link orange-bg"><span class="white-color">+</span>
-                            <ul class="sublinks">
-                                <li class="sublinks__item">
-                                    <a href=""><span class="fa-stack">
-                                    <i class="fa fa-circle fa-stack-2x yellow-color"></i>
-                                    <i class="fab  fa-twitter fa-stack-1x white-color"></i>
-                                    </span></a>
-                                </li>
-                                <li class="sublinks__item">
-                                    <a href=""><span class="fa-stack">
-                                        <i class="fa fa-circle fa-stack-2x yt-color"></i>
-                                        <i class="fab fa-youtube fa-stack-1x white-color"></i>
-                                    </span></a>
-                                </li>
-                                <li class="sublinks__item">
-                                    <a href=""><span class="fa-stack">
-                                        <i class="fa fa-circle fa-stack-2x blue-color"></i>
-                                        <i class="fab fa-facebook-f fa-stack-1x white-color"></i>
-                                    </span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-                <article>
-                    <img src="images/instructor_4_crop.jpg" alt="A young man smiling" width="270" class="instructors-article-img">
-                    <div class="instructors-article-caption">
-                        <h3 class="instructors-article-caption__heading heading-primary">Shaine Watson</h3>
-                        <p class="instructors-article-caption__subheading text-primary">Web Designer</p>
-                        <div class="line"></div>
-                        <p class="instructors-article-caption__info text-primary"><i class="fas fa-book icon-m orange-color"></i>980+ Courses</p>
-                        <div class="instructors-article-caption__link orange-bg"><span class="white-color">+</span>
-                            <ul class="sublinks">
-                                <li class="sublinks__item">
-                                    <a href=""><span class="fa-stack">
-                                    <i class="fa fa-circle fa-stack-2x yellow-color"></i>
-                                    <i class="fab  fa-twitter fa-stack-1x white-color"></i>
-                                    </span></a>
-                                </li>
-                                <li class="sublinks__item">
-                                    <a href=""><span class="fa-stack">
-                                        <i class="fa fa-circle fa-stack-2x yt-color"></i>
-                                        <i class="fab fa-youtube fa-stack-1x white-color"></i>
-                                    </span></a>
-                                </li>
-                                <li class="sublinks__item">
-                                    <a href=""><span class="fa-stack">
-                                        <i class="fa fa-circle fa-stack-2x blue-color"></i>
-                                        <i class="fab fa-facebook-f fa-stack-1x white-color"></i>
-                                    </span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <!-- Konec - Expert Instructors -->
-        <!-- Sekce - Upcoming Events -->
-        <section class="events">
-            <h2 class="main-heading orange-color"><span class="heading-tag">Latest Events</span><strong class="main-heading__title heading-primary">Upcoming Events</strong></h2>
-            <div class="events-container">
-                <article class="events-container-article">
-                    <img src="images/event_1.jpg" alt="A group of people smiling at the camera" width="770" class="events-container-article__img">
-                    <div class="events-container-article-caption">
-                        <span class="events-container-article-caption__price orange-bg white-color">$20</span>
-                        <p class="events-container-article-caption__info text-primary"><i class="far fa-calendar-alt icon-m orange-color"></i><time datetime="2020-11-25">25 NOV 2020</time></p>
-                        <p class="events-container-article-caption__info text-primary"><i class="far fa-clock icon-m orange-color"></i><time datetime="2020-11-25T08:00">08 AM</time> - <time datetime="2020-11-25T21:00">09 PM</time></p>
-                        <p class="events-container-article-caption__info text-primary"><i class="fas fa-map-marker-alt icon-m orange-color"></i>PARIS,FRANCE</p>
-                        <h3 class="events-container-article-caption__heading heading-primary">Web Design & Development Conference 2020</h3>
-                        <p class="events-container-article-caption__text text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Modi nostrum perferendis laudantium exercitationem optio, quidem odit dolores architecto tempore tempora?</p>
-                        <a href="" class="events-container-article-caption__link white-color orange-bg">JOIN EVENT<span class="arrow--long">&xrarr;</span></a>
-                    </div>
-                </article>
-                <div class="events-aside">
-                    <article class="events-aside-article">
-                        <img src="images/event_2_crop.jpg" alt="" width="370" class="events-aside-article__img">
-                        <p class="events-aside-article__price white-color orange-bg">$25</p>
-                        <div class="events-aside-article-text">
-                            <p class="events-aside-article-text__info"><i class="far fa-calendar-alt icon-m orange-color"></i><time datetime="2020-11-25">25 NOV 2020</time></p>
-                            <p class="events-aside-article-text__info"><i class="far fa-clock icon-m orange-color"></i><time datetime="2020-11-25T08:00">08 AM</time> - <time datetime="2020-11-25T21:00">09 PM</time></p>
-                            <h3 class="events-aside-article-text__heading white-color">Annual Conference 2020</h3>
-                            <a href="" class="events-aside-article-text__link white-color">JOIN EVENT<span class="arrow--long">&xrarr;</span></a>
-                        </div>
-                    </article>
-                    <article class="events-aside-article">
-                        <img src="images/event_3_crop.jpg" alt="" width="370" class="events-aside-article__img">
-                        <p class="events-aside-article__price white-color orange-bg">$30</p>
-                        <div class="events-aside-article-text">
-                            <p class="events-aside-article-text__info"><i class="far fa-calendar-alt icon-m orange-color"></i><time datetime="2020-11-25">25 NOV 2020</time></p>
-                            <p class="events-aside-article-text__info"><i class="far fa-clock icon-m orange-color"></i><time datetime="2020-11-25T08:00">08 AM</time> - <time datetime="2020-11-25T21:00">09 PM</time></p>
-                            <h3 class="events-aside-article-text__heading white-color">Annual Conference 2020</h3>
-                            <a href="" class="events-aside-article-text__link white-color">JOIN EVENT<span class="arrow--long">&xrarr;</span></a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <div class="events-btn-container">
-                <a href="" class="events-btn-container__link heading-primary">VIEW ALL EVENTS<span class="arrow--long">&xrarr;</span></a>
-            </div>
-        </section>
-        <!-- Konec - Upcoming Events -->
-        <!-- Sekce - What Our Students Say -->
-        <div class="testimonials-background"></div>
-        <section class="testimonials">
-            <h2 class="main-heading white-color"><span class="heading-tag">Students Feedback</span><strong class="main-heading__title">What Our Students Say</strong></h2>
-            <div class="testimonials-content">
-                <div class="testimonials-article-container">
-                    <article class="testimonials-article white-bg active">
-                        <p class="testimonials-article__text-medium heading-primary">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque, illo inventore veritatis et quasi architecto beatae vitae.</p>
-                        <p class="text-primary">Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, amet enim.</p>
-                        
-                        <figure class="testimonials-figure">
-                            <img src="images/instructor_1_crop.jpg" alt="A young man" width="50" class="circle-img">
-                            <figcaption>
-                                <h4 class="testimonials-figure__heading heading-primary">Sousa Fernandes</h4>
-                                <p class="testimonials-figure__subheading orange-color">CEO & Founder</p>
-                            </figcaption>
-                        </figure>
-                        <div class="testimonials-btn-container">
-                            <button onclick="toPrevSlide()" class="testimonials-btn heading-primary"><i class="fas fa-arrow-left"></i></button>
-                            <button onclick="toNextSlide()" class="testimonials-btn heading-primary"><i class="fas fa-arrow-right"></i></i></button>
-                        </div>
-                        <span class="testimonials-quote"><img src="images/quote.png" alt="Quotation marks" width="125"></span>
-                    </article>
-                    <article class="testimonials-article white-bg">
-                        <p class="testimonials-article__text-medium heading-primary"> Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. In enim a arcu imperdiet malesuada. Morbi leo mi.</p>
-                        <p class="text-primary">Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, amet enim.</p>
-                        
-                        <figure class="testimonials-figure">
-                            <img src="images/instructor_2_crop.jpg" alt="A young man" width="50" class="circle-img">
-                            <figcaption>
-                                <h4 class="testimonials-figure__heading heading-primary">Mark Rockwell</h4>
-                                <p class="testimonials-figure__subheading orange-color">IT Student</p>
-                            </figcaption>
-                        </figure>
-                        <div class="testimonials-btn-container">
-                            <button onclick="toPrevSlide()" class="testimonials-btn heading-primary"><i class="fas fa-arrow-left"></i></button>
-                            <button onclick="toNextSlide()" class="testimonials-btn heading-primary"><i class="fas fa-arrow-right"></i></i></button>
-                        </div>
-                        <span class="testimonials-quote"><img src="images/quote.png" alt="Quotation marks" width="125"></span>
-                    </article>
-                    <article class="testimonials-article white-bg">
-                        <p class="testimonials-article__text-medium heading-primary">Maecenas aliquet accumsan leo. Etiam posuere lacus quis dolor. Praesent vitae arcu tempor neque lacinia pretium. Etiam egestas wisi a erat.</p>
-                        <p class="text-primary">Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, amet enim.</p>
-                        
-                        <figure class="testimonials-figure">
-                            <img src="images/instructor_3_crop.jpg" alt="A young man" width="50" class="circle-img">
-                            <figcaption>
-                                <h4 class="testimonials-figure__heading heading-primary">John Doe</h4>
-                                <p class="testimonials-figure__subheading orange-color">Graphics Student</p>
-                            </figcaption>
-                        </figure>
-                        <div class="testimonials-btn-container">
-                            <button onclick="toPrevSlide()" class="testimonials-btn heading-primary"><i class="fas fa-arrow-left"></i></button>
-                            <button onclick="toNextSlide()" class="testimonials-btn heading-primary"><i class="fas fa-arrow-right"></i></i></button>
-                        </div>
-                        <span class="testimonials-quote"><img src="images/quote.png" alt="Quotation marks" width="125"></span>
-                    </article>
-                </div>
-                <div class="testimonials-gallery">
-                    <div class="col1">
-                        <div class="testimonials-gallery-img-container orange-bg">
-                            <img src="images/student_3.jpg" alt="A young man glasses" width="130" class="testimonials-gallery__img testimonials-gallery__img--top-positioned">
-                        </div>
-                        <div class="testimonials-gallery-img-container white-bg">
-                            <img src="images/student_6.jpg" alt="A young woman" width="130" class="testimonials-gallery__img testimonials-gallery__img--bot-positioned">
-                        </div>
-                    </div>
-                    <div class="col2">
-                        <img src="images/student_2.jpg" alt="A young man" width="130" class="testimonials-gallery__img">
-                        <img src="images/student_4.jpg" alt="A young woman smiling" width="130" class="testimonials-gallery__img">
-                        <img src="images/student_7.jpg" alt="A young man" width="130" class="testimonials-gallery__img">
-                    </div>
-                    <div class="col3">
-                        <img src="images/student_1.jpg" alt="A young man with shades" width="130" class="testimonials-gallery__img">         
-                        <img src="images/student_5.jpg" alt="A young woman smiling" width="130" class="testimonials-gallery__img">
-                        <img src="images/student_8.jpg" alt="A young man" width="130" class="testimonials-gallery__img">
-                    </div>
+        </div>
+        <div class="events-btn-container">
+            <a href="" class="events-btn-container__link heading-primary">VIEW ALL EVENTS<span class="arrow--long">&xrarr;</span></a>
+        </div>
+    </section>
+    <!-- Konec - Upcoming Events -->
+    <!-- Sekce - What Our Students Say -->
+    <section class="content-wrapper testimonials-background">
+        <h2 class="main-heading white-color"><span class="heading-tag">Students Feedback</span><strong class="main-heading__title">What Our Students Say</strong></h2>
+        <div class="testimonials content-box">
+            <div class="testimonials-article-container">
+                <article class="testimonials-article white-bg active">
+                    <p class="testimonials-article__text-medium heading-primary">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque, illo inventore veritatis et quasi architecto beatae vitae.</p>
+                    <p class="text-primary">Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, amet enim.</p>
                     
+                    <figure class="testimonials-figure">
+                        <img src="images/instructor_1_crop.jpg" alt="A young man" width="50" class="circle-img">
+                        <figcaption>
+                            <h4 class="testimonials-figure__heading heading-primary">Sousa Fernandes</h4>
+                            <p class="testimonials-figure__subheading orange-color">CEO & Founder</p>
+                        </figcaption>
+                    </figure>
+                    <div class="testimonials-btn-container">
+                        <button onclick="toPrevSlide()" class="testimonials-btn heading-primary"><i class="fas fa-arrow-left"></i></button>
+                        <button onclick="toNextSlide()" class="testimonials-btn heading-primary"><i class="fas fa-arrow-right"></i></i></button>
+                    </div>
+                    <span class="testimonials-quote"><img src="images/quote.png" alt="Quotation marks" width="125"></span>
+                </article>
+                <article class="testimonials-article white-bg">
+                    <p class="testimonials-article__text-medium heading-primary"> Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. In enim a arcu imperdiet malesuada. Morbi leo mi.</p>
+                    <p class="text-primary">Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, amet enim.</p>
+                    
+                    <figure class="testimonials-figure">
+                        <img src="images/instructor_2_crop.jpg" alt="A young man" width="50" class="circle-img">
+                        <figcaption>
+                            <h4 class="testimonials-figure__heading heading-primary">Mark Rockwell</h4>
+                            <p class="testimonials-figure__subheading orange-color">IT Student</p>
+                        </figcaption>
+                    </figure>
+                    <div class="testimonials-btn-container">
+                        <button onclick="toPrevSlide()" class="testimonials-btn heading-primary"><i class="fas fa-arrow-left"></i></button>
+                        <button onclick="toNextSlide()" class="testimonials-btn heading-primary"><i class="fas fa-arrow-right"></i></i></button>
+                    </div>
+                    <span class="testimonials-quote"><img src="images/quote.png" alt="Quotation marks" width="125"></span>
+                </article>
+                <article class="testimonials-article white-bg">
+                    <p class="testimonials-article__text-medium heading-primary">Maecenas aliquet accumsan leo. Etiam posuere lacus quis dolor. Praesent vitae arcu tempor neque lacinia pretium. Etiam egestas wisi a erat.</p>
+                    <p class="text-primary">Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, amet enim.</p>
+                    
+                    <figure class="testimonials-figure">
+                        <img src="images/instructor_3_crop.jpg" alt="A young man" width="50" class="circle-img">
+                        <figcaption>
+                            <h4 class="testimonials-figure__heading heading-primary">John Doe</h4>
+                            <p class="testimonials-figure__subheading orange-color">Graphics Student</p>
+                        </figcaption>
+                    </figure>
+                    <div class="testimonials-btn-container">
+                        <button onclick="toPrevSlide()" class="testimonials-btn heading-primary"><i class="fas fa-arrow-left"></i></button>
+                        <button onclick="toNextSlide()" class="testimonials-btn heading-primary"><i class="fas fa-arrow-right"></i></i></button>
+                    </div>
+                    <span class="testimonials-quote"><img src="images/quote.png" alt="Quotation marks" width="125"></span>
+                </article>
+            </div>
+            <div class="testimonials-gallery">
+                <div class="col1">
+                    <div class="testimonials-gallery-img-container orange-bg">
+                        <img src="images/student_3.jpg" alt="A young man glasses" width="130" class="testimonials-gallery__img testimonials-gallery__img--top-positioned">
+                    </div>
+                    <div class="testimonials-gallery-img-container white-bg">
+                        <img src="images/student_6.jpg" alt="A young woman" width="130" class="testimonials-gallery__img testimonials-gallery__img--bot-positioned">
+                    </div>
                 </div>
-            </div>  
-        </section>
-        <!-- Konec - What Our Students Say -->
-        <!-- Sekce - Become and Instructor -->
-        <div class="become-instructor-background"></div>
-        <section class="become-instructor">
+                <div class="col2">
+                    <img src="images/student_2.jpg" alt="A young man" width="130" class="testimonials-gallery__img">
+                    <img src="images/student_4.jpg" alt="A young woman smiling" width="130" class="testimonials-gallery__img">
+                    <img src="images/student_7.jpg" alt="A young man" width="130" class="testimonials-gallery__img">
+                </div>
+                <div class="col3">
+                    <img src="images/student_1.jpg" alt="A young man with shades" width="130" class="testimonials-gallery__img">         
+                    <img src="images/student_5.jpg" alt="A young woman smiling" width="130" class="testimonials-gallery__img">
+                    <img src="images/student_8.jpg" alt="A young man" width="130" class="testimonials-gallery__img">
+                </div>
+                
+            </div>
+        </div>  
+    </section>
+    <!-- Konec - What Our Students Say -->
+    <!-- Sekce - Become and Instructor -->
+    <section class="content-wrapper become-instructor-background">
+        <div class="become-instructor content-box">
             <div class="become-instructor-images">
                 <img src="images/become_inst_1.jpg" alt="Man with headphones working on laptop" width="500" class="become-instructor-images__image">
                 <img src="images/become_inst_2.jpg" alt="Woman with a laptop sitting down" width="330" class="become-instructor-images__image become-instructor-images__image--positioned">
             </div>
             <article class="become-instructor-article text-primary">
-                <h2 class="main-heading main-heading--no-align orange-color"><span class="heading-tag-before">Build a Career</span><strong class="main-heading__title heading-primary">Become an Instructor</strong></h2>
+                <h2 class="main-heading main-heading--no-align main-heading--no-m orange-color"><span class="heading-tag-before">Build a Career</span><strong class="main-heading__title heading-primary">Become an Instructor</strong></h2>
                 <p class="become-instructor-article__text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Modi nostrum perferendis laudantium exercitationem optio.</p>
                 <div class="become-instructor-info">
                     <article class="become-instructor-info__01">
@@ -672,68 +673,69 @@
                 <a href="" class="become-instructor-article__button orange-bg white-color">JOIN WITH US <span class="arrow--long">&xrarr;</span></a>
                 <a href="" class="become-instructor-article__button white-bg heading-primary">BECOME A PARTNER</a>
             </article>
-        </section>
-        <!-- Konec - Become and Instructor -->
-        <!-- Sekce - Latest News & Blog -->
-        <section class="news">
-            <h2 class="main-heading orange-color"><span class="heading-tag">Articles & Tips</span><strong class="main-heading__title heading-primary">Latest News & Blog</strong></h2>
-            <div class="news-articles-container">
-                <article class="news-article">
-                    <img src="images/news_1.jpg" alt="Girl reading a book" width="370">
-                    <div class="news-article-caption">
-                        <small class="news-article-caption__info text-primary"><i class="far fa-calendar-alt icon-m orange-color"></i><time datetime="2020-11-25">25 NOV 2020</time></small>
-                        <small class="news-article-caption__info text-primary"><i class="far fa-comments icon-m orange-color"></i>COM(30)</small>
-                        <h3 class="news-article-caption__header">Learning Resources In Challenging Times Online Workshop</h3>
-                        <figure>
-                            <img src="images/instructor_1_crop.jpg" alt="" class="news-article-caption__img">
-                            <figcaption class="news-article-caption__author orange-color">David Simala</figcaption>
-                        </figure>
-                        <a href="" class="news-article-caption-link white-color">&LongRightArrow;</a>
-                    </div>
-                </article>
-                <article class="news-article">
-                    <img src="images/news_2.jpg" alt="A group of young people studiyng in a park" width="370">
-                    <div class="news-article-caption">
-                        <small class="news-article-caption__info text-primary"><i class="far fa-calendar-alt icon-m orange-color"></i><time datetime="2021-01-16">16 FEB 2021</time></small>
-                        <small class="news-article-caption__info text-primary"><i class="far fa-comments icon-m orange-color"></i>COM(40)</small>
-                        <h3 class="news-article-caption__header">Djang Highlights Models Admin And Hardness Relation Database</h3>
-                        <figure>
-                            <img src="images/instructor_1_crop.jpg" alt="" class="news-article-caption__img">
-                            <figcaption class="news-article-caption__author orange-color">David Simala</figcaption>
-                        </figure>
-                        <a href="" class="news-article-caption-link white-color">&LongRightArrow;</a>
-                    </div>
-                </article>
-                <article class="news-article">
-                    <img src="images/news_3.jpg" alt="A group of young people sitting around table" width="370">
-                    <div class="news-article-caption">
-                        <small class="news-article-caption__info text-primary"><i class="far fa-calendar-alt icon-m orange-color"></i><time datetime="2021-03-08">8 MARCH 2021</time></small>
-                        <small class="news-article-caption__info text-primary"><i class="far fa-comments icon-m orange-color"></i>COM(40)</small>
-                        <h3 class="news-article-caption__header">Smash Podcast Episode With Laura Kalbag What Is Online Privacy</h3>
-                        <figure>
-                            <img src="images/instructor_1_crop.jpg" alt="" class="news-article-caption__img">
-                            <figcaption class="news-article-caption__author orange-color">David Simala</figcaption>
-                        </figure>
-                        <a href="" class="news-article-caption-link white-color">&LongRightArrow;</a>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <!-- Konec - Latest News & Blog -->
-        <!-- Sekce - Partners -->
-        <div class="brands-background orange-bg">
         </div>
-        <section class="brands">
+    </section>
+    <!-- Konec - Become and Instructor -->
+    <!-- Sekce - Latest News & Blog -->
+    <section class="content-wrapper">
+        <h2 class="main-heading orange-color"><span class="heading-tag">Articles & Tips</span><strong class="main-heading__title heading-primary">Latest News & Blog</strong></h2>
+        <div class="content-box news">
+            <article class="news-article">
+                <img src="images/news_1.jpg" alt="Girl reading a book" width="370" class="news__img">
+                <div class="news-article-caption">
+                    <small class="news-article-caption__info text-primary"><i class="far fa-calendar-alt icon-m orange-color"></i><time datetime="2020-11-25">25 NOV 2020</time></small>
+                    <small class="news-article-caption__info text-primary"><i class="far fa-comments icon-m orange-color"></i>COM(30)</small>
+                    <h3 class="news-article-caption__header">Learning Resources In Challenging Times Online Workshop</h3>
+                    <figure>
+                        <img src="images/instructor_1_crop.jpg" alt="" class="news-article-caption__img">
+                        <figcaption class="news-article-caption__author orange-color">David Simala</figcaption>
+                    </figure>
+                    <a href="" class="news-article-caption-link white-color">&LongRightArrow;</a>
+                </div>
+            </article>
+            <article class="news-article">
+                <img src="images/news_2.jpg" alt="A group of young people studiyng in a park" width="370" class="news__img">
+                <div class="news-article-caption">
+                    <small class="news-article-caption__info text-primary"><i class="far fa-calendar-alt icon-m orange-color"></i><time datetime="2021-01-16">16 FEB 2021</time></small>
+                    <small class="news-article-caption__info text-primary"><i class="far fa-comments icon-m orange-color"></i>COM(40)</small>
+                    <h3 class="news-article-caption__header">Djang Highlights Models Admin And Hardness Relation Database</h3>
+                    <figure>
+                        <img src="images/instructor_1_crop.jpg" alt="" class="news-article-caption__img">
+                        <figcaption class="news-article-caption__author orange-color">David Simala</figcaption>
+                    </figure>
+                    <a href="" class="news-article-caption-link white-color">&LongRightArrow;</a>
+                </div>
+            </article>
+            <article class="news-article">
+                <img src="images/news_3.jpg" alt="A group of young people sitting around table" width="370" class="news__img">
+                <div class="news-article-caption">
+                    <small class="news-article-caption__info text-primary"><i class="far fa-calendar-alt icon-m orange-color"></i><time datetime="2021-03-08">8 MARCH 2021</time></small>
+                    <small class="news-article-caption__info text-primary"><i class="far fa-comments icon-m orange-color"></i>COM(40)</small>
+                    <h3 class="news-article-caption__header">Smash Podcast Episode With Laura Kalbag What Is Online Privacy</h3>
+                    <figure>
+                        <img src="images/instructor_1_crop.jpg" alt="" class="news-article-caption__img">
+                        <figcaption class="news-article-caption__author orange-color">David Simala</figcaption>
+                    </figure>
+                    <a href="" class="news-article-caption-link white-color">&LongRightArrow;</a>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- Konec - Latest News & Blog -->
+    <!-- Sekce - Partners -->
+    <section class="content-wrapper content-wrapper--no-p orange-bg">
+        <div class="content-box brands">
             <img src="images/brand1.png" alt="Brand1">
             <img src="images/brand2.png" alt="Brand2">
             <img src="images/brand3.png" alt="Brand3">
             <img src="images/brand4.png" alt="Brand4">
             <img src="images/brand5.png" alt="Brand5">
-        </section>
-        <!-- Konec - Partners -->
-        <!-- Footer -->
-        <div class="footer-background"></div>
-        <footer class="footer">
+        </div>  
+    </section>
+    <!-- Konec - Partners -->
+    <!-- Footer -->
+    <footer class="content-wrapper content-wrapper--no-p footer-background">
+        <div class="content-box footer">
             <div class="footer-header">
                 <div class="footer-logo">
                     <img src="images/logo_white.png" alt="Logo webové stránky" width="60" class="logo__img">
@@ -801,10 +803,9 @@
             </div>
             <button onclick="scrollUp()" class="scroll-up-btn"><i class="fas fa-angle-up white-color"></i></button>
             <p class="footer__copyright">Copyright &copy; 2020 <span class="white-color"><b>Edu</b>Plus</span> All Rights Reserved</p>
-        </footer>
-        <!-- Konec - Footer -->
-    
-    </div> 
+        </div>
+    </footer>
+    <!-- Konec - Footer -->
 <script src="lightbox/dist/simple-lightbox.js"></script>
 <script>
     (function() {
