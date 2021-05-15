@@ -9,13 +9,19 @@ Tmavě modrá - #0c3542
 Modrá - #4582ff
 */
 
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body{
-    padding: 0;
-    margin: 0;
     font-family: "Hind";
 }
 
@@ -23,94 +29,20 @@ a{
     text-decoration: none;
 }
 
-/* LAYOUT */
-
-.index-container{
-    display: grid;
-    grid-template-rows: 6em repeat(9, auto) 15em auto;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-areas: 
-    "header header header"
-    ". hero-area ."
-    ". categories ."
-    ". courses ."
-    ". gallery ."
-    ". team ."
-    ". events ."
-    ". testimonials ."
-    ". become-instructor ."
-    ". blog ."
-    ". brands ."
-    ". footer .";
+.content-box{
+    margin: 0 auto;
+    max-width: 1170px;
 }
 
-.about-us-container{
-    display: grid;
-    grid-template-rows: 6em repeat(6, auto) 15em auto;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-areas: 
-    "header header header"
-    "hero-area hero-area hero-area"
-    ". welcome ."
-    ". goals ."
-    ". team ."
-    ". testimonials ."
-    ". blog ."
-    ". brands ."
-    ". footer .";
+.content-wrapper{
+    padding: 8em 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.our-courses-container{
-    display: grid;
-    grid-template-rows: 6em repeat(4, auto) 15em auto;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-areas: 
-    "header header header"
-    "hero-area hero-area hero-area"
-    ". courses ."
-    ". team ."
-    ". blog ."
-    ". brands ."
-    ". footer .";
+.content-wrapper--no-p{
+    padding: 0;
 }
-
-.basic-content-container{
-    display: grid;
-    grid-template-rows: 6em repeat(2, auto) 15em auto;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-areas: 
-    "header header header"
-    "hero-area hero-area hero-area"
-    ". content ."
-    ". brands ."
-    ". footer .";
-}
-
-.basic-content-container--no-brands{
-    grid-template-rows: 6em auto auto auto;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-areas: 
-    "header header header"
-    "hero-area hero-area hero-area"
-    ". content ."
-    ". footer .";
-}
-
-.faq-content-container{
-    display: grid;
-    grid-template-rows: 6em repeat(3, auto) 15em auto;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-areas: 
-    "header header header"
-    "hero-area hero-area hero-area"
-    ". content ."
-    ". cta ."
-    ". brands ."
-    ". footer .";
-}
-
-/* KONEC - LAYOUT */
-
 
 .heading-tag, .heading-tag-before{
     vertical-align: middle;
@@ -157,7 +89,7 @@ a{
 }
 
 .main-heading__title--big{
-    font-size: 4.5em;
+    font-size: 4em;
 }
 
 .circle-img{
@@ -182,9 +114,11 @@ a{
 /* NAVIGACE */
 
 .header{
-    grid-area: header;
     display: flex;
-    padding: 1em 2em 1em 2em;
+    padding: 1em 4.375em;
+}
+
+.header--bg{
     background-color: #eaf4f7;
 }
 
@@ -212,7 +146,7 @@ a{
 }
 
 .navigation--index .menu{
-    margin-left: 6em;
+    margin-left: 3em;
     justify-content: flex-start;
 }
 
@@ -241,6 +175,7 @@ a{
     font-family: "Roboto";
     font-weight: 500;
     font-size: 1em;
+    white-space: nowrap;
 }
   
 .submenu {
@@ -285,7 +220,8 @@ a{
 .header-links a{
    margin-right: .5em;
    color: #062a35;
-   font-weight: bold;
+   font-weight: bold; 
+   white-space: nowrap;
 }
 
 .header-links a i{
@@ -301,19 +237,22 @@ a{
     color: #fff;
 }
 
+.header-links__bar{
+    margin-left: 2em;
+}
+
 /* KONEC - NAVIGACE*/
 /* HERO AREA */
 
 .hero-area-background{
-    grid-row: 1 / 3;
-    grid-column: 1 / 4;
-    background-color: #e9f3f7;
-    z-index: -1;
+    background-image: url(../images/hero_area_img.png), url(../images/index_hero_area_bg.svg);
+    background-position: right;
+    background-size: contain, cover;
+    background-repeat: no-repeat, no-repeat;
 }
 
 .hero-area{
-    grid-area: hero-area;
-    padding: 8em 0;
+    padding: 8em 0 10em 0;
     position: relative;
 }
 
@@ -420,6 +359,7 @@ a{
     align-items: center;
     height: 8em;
     width: 16em;
+    filter: drop-shadow(0 5px 15px rgb(0, 0, 0, 0.1));
 }
 
 .fact--bordered{
@@ -466,24 +406,24 @@ a{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/hero-area-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 /* KONEC - HERO AREA */
 /* COURSE CATEGORIES */
 
-.courses{
-    grid-area: categories;
-    margin: 8em 0;
+.courses-container{
+    padding-top: 11em;
 }
 
-.courses-container{
+.courses{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    row-gap: 2em;
 }
 
 .courses-article{
-    margin-bottom: 2em;
     border: 1px solid #e6e6e6;
 }
 
@@ -510,18 +450,10 @@ a{
 /* AVAILABLE COURSES */
 
 .available-courses-background{
-    grid-row: 4 / 5;
-    grid-column: 1 / 4;
-    background-color: #062a35;
-    z-index: -1;
+    background-color: #062a35; 
 }
 
 .available-courses{
-    grid-area: courses;
-    margin: 8em 0;
-}
-
-.available-courses-container{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -726,15 +658,11 @@ a{
 /* KONEC - AVAILABLE COURSES */
 /* GALLERY */
 
-.gallery{
-    grid-area: gallery;
-    margin: 8em 0;
-}
-
 .gallery-menu{
     display: flex;
     justify-content: center;
-    width: 80%; /* plne fluidní menu */
+    max-width: 50%;
+    min-width: max-content;
     padding: 0;
     margin: 0 auto 3em auto;
     list-style-type: none;
@@ -746,6 +674,8 @@ a{
     font-size: 1.2em;
     font-weight: bold;
     padding: 1em;
+    white-space: nowrap;
+
 }
 
 .gallery-menu__item:hover{
@@ -757,15 +687,15 @@ a{
     color: #EA5822;
 }
 
-.gallery-container{
+.gallery{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    row-gap: 2em;
 }
 
 .gallery-img-wrap{
     position: relative;
-    margin-bottom: 1em;
 }
 
 .gallery__img{
@@ -820,24 +750,12 @@ a{
 /* INSTRUCTORS */
 
 .instructors-background{
-    grid-row: 6 / 7;
-    grid-column: 1 / 4;
     background-color: #eaf4f7;
-    z-index: -1;
-}
-
-.instructors-background--our-courses{
-    grid-row: 4 / 5;
-    grid-column: 1 / 4;
 }
 
 .instructors{
-    grid-area: team;
-    margin: 8em 0;
-}
-
-.instructors-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -911,38 +829,28 @@ a{
 /* EVENTS */
 
 .events{
-    grid-area: events;
-    margin: 8em 0;
-}
-
-.events-container{
     display: flex;
     justify-content: space-between;
-}
-
-.events-container-article{
-    flex: 2;
-    margin-right: 2em;
+    column-gap: 2em;
 }
 
 .events-aside{
-    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.events-container-article__img{
+.events-article__img{
     display: block;
 }
 
-.events-container-article-caption{
+.events-article-caption{
     position: relative;
     padding: 2em 4.5em;
     background-color: #eaf4f7;
 }
 
-.events-container-article-caption__price{
+.events-article-caption__price{
     position: absolute;
     top: -1.375em;
     right: 3em;
@@ -958,7 +866,7 @@ a{
     border-radius: 50%;
 }
 
-.events-container-article-caption__info{
+.events-article-caption__info{
     display: inline-block;
     margin: 0;
     margin-right: 1.5em;
@@ -966,16 +874,16 @@ a{
 
 }
 
-.events-container-article-caption__heading{
+.events-article-caption__heading{
     font-size: 1.5em;
     margin: .5em 0;
 }
 
-.events-container-article-caption__text{
+.events-article-caption__text{
     margin: 1em 0;
 }
 
-.events-container-article-caption__link{
+.events-article-caption__link{
     padding: 1em 2em;
     font-size: 1em;
     font-family: "Roboto";
@@ -1063,24 +971,11 @@ a{
 /* TESTiMONIALS */
 
 .testimonials-background{
-    grid-row: -5 / -6;
-    grid-column: 1 / 4;
     background:linear-gradient(0deg, rgba(0, 12, 15, 0.8), rgba(0, 12, 15, 0.8)), url(../images/testimonials_bg.jpg);
     background-size:cover;
-    z-index: -1;
-}
-
-.testimonials-background--about-us{
-    grid-row: -4 / -5;
-    grid-column: 1 / 4;
 }
 
 .testimonials{
-    grid-area: testimonials;
-    margin: 8em 0;
-}
-
-.testimonials-content{
     display: flex;
     flex-direction: row;
     column-gap: 10em;
@@ -1210,17 +1105,12 @@ a{
 /* BECOME INSTRUCTOR */
 
 .become-instructor{
-    grid-area: become-instructor;
     display: flex;
     align-items: center;
-    margin: 8em 0;
 }
 
 .become-instructor-background{
-    grid-row: -4 / -5;
-    grid-column: 1 / 4;
     background-color: #eaf4f7;
-    z-index: -1;
 }
 
 .become-instructor-images, .become-instructor-article{
@@ -1243,7 +1133,7 @@ a{
 }
 
 .become-instructor-article__text{
-    margin: 1em 0 2em 0;
+    margin: 2em 0;
 }
 
 .become-instructor-info{
@@ -1252,8 +1142,12 @@ a{
 }
 
 .become-instructor-info__01{
-    margin-right: 2em;
+    padding-right: 2em;
     border-right: 1px solid #c3d9df;
+}
+
+.become-instructor-info__02{
+    padding-left: 2em;
 }
 
 .become-instructor-info__01 h4, .become-instructor-info__02 h4{
@@ -1282,12 +1176,8 @@ a{
 /* LATEST NEWS AND BLOG */
 
 .news{
-    grid-area: blog;
-    margin: 8em 0;
-}
-
-.news-articles-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -1349,8 +1239,9 @@ a{
 /* WELCOME TO EDUPLUS */
 
 .welcome{
-    grid-area: welcome;
     display: flex;
+    flex-direction: row;
+    column-gap: 9.75em;
     margin-top: 8em;
     padding-bottom: 12em;
     position: relative;
@@ -1407,9 +1298,6 @@ a{
     font-weight: bold;
 }
 
-.welcome-article{
-    margin-left: 8em;
-}
 
 .welcome-article__bordered-text{
     margin: 2em 0;
@@ -1462,22 +1350,18 @@ a{
 /* INSTITUTE GOALS */
 
 .institute-goals{
-    grid-area: goals;
     display: flex;
     flex-direction: row;
-    margin: 10em 0 8em 0;
 }
 
 .institute-goals-background{
-    grid-row: 4 / 5;
-    grid-column: 1 / 4;
     background-color: #eaf4f7;
-    z-index: -1;
 }
 
 .institute-goals-content{
     display: inline-block;
     margin-right: 5em;
+    flex: 1;
 }
 
 .institute-goals-graph-container{
@@ -1500,10 +1384,30 @@ a{
     box-sizing: border-box;
 }
 
+.graph{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.graph--orange{
+    background: radial-gradient(#fff 60%, transparent 41%), conic-gradient(#fff 0% 17%, #ea5822 17% 100%);
+}
+
+.graph--blue{
+    background: radial-gradient(#fff 60%, transparent 41%), conic-gradient(#fff 0% 21%, #3662ff 21% 100%);
+}
+
 .institute-goals-graph__num{
     font-family: "Roboto";
     font-weight: bold;
-    
+    z-index: 5;
 }
 
 .institute-goals-graph__num strong{
@@ -1523,13 +1427,18 @@ a{
     font-size: 1.2em;
 }
 
+.institute-goals-video{
+    width: 670px;
+    height: 380px;
+}
+
+.video{
+    height: 100%;
+    width: 100%;
+}
+
 /* KONEC - INSTITUTE GOALS */
 /* ALL COURSES */
-
-.all-courses{
-    grid-area: courses;
-    margin: 8em 0;
-}
 
 .all-courses-menu{
     display: flex;
@@ -1537,14 +1446,15 @@ a{
     justify-content: space-evenly;
     margin: 0 auto 2em auto;
     padding: 0;
-    width: 80%;
+    max-width: 50%;
     list-style-type: none;
 }
 
 .all-courses-menu__item{
     padding: .2em .8em;
     border-radius: 20px;
-    font-weight: 600
+    font-weight: 600;
+    white-space: nowrap;
 }
 
 .all-courses-menu__item:hover{
@@ -1556,16 +1466,16 @@ a{
     color: #fff;
 }
 
-.all-courses-container{
+.all-courses{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    row-gap: 2em;
 }
 
 .all-courses-article{
     width: min-content;
-    margin-bottom: 1.5em;
     position: relative;
 }
 
@@ -1701,12 +1611,10 @@ a{
 /*KONEC - ALL COURSES */
 /* COURSES DETAILS */
 
-.courses-details-content{
-    grid-area: content;
+.courses-details{
     display: flex;
     flex-direction: row;
     flex-flow: row-reverse;
-    margin: 5em 0;
 }
 
 .courses-details-article{
@@ -1733,6 +1641,11 @@ a{
     font-family: "Roboto";
     font-size: 1.8em;
     font-weight: bold;
+}
+
+.courses-details-video{
+    width: 770px;
+    height: 450px;
 }
 
 .lessons-container{
@@ -1820,10 +1733,11 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    row-gap: 2em;
 }
 
 .course-instructor{
-    margin: 0 0 2em 0;
+    margin: 0;
     width: 23em;
     height: 23em;
     display: flex;
@@ -1887,12 +1801,11 @@ a{
 /* KONEC - COURSES DETAILS */
 /* EVENT DETAILS */
 
-.event-details-content{
-    grid-area: content;
-    margin: 5em 0;
+.event-details{
+    margin: 5em auto;
 }
 
-.event-details-content__heading{
+.event-details__heading{
     margin: 0;
     font-size: 2.1875em;
     font-family: "Roboto";
@@ -1902,8 +1815,12 @@ a{
 .meta-container{
     margin-bottom: 1.8em;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 1em;
 }
+
 
 .meta-list{
     margin: 0;
@@ -1912,6 +1829,7 @@ a{
     align-items: center;
     align-self: flex-end;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 65%;
     list-style-type: none;
 }
@@ -1922,13 +1840,14 @@ a{
 
 .meta-list__item{
     font-weight: 500;
+    white-space: nowrap;
 }
 
 .meta-list__icon{
     margin-right: .3em;
 }
 
-.event-details-content__price{
+.event-details__price{
     margin: 0 0 0 4em;
     padding: 0 .8em;
     height: 2em;
@@ -1942,51 +1861,66 @@ a{
     background-color: #3662ff;
 }
 
-.event-details-content__link{
+.event-details__link{
     padding: 0 2.5em;
     height: 3.5em;
     display: inline-block;
     font-size: .875em;
     font-family: "Roboto";
     font-weight: bold;
+    white-space: nowrap;
 }
 
-.event-details-content__img{
+.event-details-img{
     margin: 1.5em 0;
+    width: 100%;
 }
 
-.event-details-content-map{
+.event-details__img{
+    width: 100%;
+    height: auto;
+}
+
+.event-details-map{
     margin: 3em 0 5em 0;
     display: flex;
+    flex-direction: row;
+    
 }
 
-.event-details-content-map-article{
+.event-details-map__img{
+    align-self: center;
+}
+
+.event-details-map-article{
     margin-right: 2.5em;
 }
 
-.event-details-content-map-article__text{
+.event-details-map-article__text{
     margin: 1.5em 0;
 }
 
-.event-details-content-map-list{
+.event-details-map-list{
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
 
-.event-details-content-map-list__item{
+.event-details-map-list__item{
     padding: .3em;
+    display: flex;
+    align-items: center;
     font-weight: 500;
 }
 
-.event-details-content-map-list__icon{
+.event-details-map-list__icon{
     padding: .5em;
     margin-right: .8em;
     border: 2px solid #e2e2e2;
     border-radius: 50%;
 }
 
-.event-details-content-events{
+.event-details-events{
     margin: 5em 0 3em 0;
     display: flex;
     justify-content: space-between;
@@ -1995,16 +1929,8 @@ a{
 /* KONEC - EVENT DETAILS */
 /* INSTRUCTOR DETAILS */
 
-.instructor-details{
-    grid-area: content;
-    margin: 5em 0;
-}
-
 .instructor-details-background{
-    grid-row: 3 / 4;
-    grid-column: 1 / 4;
     background-color: #eaf4f7;
-    z-index: -1;
 }
 
 .instructor-details-member{
@@ -2102,6 +2028,7 @@ a{
     margin-top: 2em;
     display: flex;
     justify-content: space-between;
+    white-space: nowrap;
 }
 
 .instructor-details-facts--m-small{
@@ -2123,6 +2050,7 @@ a{
 .instructor-details-education{
     margin: 2em 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -2147,7 +2075,7 @@ a{
 }
 
 .instructor-details-courses{
-    margin: 8em 0;
+    padding: 4em 7em 7em 7em;
     position: relative;
 }
 
@@ -2156,42 +2084,25 @@ a{
     text-align: center;
 }
 
-.instructor-details-courses::before{
-    content:"";
-    background-color:#fff;
-    position: absolute;
-    left: -10%;
-    top:-5%;
-    height: 113%;
-    width: 120%;
-    
-    z-index: -1;
-}
-
 /* KONEC - INSTRUCTOR DETAILS */
 /* FAQ */
 
 .faq{
-    grid-area: content;
-    margin: 5em 0;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: 
-    "author questions"
-    "get-in-touch questions";
+    display: flex;
+    flex-direction: row;
     gap: 2em;
 }
 
 .faq-background{
-    grid-row: 3 / 4;
-    grid-column: 1 / 4;
     background-color: #eaf4f7;
-    z-index: -1;
+}
+
+.faq-author-container{
+    flex: 1;
 }
 
 .faq-author{
-    grid-area: author;
+    margin-bottom: 2em;
     padding: 3.75em 2.875em;
     display: flex;
     flex-direction: column;
@@ -2228,7 +2139,6 @@ a{
 }
 
 .faq-form-container{
-    grid-area: get-in-touch;
     padding: 3.75em 2.875em;
 }
 
@@ -2317,22 +2227,17 @@ a{
 }
 
 .faq-questions{
-    grid-area: questions;
+    flex: 2;
     padding: 3.75em 2.875em;
 }
 
 .faq-cta{
-    grid-area: cta;
-    margin: 5em 0;
     display: flex;
+    flex-direction: row;
 }
 
 .faq-cta-background{
-    grid-row: 4 / 5;
-    grid-column: 1 / 4;
-    background: rgb(14,24,81);
     background: linear-gradient(90deg, rgba(14,24,81,1) 0%, rgba(14,24,81,1) 50%, rgba(0,8,70,1) 50%, rgba(0,8,70,1) 100%);
-    z-index: -1;
 }
 
 .faq-cta-card{
@@ -2366,32 +2271,27 @@ a{
 /* BLOG */
 
 .blog-container{
-    grid-area: content;
-    margin: 5em 0;
     display: flex;
+    flex-direction: row;
     column-gap: 2em;
 }
 
 .blog{
     flex: 2;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
 }
 
 .blog-background{
-    grid-row: 3 / 4;
-    grid-column: 1 / 4;
     background-color: #eaf4f7;
-    z-index: -1;
-}
-
-.blog-article-container{
-    margin-bottom: 2em;
 }
 
 .blog-article{
     padding: 2.5em;
 }
 
-.blog-article__img{
+.blog-article__img, .blog-article__video{
     display: block;
 }
 
@@ -2440,7 +2340,6 @@ a{
 }
 
 .blog-ad{
-    margin-bottom: 2em;
     padding: 3em 4.375em;
     background-color: #3662ff;
 }
@@ -2570,7 +2469,7 @@ a{
     margin-bottom: 0;
 }
 
-.blog-article-comment--subcoment{
+.blog-article-comment--subcomment{
     margin-left: 6.5em;
     margin-right: 0;
 }
@@ -2791,14 +2690,7 @@ a{
 /* KONEC - BLOG */
 /* CONTACT US */
 
-.contact-us-container{
-    grid-area: content;
-    margin: 8em 0;
-}
-
 .contact-us-background{
-    grid-row: 3 /4;
-    grid-column: 1 / 4;
     background-color: #eaf4f7;
 }
 
@@ -2903,18 +2795,11 @@ a{
 /* KONEC - CONTACT US */
 /* BRANDS */
 
-.brands-background{
-    grid-row: -2 / -3;
-    grid-column: 1 / 4;
-    z-index: -1;
-}
-
 .brands{
-    grid-area: brands;
+    padding: 5em 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
 
 /* KONEC - BRANDS */
@@ -2937,16 +2822,13 @@ a{
 }
 
 .footer-background{
-    z-index: -10;
-    grid-row: -1/-2;
-    grid-column: 1 / 4;
     background-image: url("../images/footer_bg.png");
     background-size: cover;
     background-color: #062a35;
 }
 
 .footer{
-    grid-area: footer;
+    padding: 1em 0;
     position: relative;
 }
 
@@ -3073,9 +2955,9 @@ a{
 .newsletter-form__submit{
     flex: 1;
     padding: 0;
-    
     color: #fff;
     font-size: 2em;
+    cursor: pointer;
 }
 
 /* Barvy */
@@ -3141,3 +3023,584 @@ a{
 .icon-box{
     padding: .8em 1em;
 }
+
+@media only screen and (max-width: 1500px){
+    .scroll-up-btn{
+        right: 0;
+        bottom: 17em;
+    }
+}
+
+/* 1200px + */
+
+@media only screen and (max-width: 1200px){
+
+    /* LAYOUT */
+  
+    .header{
+        padding: 1em 0;
+    }
+
+    .content-wrapper.content-wrapper--no-p{
+        padding: 0 4vw;
+    }
+
+    .content-wrapper{
+        padding: 6em 4vw;
+    }
+
+    .content-wrapper .header{
+        padding: 1em 0;
+    }
+
+    .content-wrapper .hero-area{
+        padding: 1em 0 6em 0;
+    }
+
+    .header{
+        padding: 1em 4vw ;
+    }
+
+    .hero-area-background{
+        background-size: cover;
+        background-position: center;
+    }
+
+    .header-links__bar{
+        display: none;
+    }
+
+    .navigation--index .menu, .menu{
+        margin: 0;
+        justify-content: center;
+    }
+
+    .fact{
+        font-size: .8em;
+    }
+
+    .events{
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 2em;
+
+    }
+
+    .events-article{   
+        margin: 0;
+        width: min-content;
+    }
+    
+    .events-aside{
+        flex-direction: row;
+        column-gap: 2em;
+    }
+
+    .available-courses, .gallery, .instructors, .news, .course-instructors-img-container{
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .testimonials{
+        justify-content: center;
+    }
+
+    .testimonials-gallery, .become-instructor-images{
+        display: none;
+    }
+
+    .become-instructor-article{
+        padding: 0;
+        
+    }
+
+    .welcome{
+        margin-top: 3em;
+        padding-bottom: 6em;
+    }
+
+    .welcome-img-container{
+        display: none;
+    }
+
+
+    .institute-goals-content{
+        margin: 0;
+    }
+
+    .courses-details{
+        flex-direction: column-reverse;
+    }
+
+    .course-instructors{
+        text-align: center;
+    }
+
+    .event-details-events{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .meta-list{
+        width: 100%;
+    }
+
+    .meta-container{
+        margin: 1.5em 0;
+        justify-content: flex-start;
+    }
+    .event-details__price{
+        margin: 0;
+    }
+
+    .event-details-map{
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 2em;
+    }
+
+    .instructor-details-education{
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .instructor-details-facts{
+        gap: 1em;
+    }
+
+    .faq-cta-card--left{
+        padding-right: 2em;
+    }
+
+    .faq-cta-card--right{
+        padding-left: 2em;
+    }
+
+    .blog-article__img{
+        width: 100%;
+    }
+
+    .blog-article__video{
+        width: 100%;
+        height: calc(92vw/16*9) ;
+    }
+
+    .contact-us{
+        flex-direction: column;
+        row-gap: 2em;
+    }
+
+    .contact-us-map{
+        margin: 0 auto;
+    }
+}
+
+
+/* 992 - 1270 px */
+@media only screen and (max-width: 992px){
+
+    .hero-area-background{
+        background-image: none;
+        background-color: #eaf4f7;
+    }
+
+    .header{
+        flex-wrap: wrap;
+    }
+
+    .header-logo{
+        flex: 0 1 50%;
+        order: 1;
+    }
+
+    .navigation{
+        flex: 0 1 100%;
+        order: 2;
+        font-size: 1.2em;
+    }
+
+    .header-links a:nth-child(1), .header-links a:nth-child(2){
+        display: none;
+    }
+
+    .navigation--index .menu, .menu{
+        justify-content: space-between;
+    }
+
+    .header-links{
+        flex: 0 1 50%;
+        order: 1;
+    }
+
+    .hero-area{
+        padding: 4em 4vw;
+    }
+
+    h1.main-heading{
+        text-align: center;
+    }
+  
+    .hero-area-content, .hero-area-form{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .fact{
+        height: 7em;
+        width: 14em;
+    }
+
+    .gallery-menu, .all-courses-menu{
+        flex-wrap: wrap;
+        min-width: min-content;
+        max-width: none;
+    }
+
+    .events-aside{
+        flex-direction: column;
+        row-gap: 2em;
+    }
+
+
+    .institute-goals{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2em;
+    }
+
+    .all-courses{
+        justify-content: center;
+        gap: 2em;
+    }
+   
+    .instructor-details-member{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .instructor-details-about{
+        margin: 0;
+    }
+
+    .faq{
+        flex-direction: column-reverse;
+    }
+
+    .faq-cta{
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .faq-cta-background{
+        background: linear-gradient(180deg, rgba(14,24,81,1) 0%, rgba(14,24,81,1) 50%, rgba(0,8,70,1) 50%, rgba(0,8,70,1) 100%);
+    }
+
+    .faq-cta-card--left, .faq-cta-card--right{
+        padding: 1em;
+    }
+
+    .faq-form-container, .faq-author, .faq-questions{
+        padding: 2em;
+    }
+
+    .blog-container{
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .brands{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .footer-logo{
+        flex: 2;
+    }
+
+    .footer-body{
+        flex-wrap: wrap;
+        row-gap: 2em;
+    }
+
+    .footer-menu{
+        flex: 0 1 33.3%;
+    }
+
+    .newsletter{
+        flex: 0 1 100%;
+    }
+
+    .institute-goals-video, .courses-details-video{
+        width: 100%;
+        height: calc(92vw/16*9);
+    }
+
+    .blog-article-news{
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 2em;
+    }
+}  
+ 
+@media only screen and (max-width: 670px){
+
+    .menu__item a{
+        padding: .5em;
+    }
+
+ 
+}
+
+@media only screen and (max-width: 576px){
+
+    .content-wrapper{
+        padding: 4em 4vw;
+    }
+
+
+    .navigation--index .menu, .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu a{
+        padding: .3em 0;
+    }
+
+    .menu a i{
+        display: none;
+    }
+
+    .header-links{
+        flex: 1 ;
+    }
+
+    .header-links{
+        margin: 0;
+    }
+
+    .header-links a i{
+        margin: 0;
+    }
+
+    .sign-in{
+        display: none;
+    }
+
+    .main-heading__title--big{
+        font-size: 3em;
+    }
+
+    .hero-area-content, .hero-area-form{
+        width: 100%;
+        
+    }
+
+    .hero-area__title{
+        font-size: 5em;
+    }
+
+    .fact-container{
+        display: none;
+    }
+
+    .courses{
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .gallery__img{
+        width: 350px;
+    }
+
+    .events-aside{
+        justify-content: center;
+        column-gap: 2em;
+    }
+
+    .events-aside-article__img, .events-article__img{
+        width: 330px;
+    }
+
+    .events-article-caption{
+        padding: 1em;
+    }
+
+    .events-article-caption__price{
+        right: 1em;
+        top: -3em;
+    }
+
+    .testimonials-article-container{
+        width: 100%;
+       
+    }
+
+    .testimonials-article{
+        position: static;
+    } 
+
+    .testimonials-article__text-medium{
+        font-size: 1.2em;
+    }
+
+    .testimonials-quote img{
+        width: 5.625em;
+    }
+
+    .become-instructor-article .main-heading{
+        text-align: center;
+    }
+
+    .become-instructor-article{
+        text-align: center;
+    }
+
+    .become-instructor-article__button{
+        display: block;
+        margin-bottom: 1em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .become-instructor-info{
+        justify-content: center;
+    }
+
+    .become-instructor-info__01, .become-instructor-info__02{
+        flex: 1;
+    }
+
+    .lesson__time{
+        white-space: nowrap;
+    }
+
+    .question-img-content{
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 1em;
+    }
+
+    .question-img-content p{
+        margin: 0;
+    }
+
+    .meta-list{
+        justify-content: flex-start;
+        gap: 1em;
+
+    }
+
+    .event-details{
+        margin: 2em 0;
+    }
+
+    
+   .instructor-details-facts{
+        flex-wrap: wrap;
+    }
+
+    .instructor-details-about .instructor-details-facts{
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .instructor-details-about .line--vertical{
+        display: none;
+    }
+    
+
+    .instructor-details-about, .instructor-details-certificate, .instructor-details-experience{
+        padding: 2em;
+    }
+
+    .instructor-details-certificate, .instructor-details-experience{
+        flex: 1;
+    }
+
+    .instructor-details-certificate-imgs{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .available-courses-article__img{
+        width: 320px;
+    }
+
+    .news__img{
+        width: 330px;
+    }
+
+    .ad__img, .lesson__img{
+        width: 100%
+    }
+
+    .blog-aside-gallery-wrapper{
+        justify-content: center;
+    }
+
+    .blog-aside-gallery, .blog-aside-news, .blog-aside-search, .blog-ad, .blog-article{
+        padding: 2em 1.3em;
+    }
+
+    .blog-ad--small{
+        margin: 0 0 2em 0;
+    }
+
+    .blog-article__heading{
+        font-size: 1.5em;
+    }
+
+    .blog-article-comment--subcomment{
+        margin-left: 2em;
+    }
+
+    .blog-article-form .form__submit{
+        width: 100%;
+    }
+
+    .blog-article-comment, .blog-article-author{
+        flex-direction: column;
+        row-gap: 1em;
+    }
+
+    .contact-us-map img{
+       width: 100%;
+    }
+
+    .contact-us-map__pin{
+        font-size: 4em;
+    }
+
+    .contact-us-article article{
+        padding: 0;
+    }
+
+    .contact-us-form .form__submit{
+        flex: 0 0 100%;
+    }
+
+    .footer-header{
+        flex-direction: column;
+        row-gap: 2em;
+    }
+
+    .footer-social{
+        column-gap: 2em;
+    }
+
+    .footer-social__item{
+        text-align: center;
+    }
+
+    .scroll-up-btn{
+        right: 0;
+        bottom: 14em;
+    }
+}
+
+ 
